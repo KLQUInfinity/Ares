@@ -50,7 +50,7 @@ public class UIManager : MonoBehaviour
         while (!operation.isDone)
         {
             loading.value = operation.progress;
-            loadingValue.text = (operation.progress * 100) + " %";
+            loadingValue.text = (int)(operation.progress * 100) + " %";
             yield return null;
         }
     }

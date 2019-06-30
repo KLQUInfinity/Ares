@@ -5,10 +5,9 @@ using ArabicSupport;
 [ExecuteInEditMode]
 public class FixTextMeshPro : MonoBehaviour
 {
-    [Multiline]
-    [SerializeField] public string text;
-    [SerializeField] public bool tashkeel = true;
-    [SerializeField] public bool hinduNumbers = true;
+    [Multiline] public string text;
+    public bool tashkeel = true;
+    public bool hinduNumbers = true;
 
     void Update()
     {
