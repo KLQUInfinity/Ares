@@ -23,7 +23,7 @@ public class Slot : MonoBehaviour
     /// <param name="buildType">Determain next build allowence</param>
     public void BuildThisSlot(string buildType)
     {
-        if (buildType.Equals("GrapperRoom"))
+        if (buildType.Contains("GrapperRoom"))
         {
             MySlotManger.PrepareNextSlot(MyDir, false);
         }
