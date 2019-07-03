@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!205 &6079430438758525827
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5191919623850267983}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.022644043, y: -0.09234023, z: -0.013797045}
+  m_Size: 27.962635
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.06496529
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5191919623848266633}
+  - screenRelativeHeight: 0.028726516
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5191919623848266635}
+  - screenRelativeHeight: 0.0023946906
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5191919623848266637}
+  m_Enabled: 1
+--- !u!1001 &5191919623850169321
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100006, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+      propertyPath: m_Name
+      value: Training Room Model (LOD)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400006, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 5eaf31f95e3cdda44956f0f30a172cae, type: 3}
+--- !u!1 &5191919623850267983 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: 5eaf31f95e3cdda44956f0f30a172cae,
+    type: 3}
+  m_PrefabInstance: {fileID: 5191919623850169321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5191919623848266633 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2300000, guid: 5eaf31f95e3cdda44956f0f30a172cae,
+    type: 3}
+  m_PrefabInstance: {fileID: 5191919623850169321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5191919623848266635 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2300002, guid: 5eaf31f95e3cdda44956f0f30a172cae,
+    type: 3}
+  m_PrefabInstance: {fileID: 5191919623850169321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5191919623848266637 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2300004, guid: 5eaf31f95e3cdda44956f0f30a172cae,
+    type: 3}
+  m_PrefabInstance: {fileID: 5191919623850169321}
+  m_PrefabAsset: {fileID: 0}

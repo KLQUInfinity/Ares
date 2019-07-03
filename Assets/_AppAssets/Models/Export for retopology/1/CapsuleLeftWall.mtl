@@ -1,0 +1,10 @@
+newmtl CladingWall
+map_Kd CladingWall.jpg
+Kd 0.5875156 0.1081346 0.8490566
+d 1
+
+newmtl Default_Prototype
+map_Kd GridBox_Default.png
+Kd 1 1 1
+d 1
+

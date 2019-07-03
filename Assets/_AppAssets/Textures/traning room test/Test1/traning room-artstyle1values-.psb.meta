@@ -1,0 +1,2229 @@
+fileFormatVersion: 2
+guid: 627b0d29a1d6302449ebb227b30dcb1d
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO
+    100002: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/door
+    100004: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/fire_PNG6009
+    100006: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/flame_PNG13232
+    100008: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/kodak-harrow-14-1024x683
+    100010: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      13
+    100012: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      15
+    100014: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      16
+    100016: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      17
+    100018: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      18
+    100020: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      19
+    100022: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      20
+    100024: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      21
+    100026: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      23
+    100028: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      25
+    100030: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      26
+    100032: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      27
+    100034: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      29
+    100036: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      30
+    100038: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      31
+    100040: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      32
+    100042: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      34
+    100044: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      35
+    100046: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      36
+    100048: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37
+    100050: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy
+    100052: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 4
+    100054: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 5
+    100056: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 6
+    100058: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 7
+    100060: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 8
+    100062: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 9
+    100064: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      39
+    100066: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      40
+    100068: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      41
+    100070: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      42 copy
+    100072: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      43
+    100074: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      44
+    100076: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      45
+    100078: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      46
+    100080: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      47
+    100082: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      48
+    100084: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      49
+    100086: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 3
+    100088: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4
+    100090: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 3
+    100092: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 4
+    100094: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 5
+    100096: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 6
+    100098: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 7
+    100100: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 8
+    100102: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 9
+    100104: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 10
+    100106: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      1
+    100108: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      1_1
+    100110: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      2
+    100112: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      2 copy
+    100114: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      3
+    100116: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      3 copy
+    100118: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      4
+    100120: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      5
+    400000: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Transform
+    400002: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/door/Transform
+    400004: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/fire_PNG6009/Transform
+    400006: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/flame_PNG13232/Transform
+    400008: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/kodak-harrow-14-1024x683/Transform
+    400010: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      13/Transform
+    400012: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      15/Transform
+    400014: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      16/Transform
+    400016: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      17/Transform
+    400018: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      18/Transform
+    400020: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      19/Transform
+    400022: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      20/Transform
+    400024: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      21/Transform
+    400026: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      23/Transform
+    400028: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      25/Transform
+    400030: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      26/Transform
+    400032: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      27/Transform
+    400034: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      29/Transform
+    400036: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      30/Transform
+    400038: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      31/Transform
+    400040: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      32/Transform
+    400042: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      34/Transform
+    400044: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      35/Transform
+    400046: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      36/Transform
+    400048: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37/Transform
+    400050: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy/Transform
+    400052: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 4/Transform
+    400054: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 5/Transform
+    400056: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 6/Transform
+    400058: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 7/Transform
+    400060: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 8/Transform
+    400062: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 9/Transform
+    400064: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      39/Transform
+    400066: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      40/Transform
+    400068: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      41/Transform
+    400070: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      42 copy/Transform
+    400072: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      43/Transform
+    400074: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      44/Transform
+    400076: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      45/Transform
+    400078: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      46/Transform
+    400080: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      47/Transform
+    400082: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      48/Transform
+    400084: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      49/Transform
+    400086: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 3/Transform
+    400088: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4/Transform
+    400090: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 3/Transform
+    400092: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 4/Transform
+    400094: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 5/Transform
+    400096: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 6/Transform
+    400098: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 7/Transform
+    400100: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 8/Transform
+    400102: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 9/Transform
+    400104: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 10/Transform
+    400106: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      1/Transform
+    400108: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      1_1/Transform
+    400110: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      2/Transform
+    400112: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      2 copy/Transform
+    400114: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      3/Transform
+    400116: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      3 copy/Transform
+    400118: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      4/Transform
+    400120: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      5/Transform
+    2800000: traning room-artstyle1values-
+    21200000: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/door/SpriteRenderer
+    21200002: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/fire_PNG6009/SpriteRenderer
+    21200004: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/flame_PNG13232/SpriteRenderer
+    21200006: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/kodak-harrow-14-1024x683/SpriteRenderer
+    21200008: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      13/SpriteRenderer
+    21200010: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      15/SpriteRenderer
+    21200012: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      16/SpriteRenderer
+    21200014: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      17/SpriteRenderer
+    21200016: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      18/SpriteRenderer
+    21200018: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      19/SpriteRenderer
+    21200020: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      20/SpriteRenderer
+    21200022: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      21/SpriteRenderer
+    21200024: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      23/SpriteRenderer
+    21200026: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      25/SpriteRenderer
+    21200028: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      26/SpriteRenderer
+    21200030: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      27/SpriteRenderer
+    21200032: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      29/SpriteRenderer
+    21200034: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      30/SpriteRenderer
+    21200036: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      31/SpriteRenderer
+    21200038: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      32/SpriteRenderer
+    21200040: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      34/SpriteRenderer
+    21200042: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      35/SpriteRenderer
+    21200044: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      36/SpriteRenderer
+    21200046: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37/SpriteRenderer
+    21200048: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy/SpriteRenderer
+    21200050: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 4/SpriteRenderer
+    21200052: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 5/SpriteRenderer
+    21200054: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 6/SpriteRenderer
+    21200056: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 7/SpriteRenderer
+    21200058: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 8/SpriteRenderer
+    21200060: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      37 copy 9/SpriteRenderer
+    21200062: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      39/SpriteRenderer
+    21200064: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      40/SpriteRenderer
+    21200066: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      41/SpriteRenderer
+    21200068: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      42 copy/SpriteRenderer
+    21200070: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      43/SpriteRenderer
+    21200072: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      44/SpriteRenderer
+    21200074: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      45/SpriteRenderer
+    21200076: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      46/SpriteRenderer
+    21200078: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      47/SpriteRenderer
+    21200080: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      48/SpriteRenderer
+    21200082: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Layer
+      49/SpriteRenderer
+    21200084: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 3/SpriteRenderer
+    21200086: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4/SpriteRenderer
+    21200088: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 3/SpriteRenderer
+    21200090: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 4/SpriteRenderer
+    21200092: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 5/SpriteRenderer
+    21200094: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 6/SpriteRenderer
+    21200096: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 7/SpriteRenderer
+    21200098: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 8/SpriteRenderer
+    21200100: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 9/SpriteRenderer
+    21200102: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Rounded
+      Rectangle 4 copy 10/SpriteRenderer
+    21200104: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      1/SpriteRenderer
+    21200106: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      1_1/SpriteRenderer
+    21200108: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      2/SpriteRenderer
+    21200110: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      2 copy/SpriteRenderer
+    21200112: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      3/SpriteRenderer
+    21200114: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      3 copy/SpriteRenderer
+    21200116: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      4/SpriteRenderer
+    21200118: traning room-artstyle1values-_GO/traning room-artstyle1values-_GO/Shape
+      5/SpriteRenderer
+    21300000: cc020850e3b524349b4448b3db9d0a56
+    21300002: ae91c623e492c07439d76581a4e882c2
+    21300004: eaaa58ed9aacf0949b3e4542c4712a87
+    21300006: 4ed6403de8aceb04393214b340d0e6f1
+    21300008: 16013b1fa69cff2438ff6f0e40e88124
+    21300010: 840e3b35da33b25439f8cbc0537eaf4e
+    21300012: 545a66d3b1ab42340a9217ddde5c4dd8
+    21300014: 9edeb414923a56c42809505546a13d09
+    21300016: ee70d673e57253e4ca21b20aa7fecd53
+    21300018: e50879a8cdef7a544b771ea415002134
+    21300020: 330a6c8afe975d942b7e1237584842c4
+    21300022: 79c33094d5a80e04f92a1e9baf052ad4
+    21300024: d8b3bb6c29243a74281a39271f601154
+    21300026: 4d337b7ab3d0f3047bc1313c6ac62924
+    21300028: 29e1d4aed3e065a44b4c9c3c52cf1ff3
+    21300030: 2ab44468d1b2099469c07e74bab5de98
+    21300032: ac6138ddebddae74699c8b0c25468276
+    21300034: 959d184778bbce04d877bcb15d696057
+    21300036: decc558534ae15c499250a91e3077640
+    21300038: e3b121775cde08944b1ab254345561e1
+    21300040: a7daee430fac14544adbad05172776e9
+    21300042: 7ab5f789188c09a4f99a8911a9e13022
+    21300044: 0a7b5d975f1c0c54caeaee3795f46b20
+    21300046: e0abf048dc70cd14fa5ab8ee39309034
+    21300048: df363592eb285f643be1bfb21562ee80
+    21300050: e5525300eba4b7341a918e545507d889
+    21300052: 8c01305e8ff654042bdef898cdf54e7c
+    21300054: 85ffb70fa12094547b0532e67642a9c2
+    21300056: 9346a0cc1de3fdc488dcc168bb1fdf0d
+    21300058: a4c5a99673ac637499b08acf1c7b79af
+    21300060: ce1019b416d0a9447bbc33e8b3dea61f
+    21300062: a41311c92cff8214295293b8210fe9c7
+    21300064: 97ded9a1f6df1bf4780ed413e5b5f495
+    21300066: 7802e96e749fa294bb3f43a557875c87
+    21300068: 5f7931a1545ae134793d441f55254bc5
+    21300070: 2b356e85aa90a1944a2bac15380faffe
+    21300072: 352f951a6f2ab974e9752f3baf5f274c
+    21300074: edfce381e6ad82f47aaa76927048a54c
+    21300076: 8669f3f2f789bbc4a8f6d26d4ab42e74
+    21300078: 3d6f8b646165be14ab59bb10dfe43768
+    21300080: 2738048ff94d4ad4fa99e8306ed63282
+    21300082: 5b8eb945c836da84a9508a230399edcf
+    21300084: 6e39e2a4b85b50249b1b998e165dceab
+    21300086: 88d878dc3e3518448b3ce51afbac1051
+    21300088: e052f5b5f2964064dad1644028c43f68
+    21300090: ebd3ee7ac3d8ac542b564a9ce515551c
+    21300092: 1967b478001c2464b9c1143d902616f1
+    21300094: d164b6d49ce813d40924ed23f2c34b52
+    21300096: 5e9d2cd94220594469d4a5c1aa75b8ff
+    21300098: a7cc8a33a24d4744aaf27367e2cc4e96
+    21300100: ee109fcecb9881a498f13504ae9cf607
+    21300102: ef78016bb3098a24793215f4ffffb4fb
+    21300104: 093712c4c15e8aa4e863a8e03fb9def1
+    21300106: d7faf443f5388314bb3d7aabc3e03770
+    21300108: f22c98153313f574da4c4bac39fde976
+    21300110: fd8e37d9f0ad0184eb81078325bcaeba
+    21300112: 9bb012de46f6cc64e81a6a2e1f7530b2
+    21300114: 07b4080010fa8f641b496acc293d8ff8
+    21300116: d26ea0b74a346b9418ed767524fa4289
+    21300118: f3d191a3b1beb97498676d5f9cc36523
+    100100000: traning room-artstyle1values-_GO
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: fire_PNG6009
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4110
+      width: 617
+      height: 232
+    spriteID: cc020850e3b524349b4448b3db9d0a56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -526, y: 4055}
+  - name: flame_PNG13232
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 285
+      y: 7661
+      width: 214
+      height: 246
+    spriteID: ae91c623e492c07439d76581a4e882c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -349, y: 7515}
+  - name: Layer 37
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3584
+      width: 596
+      height: 518
+    spriteID: eaaa58ed9aacf0949b3e4542c4712a87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -493, y: 3460}
+  - name: Rounded Rectangle 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2434
+      y: 1057
+      width: 591
+      height: 24
+    spriteID: 4ed6403de8aceb04393214b340d0e6f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1932, y: 987}
+  - name: Layer 36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4599
+      width: 592
+      height: 204
+    spriteID: 16013b1fa69cff2438ff6f0e40e88124
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -499, y: 4573}
+  - name: Layer 35
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4811
+      width: 589
+      height: 204
+    spriteID: 840e3b35da33b25439f8cbc0537eaf4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -502, y: 4785}
+  - name: Layer 34
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 809
+      y: 3228
+      width: 800
+      height: 204
+    spriteID: 545a66d3b1ab42340a9217ddde5c4dd8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 514, y: 3202}
+  - name: Layer 37 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 809
+      y: 3023
+      width: 878
+      height: 197
+    spriteID: 9edeb414923a56c42809505546a13d09
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 299, y: 3023}
+  - name: Layer 32
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 285
+      y: 5684
+      width: 224
+      height: 460
+    spriteID: ee70d673e57253e4ca21b20aa7fecd53
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -296, y: 5517}
+  - name: Layer 31
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5023
+      width: 273
+      height: 420
+    spriteID: e50879a8cdef7a544b771ea415002134
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -533, y: 4816}
+  - name: Layer 30
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 6109
+      width: 264
+      height: 292
+    spriteID: 330a6c8afe975d942b7e1237584842c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -33, y: 5776}
+  - name: Layer 29
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 285
+      y: 6152
+      width: 224
+      height: 413
+    spriteID: 79c33094d5a80e04f92a1e9baf052ad4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -291, y: 5940}
+  - name: Layer 21
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 517
+      y: 5684
+      width: 225
+      height: 417
+    spriteID: d8b3bb6c29243a74281a39271f601154
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -61, y: 5475}
+  - name: door
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3023
+      width: 797
+      height: 553
+    spriteID: 4d337b7ab3d0f3047bc1313c6ac62924
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1463, y: 2915}
+  - name: Layer 49
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 809
+      y: 3596
+      width: 730
+      height: 48
+    spriteID: 29e1d4aed3e065a44b4c9c3c52cf1ff3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 72, y: 2689}
+  - name: Layer 48
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 809
+      y: 3440
+      width: 377
+      height: 148
+    spriteID: 2ab44468d1b2099469c07e74bab5de98
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 19, y: 2693}
+  - name: Layer 47
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1785
+      y: 1092
+      width: 976
+      height: 278
+    spriteID: ac6138ddebddae74699c8b0c25468276
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 948, y: 650}
+  - name: Rounded Rectangle 4 copy 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 600
+      y: 5023
+      width: 26
+      height: 305
+    spriteID: 959d184778bbce04d877bcb15d696057
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 94, y: 4407}
+  - name: Rounded Rectangle 4 copy 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 634
+      y: 5023
+      width: 26
+      height: 305
+    spriteID: decc558534ae15c499250a91e3077640
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 74, y: 4410}
+  - name: Rounded Rectangle 4 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 668
+      y: 5023
+      width: 26
+      height: 305
+    spriteID: e3b121775cde08944b1ab254345561e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 52, y: 4409}
+  - name: Rounded Rectangle 4 copy 9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1679
+      y: 3326
+      width: 56
+      height: 76
+    spriteID: a7daee430fac14544adbad05172776e9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -306, y: 2696}
+  - name: Rounded Rectangle 4 copy 8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1698
+      y: 3440
+      width: 76
+      height: 75
+    spriteID: 7ab5f789188c09a4f99a8911a9e13022
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -212, y: 2947}
+  - name: Rounded Rectangle 4 copy 10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 750
+      y: 5684
+      width: 26
+      height: 385
+    spriteID: 0a7b5d975f1c0c54caeaee3795f46b20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1250, y: 5408}
+  - name: Rounded Rectangle 4 copy 7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 440
+      y: 6573
+      width: 26
+      height: 419
+    spriteID: e0abf048dc70cd14fa5ab8ee39309034
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1495, y: 6020}
+  - name: Rounded Rectangle 4 copy 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 702
+      y: 5023
+      width: 26
+      height: 305
+    spriteID: df363592eb285f643be1bfb21562ee80
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 39, y: 4411}
+  - name: kodak-harrow-14-1024x683
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1690
+      y: 3565
+      width: 0
+      height: 0
+    spriteID: e5525300eba4b7341a918e545507d889
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -732, y: 2485}
+  - name: Layer 46
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1690
+      y: 3573
+      width: 0
+      height: 0
+    spriteID: 8c01305e8ff654042bdef898cdf54e7c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -732, y: 2493}
+  - name: Layer 41
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 440
+      y: 7000
+      width: 61
+      height: 101
+    spriteID: 85ffb70fa12094547b0532e67642a9c2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1044, y: 6459}
+  - name: Layer 25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 285
+      y: 6573
+      width: 147
+      height: 536
+    spriteID: 9346a0cc1de3fdc488dcc168bb1fdf0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1628, y: 6132}
+  - name: Layer 26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 285
+      y: 7117
+      width: 147
+      height: 536
+    spriteID: a4c5a99673ac637499b08acf1c7b79af
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1628, y: 6676}
+  - name: Shape 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 656
+      y: 4311
+      width: 0
+      height: 0
+    spriteID: ce1019b416d0a9447bbc33e8b3dea61f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1766, y: 3231}
+  - name: Shape 3 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1564
+      y: 3440
+      width: 126
+      height: 90
+    spriteID: a41311c92cff8214295293b8210fe9c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -138, y: 2682}
+  - name: Shape 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1617
+      y: 3228
+      width: 126
+      height: 90
+    spriteID: 97ded9a1f6df1bf4780ed413e5b5f495
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 160, y: 2462}
+  - name: Shape 2 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 676
+      y: 4236
+      width: 39
+      height: 73
+    spriteID: 7802e96e749fa294bb3f43a557875c87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1133, y: 3392}
+  - name: Shape 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 629
+      y: 4230
+      width: 39
+      height: 73
+    spriteID: 5f7931a1545ae134793d441f55254bc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -817, y: 3386}
+  - name: Shape 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1564
+      y: 3565
+      width: 118
+      height: 15
+    spriteID: 2b356e85aa90a1944a2bac15380faffe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -24, y: 2807}
+  - name: Shape 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1564
+      y: 3538
+      width: 125
+      height: 19
+    spriteID: 352f951a6f2ab974e9752f3baf5f274c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -24, y: 2765}
+  - name: Shape 1_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1194
+      y: 3440
+      width: 362
+      height: 82
+    spriteID: edfce381e6ad82f47aaa76927048a54c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -272, y: 2545}
+  - name: Layer 18
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2434
+      y: 683
+      width: 1316
+      height: 224
+    spriteID: 8669f3f2f789bbc4a8f6d26d4ab42e74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1708, y: 4}
+  - name: Layer 37 copy 9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 629
+      y: 4311
+      width: 19
+      height: 19
+    spriteID: 3d6f8b646165be14ab59bb10dfe43768
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -845, y: 3821}
+  - name: Layer 37 copy 8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 750
+      y: 6077
+      width: 19
+      height: 19
+    spriteID: 2738048ff94d4ad4fa99e8306ed63282
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -765, y: 5584}
+  - name: Layer 37 copy 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4000
+      y: 1001
+      width: 35
+      height: 36
+    spriteID: 5b8eb945c836da84a9508a230399edcf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2312, y: 406}
+  - name: Layer 42 copy
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4000
+      y: 915
+      width: 74
+      height: 78
+    spriteID: 6e39e2a4b85b50249b1b998e165dceab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 2427, y: 367}
+  - name: Layer 45
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 629
+      y: 4110
+      width: 39
+      height: 112
+    spriteID: 88d878dc3e3518448b3ce51afbac1051
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1054, y: 3658}
+  - name: Layer 43
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1695
+      y: 3023
+      width: 64
+      height: 192
+    spriteID: e052f5b5f2964064dad1644028c43f68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 849, y: 2514}
+  - name: Layer 44
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 604
+      y: 4599
+      width: 162
+      height: 186
+    spriteID: ebd3ee7ac3d8ac542b564a9ce515551c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -242, y: 4084}
+  - name: Layer 20
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4350
+      width: 517
+      height: 241
+    spriteID: 1967b478001c2464b9c1143d902616f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -506, y: 3862}
+  - name: Layer 23
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 285
+      y: 5398
+      width: 386
+      height: 278
+    spriteID: d164b6d49ce813d40924ed23f2c34b52
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1161, y: 4963}
+  - name: Layer 19
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2434
+      y: 915
+      width: 1558
+      height: 134
+    spriteID: 5e9d2cd94220594469d4a5c1aa75b8ff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1994, y: 622}
+  - name: Rounded Rectangle 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 285
+      y: 5023
+      width: 307
+      height: 367
+    spriteID: a7cc8a33a24d4744aaf27367e2cc4e96
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -796, y: 4709}
+  - name: Layer 13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1617
+      y: 3326
+      width: 54
+      height: 80
+    spriteID: ee109fcecb9881a498f13504ae9cf607
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 700, y: 2417}
+  - name: Layer 17
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 2434
+      y: 4
+      width: 1546
+      height: 671
+    spriteID: ef78016bb3098a24793215f4ffffb4fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 1924, y: -302}
+  - name: Layer 40
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 656
+      y: 4319
+      width: 0
+      height: 0
+    spriteID: 093712c4c15e8aa4e863a8e03fb9def1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1766, y: 3239}
+  - name: Layer 39
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 2422
+      height: 1080
+    spriteID: d7faf443f5388314bb3d7aabc3e03770
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+  - name: Layer 37 copy 7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 1698
+      y: 3523
+      width: 54
+      height: 55
+    spriteID: f22c98153313f574da4c4bac39fde976
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -167, y: 3181}
+  - name: Layer 37 copy 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 676
+      y: 4110
+      width: 54
+      height: 55
+    spriteID: fd8e37d9f0ad0184eb81078325bcaeba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -1047, y: 3775}
+  - name: Layer 37 copy 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 676
+      y: 4173
+      width: 54
+      height: 55
+    spriteID: 9bb012de46f6cc64e81a6a2e1f7530b2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -909, y: 3831}
+  - name: Layer 27
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2568
+      width: 1567
+      height: 447
+    spriteID: 07b4080010fa8f641b496acc293d8ff8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -485, y: 2259}
+  - name: Layer 16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1773
+      height: 730
+    spriteID: d26ea0b74a346b9418ed767524fa4289
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -483, y: 862}
+  - name: Layer 15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1830
+      width: 1768
+      height: 730
+    spriteID: f3d191a3b1beb97498676d5f9cc36523
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -459, y: 1578}
+  platformSettings: []
+  mosaicLayers: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  importedTextureWidth: 1024
+  importedTextureHeight: 2048
+  documentSize: {x: 2422, y: 1080}
+  textureActualWidth: 4096
+  textureActualHeight: 8192
+  spritePackingTag: 
+  resliceFromLayer: 0
+  characterMode: 1
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Group 2
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 193
+    mosaicPosition: {x: 0, y: 0}
+  - name: fire_PNG6009
+    spriteName: fire_PNG6009
+    isGroup: 0
+    parentIndex: 0
+    spriteID: cc020850e3b524349b4448b3db9d0a56
+    layerID: 208
+    mosaicPosition: {x: 4, y: 4110}
+  - name: flame_PNG13232
+    spriteName: flame_PNG13232
+    isGroup: 0
+    parentIndex: 0
+    spriteID: ae91c623e492c07439d76581a4e882c2
+    layerID: 209
+    mosaicPosition: {x: 285, y: 7661}
+  - name: Layer 37
+    spriteName: Layer 37
+    isGroup: 0
+    parentIndex: 0
+    spriteID: eaaa58ed9aacf0949b3e4542c4712a87
+    layerID: 124
+    mosaicPosition: {x: 4, y: 3584}
+  - name: Rounded Rectangle 4
+    spriteName: Rounded Rectangle 4
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 4ed6403de8aceb04393214b340d0e6f1
+    layerID: 143
+    mosaicPosition: {x: 2434, y: 1057}
+  - name: Layer 36
+    spriteName: Layer 36
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 16013b1fa69cff2438ff6f0e40e88124
+    layerID: 123
+    mosaicPosition: {x: 4, y: 4599}
+  - name: Layer 35
+    spriteName: Layer 35
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 840e3b35da33b25439f8cbc0537eaf4e
+    layerID: 122
+    mosaicPosition: {x: 4, y: 4811}
+  - name: Layer 34
+    spriteName: Layer 34
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 545a66d3b1ab42340a9217ddde5c4dd8
+    layerID: 111
+    mosaicPosition: {x: 809, y: 3228}
+  - name: Layer 37 copy
+    spriteName: Layer 37 copy
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 9edeb414923a56c42809505546a13d09
+    layerID: 166
+    mosaicPosition: {x: 809, y: 3023}
+  - name: msora
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 107
+    mosaicPosition: {x: 0, y: 0}
+  - name: Layer 32
+    spriteName: Layer 32
+    isGroup: 0
+    parentIndex: 9
+    spriteID: ee70d673e57253e4ca21b20aa7fecd53
+    layerID: 106
+    mosaicPosition: {x: 285, y: 5684}
+  - name: Layer 31
+    spriteName: Layer 31
+    isGroup: 0
+    parentIndex: 9
+    spriteID: e50879a8cdef7a544b771ea415002134
+    layerID: 105
+    mosaicPosition: {x: 4, y: 5023}
+  - name: Layer 30
+    spriteName: Layer 30
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 330a6c8afe975d942b7e1237584842c4
+    layerID: 104
+    mosaicPosition: {x: 517, y: 6109}
+  - name: Layer 29
+    spriteName: Layer 29
+    isGroup: 0
+    parentIndex: 9
+    spriteID: 79c33094d5a80e04f92a1e9baf052ad4
+    layerID: 103
+    mosaicPosition: {x: 285, y: 6152}
+  - name: Layer 21
+    spriteName: Layer 21
+    isGroup: 0
+    parentIndex: 9
+    spriteID: d8b3bb6c29243a74281a39271f601154
+    layerID: 84
+    mosaicPosition: {x: 517, y: 5684}
+  - name: door
+    spriteName: door
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 4d337b7ab3d0f3047bc1313c6ac62924
+    layerID: 173
+    mosaicPosition: {x: 4, y: 3023}
+  - name: Layer 49
+    spriteName: Layer 49
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 29e1d4aed3e065a44b4c9c3c52cf1ff3
+    layerID: 203
+    mosaicPosition: {x: 809, y: 3596}
+  - name: wall
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 215
+    mosaicPosition: {x: 0, y: 0}
+  - name: Layer 48
+    spriteName: Layer 48
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 2ab44468d1b2099469c07e74bab5de98
+    layerID: 188
+    mosaicPosition: {x: 809, y: 3440}
+  - name: Layer 47
+    spriteName: Layer 47
+    isGroup: 0
+    parentIndex: 17
+    spriteID: ac6138ddebddae74699c8b0c25468276
+    layerID: 186
+    mosaicPosition: {x: 1785, y: 1092}
+  - name: Rounded Rectangle 4 copy 6
+    spriteName: Rounded Rectangle 4 copy 6
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 959d184778bbce04d877bcb15d696057
+    layerID: 192
+    mosaicPosition: {x: 600, y: 5023}
+  - name: Rounded Rectangle 4 copy 5
+    spriteName: Rounded Rectangle 4 copy 5
+    isGroup: 0
+    parentIndex: 17
+    spriteID: decc558534ae15c499250a91e3077640
+    layerID: 191
+    mosaicPosition: {x: 634, y: 5023}
+  - name: Rounded Rectangle 4 copy 4
+    spriteName: Rounded Rectangle 4 copy 4
+    isGroup: 0
+    parentIndex: 17
+    spriteID: e3b121775cde08944b1ab254345561e1
+    layerID: 190
+    mosaicPosition: {x: 668, y: 5023}
+  - name: Rounded Rectangle 4 copy 9
+    spriteName: Rounded Rectangle 4 copy 9
+    isGroup: 0
+    parentIndex: 17
+    spriteID: a7daee430fac14544adbad05172776e9
+    layerID: 206
+    mosaicPosition: {x: 1679, y: 3326}
+  - name: Rounded Rectangle 4 copy 8
+    spriteName: Rounded Rectangle 4 copy 8
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 7ab5f789188c09a4f99a8911a9e13022
+    layerID: 205
+    mosaicPosition: {x: 1698, y: 3440}
+  - name: Rounded Rectangle 4 copy 10
+    spriteName: Rounded Rectangle 4 copy 10
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 0a7b5d975f1c0c54caeaee3795f46b20
+    layerID: 207
+    mosaicPosition: {x: 750, y: 5684}
+  - name: Rounded Rectangle 4 copy 7
+    spriteName: Rounded Rectangle 4 copy 7
+    isGroup: 0
+    parentIndex: 17
+    spriteID: e0abf048dc70cd14fa5ab8ee39309034
+    layerID: 204
+    mosaicPosition: {x: 440, y: 6573}
+  - name: Rounded Rectangle 4 copy 3
+    spriteName: Rounded Rectangle 4 copy 3
+    isGroup: 0
+    parentIndex: 17
+    spriteID: df363592eb285f643be1bfb21562ee80
+    layerID: 189
+    mosaicPosition: {x: 702, y: 5023}
+  - name: kodak-harrow-14-1024x683
+    spriteName: kodak-harrow-14-1024x683
+    isGroup: 0
+    parentIndex: 17
+    spriteID: e5525300eba4b7341a918e545507d889
+    layerID: 11
+    mosaicPosition: {x: 1690, y: 3565}
+  - name: Layer 46
+    spriteName: Layer 46
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 8c01305e8ff654042bdef898cdf54e7c
+    layerID: 185
+    mosaicPosition: {x: 1690, y: 3573}
+  - name: Layer 41
+    spriteName: Layer 41
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 85ffb70fa12094547b0532e67642a9c2
+    layerID: 178
+    mosaicPosition: {x: 440, y: 7000}
+  - name: Layer 25
+    spriteName: Layer 25
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 9346a0cc1de3fdc488dcc168bb1fdf0d
+    layerID: 89
+    mosaicPosition: {x: 285, y: 6573}
+  - name: Layer 26
+    spriteName: Layer 26
+    isGroup: 0
+    parentIndex: 17
+    spriteID: a4c5a99673ac637499b08acf1c7b79af
+    layerID: 90
+    mosaicPosition: {x: 285, y: 7117}
+  - name: Shape 1
+    spriteName: Shape 1
+    isGroup: 0
+    parentIndex: 17
+    spriteID: ce1019b416d0a9447bbc33e8b3dea61f
+    layerID: 151
+    mosaicPosition: {x: 656, y: 4311}
+  - name: Group 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: 17
+    spriteID: 00000000000000000000000000000000
+    layerID: 160
+    mosaicPosition: {x: 0, y: 0}
+  - name: Shape 3 copy
+    spriteName: Shape 3 copy
+    isGroup: 0
+    parentIndex: 34
+    spriteID: a41311c92cff8214295293b8210fe9c7
+    layerID: 159
+    mosaicPosition: {x: 1564, y: 3440}
+  - name: Shape 3
+    spriteName: Shape 3
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 97ded9a1f6df1bf4780ed413e5b5f495
+    layerID: 158
+    mosaicPosition: {x: 1617, y: 3228}
+  - name: Shape 2 copy
+    spriteName: Shape 2 copy
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 7802e96e749fa294bb3f43a557875c87
+    layerID: 157
+    mosaicPosition: {x: 676, y: 4236}
+  - name: Shape 2
+    spriteName: Shape 2
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 5f7931a1545ae134793d441f55254bc5
+    layerID: 156
+    mosaicPosition: {x: 629, y: 4230}
+  - name: Shape 5
+    spriteName: Shape 5
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 2b356e85aa90a1944a2bac15380faffe
+    layerID: 155
+    mosaicPosition: {x: 1564, y: 3565}
+  - name: Shape 4
+    spriteName: Shape 4
+    isGroup: 0
+    parentIndex: 34
+    spriteID: 352f951a6f2ab974e9752f3baf5f274c
+    layerID: 154
+    mosaicPosition: {x: 1564, y: 3538}
+  - name: Shape 1
+    spriteName: Shape 1_1
+    isGroup: 0
+    parentIndex: 34
+    spriteID: edfce381e6ad82f47aaa76927048a54c
+    layerID: 153
+    mosaicPosition: {x: 1194, y: 3440}
+  - name: Layer 18
+    spriteName: Layer 18
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 8669f3f2f789bbc4a8f6d26d4ab42e74
+    layerID: 79
+    mosaicPosition: {x: 2434, y: 683}
+  - name: Layer 37 copy 9
+    spriteName: Layer 37 copy 9
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 3d6f8b646165be14ab59bb10dfe43768
+    layerID: 213
+    mosaicPosition: {x: 629, y: 4311}
+  - name: Layer 37 copy 8
+    spriteName: Layer 37 copy 8
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 2738048ff94d4ad4fa99e8306ed63282
+    layerID: 212
+    mosaicPosition: {x: 750, y: 6077}
+  - name: Layer 37 copy 4
+    spriteName: Layer 37 copy 4
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 5b8eb945c836da84a9508a230399edcf
+    layerID: 148
+    mosaicPosition: {x: 4000, y: 1001}
+  - name: Layer 42 copy
+    spriteName: Layer 42 copy
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 6e39e2a4b85b50249b1b998e165dceab
+    layerID: 180
+    mosaicPosition: {x: 4000, y: 915}
+  - name: Layer 45
+    spriteName: Layer 45
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 88d878dc3e3518448b3ce51afbac1051
+    layerID: 184
+    mosaicPosition: {x: 629, y: 4110}
+  - name: Layer 43
+    spriteName: Layer 43
+    isGroup: 0
+    parentIndex: 17
+    spriteID: e052f5b5f2964064dad1644028c43f68
+    layerID: 181
+    mosaicPosition: {x: 1695, y: 3023}
+  - name: Layer 44
+    spriteName: Layer 44
+    isGroup: 0
+    parentIndex: 17
+    spriteID: ebd3ee7ac3d8ac542b564a9ce515551c
+    layerID: 182
+    mosaicPosition: {x: 604, y: 4599}
+  - name: Layer 20
+    spriteName: Layer 20
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 1967b478001c2464b9c1143d902616f1
+    layerID: 83
+    mosaicPosition: {x: 4, y: 4350}
+  - name: Layer 23
+    spriteName: Layer 23
+    isGroup: 0
+    parentIndex: 17
+    spriteID: d164b6d49ce813d40924ed23f2c34b52
+    layerID: 86
+    mosaicPosition: {x: 285, y: 5398}
+  - name: Layer 19
+    spriteName: Layer 19
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 5e9d2cd94220594469d4a5c1aa75b8ff
+    layerID: 82
+    mosaicPosition: {x: 2434, y: 915}
+  - name: Rounded Rectangle 3
+    spriteName: Rounded Rectangle 3
+    isGroup: 0
+    parentIndex: 17
+    spriteID: a7cc8a33a24d4744aaf27367e2cc4e96
+    layerID: 81
+    mosaicPosition: {x: 285, y: 5023}
+  - name: Layer 13
+    spriteName: Layer 13
+    isGroup: 0
+    parentIndex: 17
+    spriteID: ee109fcecb9881a498f13504ae9cf607
+    layerID: 64
+    mosaicPosition: {x: 1617, y: 3326}
+  - name: Layer 17
+    spriteName: Layer 17
+    isGroup: 0
+    parentIndex: 17
+    spriteID: ef78016bb3098a24793215f4ffffb4fb
+    layerID: 71
+    mosaicPosition: {x: 2434, y: 4}
+  - name: Layer 40
+    spriteName: Layer 40
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 093712c4c15e8aa4e863a8e03fb9def1
+    layerID: 164
+    mosaicPosition: {x: 656, y: 4319}
+  - name: Layer 39
+    spriteName: Layer 39
+    isGroup: 0
+    parentIndex: 17
+    spriteID: d7faf443f5388314bb3d7aabc3e03770
+    layerID: 162
+    mosaicPosition: {x: 4, y: 4}
+  - name: Layer 37 copy 7
+    spriteName: Layer 37 copy 7
+    isGroup: 0
+    parentIndex: 17
+    spriteID: f22c98153313f574da4c4bac39fde976
+    layerID: 176
+    mosaicPosition: {x: 1698, y: 3523}
+  - name: Layer 37 copy 6
+    spriteName: Layer 37 copy 6
+    isGroup: 0
+    parentIndex: 17
+    spriteID: fd8e37d9f0ad0184eb81078325bcaeba
+    layerID: 175
+    mosaicPosition: {x: 676, y: 4110}
+  - name: Layer 37 copy 5
+    spriteName: Layer 37 copy 5
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 9bb012de46f6cc64e81a6a2e1f7530b2
+    layerID: 174
+    mosaicPosition: {x: 676, y: 4173}
+  - name: Layer 27
+    spriteName: Layer 27
+    isGroup: 0
+    parentIndex: 17
+    spriteID: 07b4080010fa8f641b496acc293d8ff8
+    layerID: 91
+    mosaicPosition: {x: 4, y: 2568}
+  - name: Layer 16
+    spriteName: Layer 16
+    isGroup: 0
+    parentIndex: 17
+    spriteID: d26ea0b74a346b9418ed767524fa4289
+    layerID: 70
+    mosaicPosition: {x: 4, y: 1092}
+  - name: Layer 15
+    spriteName: Layer 15
+    isGroup: 0
+    parentIndex: 17
+    spriteID: f3d191a3b1beb97498676d5f9cc36523
+    layerID: 69
+    mosaicPosition: {x: 4, y: 1830}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+  boneGOs: []
+  generateGOHierarchy: 0
+  textureAssetName: traning room-artstyle1values-
+  prefabAssetName: traning room-artstyle1values-_GO
