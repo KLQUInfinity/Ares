@@ -48,13 +48,13 @@ public class TouchCameraController : MonoBehaviour
                     case TouchPhase.Moved:
                         direction = touch.position - startPos;
                         // Something that uses the chosen direction...
-                        Vector3 movePos = direction;
-                        posX = Mathf.Clamp(movePos.x, clampValue, -clampValue) * Time.deltaTime * swapeSpeed;
+                        Vector3 movePos = direction; 
+                        posX =Mathf.Clamp( movePos.x, clampValue, -clampValue) *Time.deltaTime * swapeSpeed;
                         posY = Mathf.Clamp(movePos.y, clampValue, -clampValue) * Time.deltaTime * swapeSpeed;
-                        camera.transform.position += new Vector3(-posX, posY, 0);
+                        camera.transform.position+=new Vector3(-posX, posY, 0);
                         //camera.transform.position = Vector3.ClampMagnitude(camera.transform.position,0.2f);
                         // camera.transform.position = camera.transform.position * Vector3.right;
-                        //camera.transform.position = new Vector3(posX, -posY, 0) * Time.deltaTime;//* swapeSpeed;
+                       //camera.transform.position = new Vector3(posX, -posY, 0) * Time.deltaTime;//* swapeSpeed;
                         break;
 
                     // Report that a direction has been chosen when the finger is lifted.

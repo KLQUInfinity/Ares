@@ -44,18 +44,21 @@ public class CharacterManager : MonoBehaviour
 
     public void OnCharacterPopulation(Room room, Character character)
     {
-        Job job = room.getRandomVacantJob(character);
-        if (job != null)
+        if ( room.roomGameObject.name != "HibernationRoom" && room.roomGameObject.name != "TrainningRoom")
         {
-            character.assignJob(job);
-            character.job.assignJobHolder(character);
+            Job job = room.getRandomVacantJob(character);
+            if (job != null)
+            {
+                character.assignJob(job);
+                character.job.assignJobHolder(character);
+            }
+            else
+            {
+                character.deassignJob();
+            }
+            character.container = room.roomGameObject;
         }
-        else
-        {
-            character.deassignJob();
 
-        }
-        character.container = room.roomGameObject;
     }
 
     public void OnCharacterEvacuation(Character character)
@@ -96,7 +99,7 @@ public class CharacterManager : MonoBehaviour
     {//Called each Game Hour
         foreach (var character in characters)
         {
-            character.updateCurrentCharacterLevelGametimeHour();
+            character.updateCurrentCharacterLevelGameTimeDay();
         }
     }
 

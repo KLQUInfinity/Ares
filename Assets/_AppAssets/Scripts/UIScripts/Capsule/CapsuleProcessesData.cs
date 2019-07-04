@@ -16,7 +16,10 @@ public class CapsuleProcessesData : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        productionResourceName.text = producitonResource.resourceType.ToString();
+        if (transform.parent.parent.gameObject.name!= "HibernationRoom" && transform.parent.parent.gameObject.name != "TrainningRoom")
+        {
+            productionResourceName.text = producitonResource.resourceType.ToString();
+        }
     }
 
     // Update is called once per frame

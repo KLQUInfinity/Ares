@@ -20,6 +20,7 @@ public class ProducerEntity : MonoBehaviour, IProducer
         //}
         foreach (var resource in resourcesToProduce)
         {
+
             appendProducingResources(getResource(resource.resourceType), resource.productionRatePerSecond);
         }
         GameBrain.Instance.resourcesManager.producers.Add(resourceProducer);
@@ -46,6 +47,9 @@ public class ProducerEntity : MonoBehaviour, IProducer
     }
     public void appendProducingResources(Resource resource, float productionRate)
     {
-        resourceProducer.addResource(resource, productionRate);
+        if (resource!=null)
+        {
+            resourceProducer.addResource(resource, productionRate);
+        }
     }
 }

@@ -59,10 +59,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisJobPath: 3
-  jobEntity: {fileID: 0}
+  jobEntity: {fileID: 2303665019286024652}
   job:
-    jobName: 
-    jobAnimation: 0
+    jobName: ConveyorBelt
+    jobAnimation: 5
     jobHolder:
       name: 
       title: 
@@ -106,7 +106,7 @@ MonoBehaviour:
                   happiness: 0
                   jobHourTemp: 0
                   productivity: 0
-                  jobState: 1
+                  jobState: 0
                   overWorkedHoursProduct: 0
                 jobState: 0
                 staminaReductionRate: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
                 workingHoursDailyLimit: 0
                 overWorkHoursProductLimit: 0
                 staminaRefillSpeedPerSecond: 0
-              jobState: 1
+              jobState: 0
               characterLevels: []
               overWorkedHoursProduct: 0
               container: {fileID: 0}
@@ -140,7 +140,7 @@ MonoBehaviour:
             workingHoursDailyLimit: 0
             overWorkHoursProductLimit: 0
             staminaRefillSpeedPerSecond: 0
-          jobState: 1
+          jobState: 0
           characterLevels: []
           overWorkedHoursProduct: 0
           container: {fileID: 0}
@@ -166,7 +166,7 @@ MonoBehaviour:
       containerEntrance: {fileID: 0}
       characterGameObject: {fileID: 0}
     jobState: 0
-    staminaReductionRate: 0
+    staminaReductionRate: 0.2
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
@@ -275,7 +275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 518524492942151538}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5719998, y: 1.2299999, z: -0.74399996}
+  m_LocalPosition: {x: 1.9740001, y: 0.030000044, z: -0.16200002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3689425950248399119}
@@ -386,7 +386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766031751409543794}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6049999, y: 1.2299999, z: -0.717}
+  m_LocalPosition: {x: -1.9799999, y: 0.030000044, z: -0.033}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2907205230507350780}
@@ -416,7 +416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154150443244093451}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2119999, y: 1.2299999, z: 0.9539999}
+  m_LocalPosition: {x: 1.074, y: 0.030000044, z: 0.95399994}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 3689425950248399119}
@@ -643,6 +643,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4548409364813521913}
+  - {fileID: 5837520377313816737}
+  - {fileID: 761776717443636224}
+  - {fileID: 5952782661378878694}
+  - {fileID: 2802640693872440710}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -709,7 +713,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3089974224642795679}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.185, y: 1.2299999, z: 0.96299994}
+  m_LocalPosition: {x: -1.0230001, y: 0.030000044, z: -0.9420001}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 8048680558635864135}
@@ -731,7 +735,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1610695463308390413
 Transform:
   m_ObjectHideFlags: 0
@@ -757,7 +761,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -843,10 +847,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisJobPath: 0
-  jobEntity: {fileID: 0}
+  jobEntity: {fileID: 2303665019286024652}
   job:
-    jobName: 
-    jobAnimation: 0
+    jobName: Carbenter
+    jobAnimation: 4
     jobHolder:
       name: 
       title: 
@@ -890,7 +894,7 @@ MonoBehaviour:
                   happiness: 0
                   jobHourTemp: 0
                   productivity: 0
-                  jobState: 1
+                  jobState: 0
                   overWorkedHoursProduct: 0
                 jobState: 0
                 staminaReductionRate: 0
@@ -905,7 +909,7 @@ MonoBehaviour:
                 workingHoursDailyLimit: 0
                 overWorkHoursProductLimit: 0
                 staminaRefillSpeedPerSecond: 0
-              jobState: 1
+              jobState: 0
               characterLevels: []
               overWorkedHoursProduct: 0
               container: {fileID: 0}
@@ -924,7 +928,7 @@ MonoBehaviour:
             workingHoursDailyLimit: 0
             overWorkHoursProductLimit: 0
             staminaRefillSpeedPerSecond: 0
-          jobState: 1
+          jobState: 0
           characterLevels: []
           overWorkedHoursProduct: 0
           container: {fileID: 0}
@@ -950,7 +954,7 @@ MonoBehaviour:
       containerEntrance: {fileID: 0}
       characterGameObject: {fileID: 0}
     jobState: 0
-    staminaReductionRate: 0
+    staminaReductionRate: 0.1
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
@@ -1109,7 +1113,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4309718872411672170}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.9499998, y: 0, z: 3.2099998}
+  m_LocalPosition: {x: -3.41, y: 0, z: -3.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4548409364813521913}
@@ -1139,7 +1143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4467594102191338256}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.185, y: 1.2299999, z: 0.96299994}
+  m_LocalPosition: {x: -1.0230001, y: 0.030000044, z: -0.9420001}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 5929959458373463586}
@@ -1169,7 +1173,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4774541766891706033}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3499994, y: 0, z: -2.39}
+  m_LocalPosition: {x: -6.6, y: 0, z: -0.11}
   m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
   m_Children: []
   m_Father: {fileID: 4548409364813521913}
@@ -1362,7 +1366,7 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
-  - jobName: Blumber
+  - jobName: ConveyorBelt
     jobAnimation: 5
     jobHolder:
       name: 
@@ -1571,6 +1575,35 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!65 &1485738218653025617
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5837520377313717377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.5565815, y: 0.45071188, z: 2.0033522}
+  m_Center: {x: 0.067779794, y: -0.0042081857, z: 0.00000014424205}
+--- !u!114 &220882404888006683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5837520377313717377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0df7605a75d576438a1801c11bc254b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 7000142991447039451}
+  deadPoint: {fileID: 6957038400034885216}
+  boxPrefab: {fileID: 3688589172782850724, guid: b69e637022c48ec4da566402982b8145,
+    type: 3}
 --- !u!1 &5941906720941978814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1595,7 +1628,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5941906720941978814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6049999, y: 1.2299999, z: -0.717}
+  m_LocalPosition: {x: -1.9799999, y: 0.030000044, z: -0.033}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5929959458373463586}
@@ -1660,10 +1693,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisJobPath: 2
-  jobEntity: {fileID: 0}
+  jobEntity: {fileID: 2303665019286024652}
   job:
-    jobName: 
-    jobAnimation: 0
+    jobName: Carbenter
+    jobAnimation: 4
     jobHolder:
       name: 
       title: 
@@ -1707,7 +1740,7 @@ MonoBehaviour:
                   happiness: 0
                   jobHourTemp: 0
                   productivity: 0
-                  jobState: 1
+                  jobState: 0
                   overWorkedHoursProduct: 0
                 jobState: 0
                 staminaReductionRate: 0
@@ -1722,7 +1755,7 @@ MonoBehaviour:
                 workingHoursDailyLimit: 0
                 overWorkHoursProductLimit: 0
                 staminaRefillSpeedPerSecond: 0
-              jobState: 1
+              jobState: 0
               characterLevels: []
               overWorkedHoursProduct: 0
               container: {fileID: 0}
@@ -1741,7 +1774,7 @@ MonoBehaviour:
             workingHoursDailyLimit: 0
             overWorkHoursProductLimit: 0
             staminaRefillSpeedPerSecond: 0
-          jobState: 1
+          jobState: 0
           characterLevels: []
           overWorkedHoursProduct: 0
           container: {fileID: 0}
@@ -1767,7 +1800,7 @@ MonoBehaviour:
       containerEntrance: {fileID: 0}
       characterGameObject: {fileID: 0}
     jobState: 0
-    staminaReductionRate: 0
+    staminaReductionRate: 0.1
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
@@ -1801,7 +1834,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6346365116971712456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2119999, y: 1.2299999, z: 0.9539999}
+  m_LocalPosition: {x: 1.074, y: 0.030000044, z: 0.95399994}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 2907205230507350780}
@@ -1876,7 +1909,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 91cb1101f86754e4e8a9a47b19f05201, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1945,10 +1978,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisJobPath: 1
-  jobEntity: {fileID: 0}
+  jobEntity: {fileID: 2303665019286024652}
   job:
-    jobName: 
-    jobAnimation: 0
+    jobName: ConveyorBelt
+    jobAnimation: 5
     jobHolder:
       name: 
       title: 
@@ -1992,7 +2025,7 @@ MonoBehaviour:
                   happiness: 0
                   jobHourTemp: 0
                   productivity: 0
-                  jobState: 1
+                  jobState: 0
                   overWorkedHoursProduct: 0
                 jobState: 0
                 staminaReductionRate: 0
@@ -2007,7 +2040,7 @@ MonoBehaviour:
                 workingHoursDailyLimit: 0
                 overWorkHoursProductLimit: 0
                 staminaRefillSpeedPerSecond: 0
-              jobState: 1
+              jobState: 0
               characterLevels: []
               overWorkedHoursProduct: 0
               container: {fileID: 0}
@@ -2026,7 +2059,7 @@ MonoBehaviour:
             workingHoursDailyLimit: 0
             overWorkHoursProductLimit: 0
             staminaRefillSpeedPerSecond: 0
-          jobState: 1
+          jobState: 0
           characterLevels: []
           overWorkedHoursProduct: 0
           container: {fileID: 0}
@@ -2052,7 +2085,7 @@ MonoBehaviour:
       containerEntrance: {fileID: 0}
       characterGameObject: {fileID: 0}
     jobState: 0
-    staminaReductionRate: 0
+    staminaReductionRate: 0.2
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
@@ -2165,11 +2198,71 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6929637021891591042}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.24, y: 0, z: -2.4799998}
+  m_LocalPosition: {x: 6.58, y: 0, z: -0.54}
   m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
   m_Children: []
   m_Father: {fileID: 4548409364813521913}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6957038400034885216
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2802640693872440710}
+  m_Layer: 0
+  m_Name: deadPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2802640693872440710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6957038400034885216}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1001463, y: -1.1299586, z: -0.403}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1886295793999903043}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7000142991447039451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5952782661378878694}
+  m_Layer: 0
+  m_Name: spawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5952782661378878694
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7000142991447039451}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.654, y: -0.82, z: 1.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1886295793999903043}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7051539484295116061
 GameObject:
@@ -2505,12 +2598,92 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9111688023356891115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5719998, y: 1.2299999, z: -0.74399996}
+  m_LocalPosition: {x: 1.9740001, y: 0.030000044, z: -0.16200002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8048680558635864135}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1658658105357488968
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1886295793999903043}
+    m_Modifications:
+    - target: {fileID: 3688589172782850724, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_Name
+      value: box 2d
+      objectReference: {fileID: 0}
+    - target: {fileID: 3688589172782850724, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132141205365182280, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.638
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132141205365182280, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.786
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132141205365182280, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.996
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132141205365182280, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132141205365182280, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132141205365182280, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132141205365182280, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132141205365182280, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132141205365182280, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132141205365182280, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2132141205365182280, guid: b69e637022c48ec4da566402982b8145,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b69e637022c48ec4da566402982b8145, type: 3}
+--- !u!4 &761776717443636224 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2132141205365182280, guid: b69e637022c48ec4da566402982b8145,
+    type: 3}
+  m_PrefabInstance: {fileID: 1658658105357488968}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2475623469248343151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2585,4 +2758,101 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2732995174177528645, guid: 14b1f3b7dbb63de4c856e6801bc8e6d7,
     type: 3}
   m_PrefabInstance: {fileID: 2475623469248343151}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5837520377313684001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1886295793999903043}
+    m_Modifications:
+    - target: {fileID: 100000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_Name
+      value: Convoyer Belt
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.687
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.35172606
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071058
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071078
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.41322654
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -0.1520078
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.16919048
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 2421c7bf7c5c09141b3d8885e51c6ad3, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+--- !u!1 &5837520377313717377 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: fcb03de2a0be32b4b938edd0da2ba5ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 5837520377313684001}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5837520377313816737 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: fcb03de2a0be32b4b938edd0da2ba5ad,
+    type: 3}
+  m_PrefabInstance: {fileID: 5837520377313684001}
   m_PrefabAsset: {fileID: 0}

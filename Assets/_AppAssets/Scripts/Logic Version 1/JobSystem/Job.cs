@@ -28,10 +28,20 @@ public class Job
     [SerializeField]
     public GameObject jobPosition;
 
+    [SerializeField]
+    //Character job work flow;
+    public Workflow jobWorkflow;
+
     public Job()
     {
         jobState = JobState.Vacant;
-
+        foreach (var workflowScript in jobRoom.GetComponentsInChildren<Workflow>())
+        {
+            if (workflowScript!=null)
+            {
+                jobWorkflow = workflowScript;
+            }
+        }
         /**
          * jobRoom it will be dynamically created and the current gameObject (Capsule) will be a child of it
          * In order to access it we need to access the parent game object;

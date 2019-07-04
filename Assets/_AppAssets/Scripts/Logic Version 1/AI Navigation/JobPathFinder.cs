@@ -43,13 +43,13 @@ public class JobPathFinder : MonoBehaviour
     }
     private void OnDrawGizmos()
     {
-        //Init();
+        Init();
     }
     void Init()
     {
         jobEntity = GetComponentInParent<JobEntity>();
-        entrancePosNodeMirror.transform.position = entrancePos.transform.position;
-        jobNodePosMirror.transform.position = jobPos.transform.position;
+        entrancePosNodeMirror.transform.position = entrancePos.transform.position+(Vector3.up*-1.2f);
+        jobNodePosMirror.transform.position = jobPos.transform.position+(Vector3.up*-1.2f);
         InitializePathsJobs();
     }
 
@@ -113,10 +113,10 @@ public class JobPathFinder : MonoBehaviour
 
     void moveSimply()
     {
-        if (job.jobHolder.characterGameObject.transform.position!= jobPos.transform.position)
+        if (job.jobHolder.characterGameObject.transform.position!= jobPos.transform.position+ (Vector3.up * -0.6f))
         {
             job.jobHolder.characterGameObject.transform.position = Vector3.MoveTowards(job.jobHolder.characterGameObject.transform.position
-            ,jobPos.transform.position, job.jobHolder.characterGameObject.GetComponent<CharController>().getMovementSpeed()/2* Time.deltaTime);
+            ,jobPos.transform.position + (Vector3.up * -0.6f), job.jobHolder.characterGameObject.GetComponent<CharController>().getMovementSpeed()/2* Time.deltaTime);
         }
         else
         {

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(CharacterAnimationFSM))]
@@ -12,13 +13,14 @@ public class CharacterEntity : MonoBehaviour
     public bool isMovingInnerMovement;
     private float walkingSpeed;
 
+
     // Start is called before the first frame update
 
     void Start()
     {
         if (LevelManager.Instance.Testing)
         {
-            character = new Character(this.gameObject);
+            //character = new Character(this.gameObject);
         }
         LevelManager.Instance.characterManager.characters.Add(character);
         characterAnimationFSM = GetComponent<CharacterAnimationFSM>();
@@ -55,6 +57,8 @@ public class CharacterEntity : MonoBehaviour
             character.containerEntrance = roomEntity.rightEntrance;
         }
         //characterController.TriggerGravity(true);
+
+        character.characterGameObject.transform.position += (Vector3.up * -0.6f);
         followRoomInnerPath(roomEntity,false);
 
     }
@@ -75,6 +79,17 @@ public class CharacterEntity : MonoBehaviour
         }
         else {
             characterAnimationFSM.changeAnimationStateTo(CharacterAnimationsState.Idle);
+            startJobWorkFlow();
+        }
+    }
+    /// <summary>
+    /// Will call workflow classes methods that is build using component pattern
+    /// </summary>
+    private void startJobWorkFlow()
+    {
+        if (character.job.jobWorkflow!=null)
+        {
+            character.job.jobWorkflow.startWorkflow();
         }
     }
 

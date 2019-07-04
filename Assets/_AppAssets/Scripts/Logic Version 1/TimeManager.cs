@@ -5,7 +5,7 @@ using UnityEngine;
 
 
 [System.Serializable]
-public class GameTime : ICloneable
+public class GameTime:ICloneable
 {
     [HideInInspector]
     public int gameHour;
@@ -40,7 +40,7 @@ public class GameTime : ICloneable
         this.gameHour = gameHour;
         this.gameDay = gameDay;
     }
-    public GameTime(int gameHour, int gameDay, float realSecond, float realMinute, float realHour) : this(gameHour, gameDay)
+    public GameTime(int gameHour, int gameDay, float realSecond, float realMinute, float realHour):this(gameHour, gameDay)
     {
         this.realSecond = realSecond;
         this.realMinute = realMinute;
@@ -54,7 +54,7 @@ public class GameTime : ICloneable
             realSecond += Time.deltaTime;
             calculateTime();
 
-            if (Mathf.FloorToInt(realSecond) != secondTemp)
+            if (Mathf.FloorToInt(realSecond)!=secondTemp)
             {
                 //if (GameBrain.Instance.testing)
                 //{
@@ -134,11 +134,10 @@ public class GameTime : ICloneable
 
     public object Clone()
     {
-        return new GameTime(this.gameHour, this.gameDay, this.realSecond, this.realMinute, this.realHour);
+        return new GameTime(this.gameHour,this.gameDay,this.realSecond,this.realMinute,this.realHour);
     }
     #region Arithmetic Operators Override;
-    public static GameTime operator +(GameTime gameTime1, GameTime gameTime2)
-    {
+    public static GameTime operator +(GameTime gameTime1, GameTime gameTime2) {
         GameTime Sum = new GameTime();
         Sum.gameDay = gameTime1.gameDay + gameTime2.gameDay;
         Sum.gameHour = gameTime1.gameHour + gameTime2.gameHour;
@@ -155,7 +154,7 @@ public class GameTime : ICloneable
     #region Logical Operators Override;
     public static bool operator ==(GameTime gameTime1, GameTime gameTime2)
     {
-        if (gameTime1.realMinute == gameTime2.realMinute)
+        if (gameTime1.realMinute== gameTime2.realMinute)
         {
             return true;
         }
@@ -177,10 +176,9 @@ public class GameTime : ICloneable
 
         }
     }
-    public static bool operator >(GameTime gameTime1, GameTime gameTime2)
-    {
-        bool state = false;
-        if (gameTime1.gameDay > gameTime2.gameDay)
+    public static bool operator >(GameTime gameTime1, GameTime gameTime2) {
+        bool state=false;
+        if (gameTime1.gameDay>gameTime2.gameDay)
         {
             state = true;
         }
@@ -203,9 +201,8 @@ public class GameTime : ICloneable
         }
         return state;
     }
-    public static bool operator >=(GameTime gameTime1, GameTime gameTime2)
-    {
-        bool state = false;
+    public static bool operator >=(GameTime gameTime1, GameTime gameTime2) {
+        bool state=false;
         if (gameTime1.gameDay >= gameTime2.gameDay)
         {
             state = true;

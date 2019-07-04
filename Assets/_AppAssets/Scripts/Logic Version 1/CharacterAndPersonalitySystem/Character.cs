@@ -82,8 +82,12 @@ public class Character
     }
 
     public void updateCurrentCharacterLevelGameTimeDay()
-    {
-        characterLevel.totalLevelDaysWorkedHours.Add(GameBrain.Instance.timeManager.gameTime.gameDay, new GameTime());
+    {//called each hour
+        if (!characterLevel.totalLevelDaysWorkedHours.ContainsKey(GameBrain.Instance.timeManager.gameTime.gameDay))
+        {
+            characterLevel.totalLevelDaysWorkedHours.Add(GameBrain.Instance.timeManager.gameTime.gameDay, new GameTime());
+        }
+        updateCurrentCharacterLevelGametimeHour();
     }
 
     public void updateCurrentCharacterLevelGametimeHour()
@@ -159,7 +163,6 @@ public class Character
     {//Called each game hour
 
         //This must be called before leveling the character up to assign the value to the current level workedhours first.
-        updateCurrentCharacterLevelGametimeHour();
         calculateOverWorkedHoursProduct();
         if (characterLevel.doneProductionCycles == characterLevel.levelProductionCyclePeriod)
         {
