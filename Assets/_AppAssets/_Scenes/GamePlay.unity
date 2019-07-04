@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 867234a7e3cf39a4b9683a8cfb1e8c9a, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 860a66ca4259b384f9ec01b687f71c3c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -5602,7 +5602,7 @@ GameObject:
   - component: {fileID: 644028484}
   - component: {fileID: 644028483}
   m_Layer: 5
-  m_Name: SideMenu (2)
+  m_Name: BuildSideMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13528,7 +13528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1352932969
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16599,7 +16599,7 @@ GameObject:
   - component: {fileID: 1484404321}
   - component: {fileID: 1484404320}
   m_Layer: 5
-  m_Name: SideMenu (1)
+  m_Name: PersonaSideMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16701,7 +16701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1221d902221fc64c8fa9042b0bab090, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AutoFindHolders: 0
+  AutoFindHolders: 1
   AllMenus:
   - {fileID: 2044030533}
   - {fileID: 323623890}
