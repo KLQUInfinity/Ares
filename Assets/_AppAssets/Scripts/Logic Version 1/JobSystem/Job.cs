@@ -23,7 +23,7 @@ public class Job
     public float staminaReductionRate; //Over time
     [SerializeField]
     public GameObject jobRoom;
-    
+
     public int jobAcquisionHour;
     [SerializeField]
     public GameObject jobPosition;
@@ -35,11 +35,14 @@ public class Job
     public Job()
     {
         jobState = JobState.Vacant;
-        foreach (var workflowScript in jobRoom.GetComponentsInChildren<Workflow>())
+        if (jobRoom)
         {
-            if (workflowScript!=null)
+            foreach (var workflowScript in jobRoom.GetComponentsInChildren<Workflow>())
             {
-                jobWorkflow = workflowScript;
+                if (workflowScript != null)
+                {
+                    jobWorkflow = workflowScript;
+                }
             }
         }
         /**
@@ -61,7 +64,8 @@ public class Job
         jobState = JobState.Vacant;
     }
 
-    public GameObject getGetJobPosiiton() {
+    public GameObject getGetJobPosiiton()
+    {
         return jobPosition;
     }
 }
