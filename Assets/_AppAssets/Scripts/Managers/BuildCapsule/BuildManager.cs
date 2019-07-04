@@ -22,8 +22,8 @@ public class BuildManager : MonoBehaviour
     [HideInInspector] public bool IsBuild;
     [HideInInspector] public SlotManager[] slotMangers;
 
-    [SerializeField] private Transform buildPanel;
-    [SerializeField] private GameObject buildBtnObj;
+    [SerializeField] private GameObject bg;
+    [SerializeField] private UIElement closeBuildingBtnObj;
     [SerializeField] private List<GameObject> buildPrefabs;
 
     private string currChosenBuildPrefab;
@@ -82,8 +82,11 @@ public class BuildManager : MonoBehaviour
                         AddToSavedData(capsole.name, hit.transform.GetComponent<Slot>());
                         roomId++;
                         LevelManager.Instance.CalculateThisRoomBounds(new Room(capsole));
+
                         // Rest the build panel UI
-                        RestBuildPanel();
+                        closeBuildingBtnObj.SwitchVisibilityImmediate();
+                        ZUIManager.Instance.ClosePopup("BuildPopup");
+                        bg.SetActive(false);
 
                         // Check in that the slot is taken
                         hit.transform.GetComponent<Slot>().BuildThisSlot(currChosenBuildPrefab);
@@ -164,23 +167,5 @@ public class BuildManager : MonoBehaviour
         {
             i.CloseAvailableSlots();
         }
-    }
-
-    /// <summary>
-    /// Rest and close the Build panel UI
-    /// </summary>
-    public void RestBuildPanel()
-    {
-        // Open the Build scrollrect 
-        buildPanel.GetChild(0).gameObject.SetActive(true);
-
-        // Close the close building button
-        buildPanel.GetChild(1).gameObject.SetActive(false);
-
-        // Close the build panel
-        buildPanel.gameObject.SetActive(false);
-
-        // Open the build button
-        buildBtnObj.SetActive(true);
     }
 }

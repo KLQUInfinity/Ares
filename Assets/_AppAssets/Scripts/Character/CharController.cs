@@ -119,13 +119,11 @@ public class CharController : MonoBehaviour
     {
         if (followingPath[pathIndex].x > curPos.x)
         {
-            print("sadfasdf");
             facingRight = true;
             cAnimFSM.flipToRight();
         }
         else if (followingPath[pathIndex].x < curPos.x)
         {
-            print("sdafsdafaaaaaaaaa");
             facingRight = false;
             cAnimFSM.flipToLeft();
         }
