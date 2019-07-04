@@ -845,7 +845,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1514
+  m_Name: pb_Mesh-146518
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1379,7 +1379,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1510
+  m_Name: pb_Mesh-146514
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1759,7 +1759,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1500
+  m_Name: pb_Mesh-146504
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -2772,8 +2772,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomJobs:
-  - jobName: Carbenter
-    jobAnimation: 4
+  - jobName: 
+    jobAnimation: 0
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -2785,6 +2786,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -2796,6 +2798,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -2807,6 +2810,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -2817,7 +2821,7 @@ MonoBehaviour:
                   happiness: 0
                   jobHourTemp: 0
                   productivity: 0
-                  jobState: 0
+                  jobState: 1
                   overWorkedHoursProduct: 0
                 jobState: 0
                 staminaReductionRate: 0
@@ -2832,7 +2836,7 @@ MonoBehaviour:
                 workingHoursDailyLimit: 0
                 overWorkHoursProductLimit: 0
                 staminaRefillSpeedPerSecond: 0
-              jobState: 0
+              jobState: 1
               characterLevels: []
               overWorkedHoursProduct: 0
               container: {fileID: 0}
@@ -2851,7 +2855,7 @@ MonoBehaviour:
             workingHoursDailyLimit: 0
             overWorkHoursProductLimit: 0
             staminaRefillSpeedPerSecond: 0
-          jobState: 0
+          jobState: 1
           characterLevels: []
           overWorkedHoursProduct: 0
           container: {fileID: 0}
@@ -2877,12 +2881,13 @@ MonoBehaviour:
       containerEntrance: {fileID: 0}
       characterGameObject: {fileID: 0}
     jobState: 0
-    staminaReductionRate: 0.1
+    staminaReductionRate: 0
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
-  - jobName: Blumber
-    jobAnimation: 5
+  - jobName: 
+    jobAnimation: 0
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -2894,6 +2899,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -2905,6 +2911,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -2916,6 +2923,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -2926,7 +2934,7 @@ MonoBehaviour:
                   happiness: 0
                   jobHourTemp: 0
                   productivity: 0
-                  jobState: 0
+                  jobState: 1
                   overWorkedHoursProduct: 0
                 jobState: 0
                 staminaReductionRate: 0
@@ -2941,7 +2949,7 @@ MonoBehaviour:
                 workingHoursDailyLimit: 0
                 overWorkHoursProductLimit: 0
                 staminaRefillSpeedPerSecond: 0
-              jobState: 0
+              jobState: 1
               characterLevels: []
               overWorkedHoursProduct: 0
               container: {fileID: 0}
@@ -2960,7 +2968,7 @@ MonoBehaviour:
             workingHoursDailyLimit: 0
             overWorkHoursProductLimit: 0
             staminaRefillSpeedPerSecond: 0
-          jobState: 0
+          jobState: 1
           characterLevels: []
           overWorkedHoursProduct: 0
           container: {fileID: 0}
@@ -2986,7 +2994,7 @@ MonoBehaviour:
       containerEntrance: {fileID: 0}
       characterGameObject: {fileID: 0}
     jobState: 0
-    staminaReductionRate: 0.2
+    staminaReductionRate: 0
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
@@ -3452,7 +3460,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1508
+  m_Name: pb_Mesh-146512
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3917,6 +3925,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1843295753732254427, guid: ac94fd0d54697894e828f65189e8fd04,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
 --- !u!114 &1211378798 stripped
@@ -4197,7 +4210,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1498
+  m_Name: pb_Mesh-146502
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -4766,7 +4779,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1504
+  m_Name: pb_Mesh-146508
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -5444,7 +5457,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1506
+  m_Name: pb_Mesh-146510
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -5680,7 +5693,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1454
+  m_Name: pb_Mesh-146360
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -6008,7 +6021,6 @@ GameObject:
   - component: {fileID: 1809234427}
   - component: {fileID: 1809234426}
   - component: {fileID: 1809234425}
-  - component: {fileID: 1809234433}
   - component: {fileID: 1809234432}
   - component: {fileID: 1809234434}
   - component: {fileID: 1809234431}
@@ -6198,55 +6210,6 @@ MonoBehaviour:
     workingHoursDailyLimit: 0
     overWorkHoursProductLimit: 0
     staminaRefillSpeedPerSecond: 0
---- !u!114 &1809234433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809234424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f65dbb48fa3fd8c40b0bae1c8becaf80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TotalGameDays: 12
-  gameTime:
-    gameHour: 0
-    gameDay: 0
-    realSecond: 0
-    realMinute: 0
-    realHour: 0
-  isUpdating: 0
-  eventsTime:
-  - eventName: 
-    eventTime:
-      gameHour: 0
-      gameDay: 0
-      realSecond: 0
-      realMinute: 0
-      realHour: 0
-  - eventName: 
-    eventTime:
-      gameHour: 0
-      gameDay: 0
-      realSecond: 0
-      realMinute: 0
-      realHour: 0
-  - eventName: 
-    eventTime:
-      gameHour: 0
-      gameDay: 0
-      realSecond: 0
-      realMinute: 0
-      realHour: 0
-  - eventName: 
-    eventTime:
-      gameHour: 0
-      gameDay: 0
-      realSecond: 0
-      realMinute: 0
-      realHour: 0
 --- !u!114 &1809234434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6736,7 +6699,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1502
+  m_Name: pb_Mesh-146506
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -7056,7 +7019,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1512
+  m_Name: pb_Mesh-146516
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2

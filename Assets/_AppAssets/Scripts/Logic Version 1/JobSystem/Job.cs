@@ -15,6 +15,8 @@ public class Job
     public string jobName;
     [SerializeField]
     public CharacterAnimationsState jobAnimation;
+    [SerializeField]
+    public AnimationClip jobAnimationClip;
     [HideInInspector]
     public Character jobHolder;
     [SerializeField]

@@ -101,10 +101,12 @@ public class CharacterEntity : MonoBehaviour
         {
             characterController.TriggerGravity(false);
             character.container = Backbone;
-              characterAnimationFSM.changeAnimationStateTo(CharacterAnimationsState.Floating);
+            characterAnimationFSM.changeAnimationStateTo(CharacterAnimationsState.Floating);
         }
         else
         {
+            //Put the character on the ground here :)
+
             //if (character.container.tag!="BaseRoom" && character.container.tag != "TrainingRoom")
             //{
             //    characterController.TriggerGravity(true);
@@ -118,6 +120,8 @@ public class CharacterEntity : MonoBehaviour
         if (!isRevesed)
         {
             characterAnimationFSM.changeAnimationStateTo(character.job.jobAnimation);
+            characterAnimationFSM.populateJobAnimationClip(character.job.jobAnimation, 
+                character.job.jobAnimationClip);
             //characterController.TriggerGravity(false);
             GetComponent<Rigidbody>().velocity = Vector3.zero;
         }

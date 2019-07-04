@@ -67,6 +67,7 @@ public class CharacterManager : MonoBehaviour
         {
             character.job.deassignJobHolder();
             character.deassignJob();
+            character.characterGameObject.GetComponent<CharacterEntity>().characterAnimationFSM.resetOriginalAnimationClips();
         }
     }
 

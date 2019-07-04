@@ -30,7 +30,7 @@ public class CharacterAnimationFSM : MonoBehaviour
     public HorizontalDirecton horizontalDirection;
     public VerticalDirecton verticalDirection;
     public Animator characterAnimator;
-    public Animation walk;
+    public AnimationClip[] originalAnimationClipList;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +44,7 @@ public class CharacterAnimationFSM : MonoBehaviour
 
     private void Init()
     {
-
+        initializeOriginalAnimationsClipsList();
     }
 
 
@@ -108,6 +108,69 @@ public class CharacterAnimationFSM : MonoBehaviour
         }
     }
 
+    public void initializeOriginalAnimationsClipsList()
+    {
+        this.originalAnimationClipList = characterAnimator.runtimeAnimatorController.animationClips;
+    }
+    /// <summary>
+    /// Agmad Method fe 2019 ->>>>>>>>>> El method el fashe5aaaaaaaaa
+    /// </summary>
+    /// <param name="animationState"></param>
+    /// <param name="jobAnimationClip"></param>
+    public void populateJobAnimationClip(CharacterAnimationsState animationState, AnimationClip jobAnimationClip)
+    {
+        // Animator animator (get component blablabla)
+        // AnimationClip anim (field in inspector)
+        if (jobAnimationClip)
+        {
+            AnimationClip[] animationClipsList = characterAnimator.runtimeAnimatorController.animationClips;
+            foreach (var animationClip in animationClipsList)
+            {
+                if (animationClip.name.ToLower().Equals(animationState.ToString().ToLower()))
+                {
+                    animationClipsList[Array.IndexOf(animationClipsList, animationClip)] = jobAnimationClip;
+                }
+            }
+            AnimatorOverrideController animatorOverriderController =
+                new AnimatorOverrideController(characterAnimator.runtimeAnimatorController);
+
+            var anims = new List<KeyValuePair<AnimationClip, AnimationClip>>();//Empty list
+
+            foreach (var animationClip in animatorOverriderController.animationClips)
+            {
+                if (!animationClip.name.ToLower().Equals(animationClipsList[
+                    Array.IndexOf(animatorOverriderController.animationClips, animationClip)].name.ToLower()))
+                {
+                    anims.Add(new KeyValuePair<AnimationClip, AnimationClip>(animationClip,
+                        animationClipsList[
+                    Array.IndexOf(animatorOverriderController.animationClips, animationClip)]));
+                }
+            }
+            animatorOverriderController.ApplyOverrides(anims);
+            characterAnimator.runtimeAnimatorController = animatorOverriderController;
+        }
+    }
+    /// <summary>
+    /// On job deassigning
+    /// Resets the animation clips in order for each to take the placeholder 
+    /// names to be able and ready for change once again because each at different room will have different clip
+    /// </summary>
+    public void resetOriginalAnimationClips()
+    {
+        AnimatorOverrideController animatorOverriderController =
+                new AnimatorOverrideController(characterAnimator.runtimeAnimatorController);
+
+        var anims = new List<KeyValuePair<AnimationClip, AnimationClip>>();//Empty list
+
+        foreach (var animationClip in animatorOverriderController.animationClips)
+        {
+            anims.Add(new KeyValuePair<AnimationClip, AnimationClip>(animationClip,
+                originalAnimationClipList[
+            Array.IndexOf(animatorOverriderController.animationClips, animationClip)]));
+        }
+        animatorOverriderController.ApplyOverrides(anims);
+        characterAnimator.runtimeAnimatorController = animatorOverriderController;
+    }
     public void flipOnFloating()
     {
         if (this.horizontalDirection == HorizontalDirecton.Right)
@@ -140,8 +203,9 @@ public class CharacterAnimationFSM : MonoBehaviour
         }
     }
 
-    public void changeWalkAnimationTransform() {
-      
+    public void changeWalkAnimationTransform()
+    {
+
     }
     #region Solid Methods to change Both horizantal and vertical states 
     public void flipToRight()
