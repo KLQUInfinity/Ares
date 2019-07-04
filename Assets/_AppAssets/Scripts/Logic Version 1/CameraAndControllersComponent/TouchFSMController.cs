@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,7 +11,7 @@ public class TouchFSMController : MonoBehaviour
     public float distanceFromBoundry = 5;
     public Camera camera;
 
-    Vector2 startPos;
+    Vector2 touchStartPos;
     Vector2 direction;
     bool directionChosen;
     //-------------------------------------------------------------
@@ -20,8 +21,13 @@ public class TouchFSMController : MonoBehaviour
     float maxFOV;
 
 
-    float posX;
-    float posY;
+    float touchPosX;
+    float touchPosY;
+    float mousePosX;
+    float mousePosY;
+    Vector2 mouseStartPos;
+    Vector2 mouseSwapeDirection;
+
     public float swapeSpeed = 0.2f;
     public float clampValue = 1;
     public bool tryOld;
@@ -33,16 +39,7 @@ public class TouchFSMController : MonoBehaviour
         camera = Camera.main;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //stateStack.Peek().OnStateUpdate(new GameObject());
-        handleTouch();
-    }
-    private void LateUpdate()
-    {
-        ClampCameraPositionAndZoom();
-    }
+    #region Clamping the Camera Swap and Zoom to the map boundries
 
     private void ClampCameraPositionAndZoom()
     {
@@ -61,6 +58,71 @@ public class TouchFSMController : MonoBehaviour
             );
     }
 
+    #endregion
+
+    // Update is called once per frame
+    void Update()
+    {
+        //stateStack.Peek().OnStateUpdate(new GameObject());
+        handleTouch();
+        handleMouse();
+    }
+
+    private void handleMouse()
+    {
+        if (!isDraggingCharacter)
+        {
+            float scrollValue = Input.GetAxis("Mouse ScrollWheel");
+            zoomIn(-scrollValue * 150 *perspectiveZoomSpeed);
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                mouseStartPos = Input.mousePosition;
+
+            }
+            if (Input.GetMouseButton(0))
+            {
+
+                mouseSwapeDirection = Vector2.one * Input.mousePosition - mouseStartPos;
+                mousePosX =/* Mathf.Clamp*/(mouseSwapeDirection.x/*, clampValue, -clampValue*/) * Time.deltaTime * swapeSpeed;
+                mousePosY = /*Mathf.Clamp*/(mouseSwapeDirection.y/*, clampValue, -clampValue*/) * Time.deltaTime * swapeSpeed;
+                swapCameraByMouseTo();
+                counter++;
+                if (counter == 5)
+                {
+                    mouseStartPos = Input.mousePosition;
+                    counter = 0;
+                }
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                mouseStartPos = Vector2.zero;
+                mouseSwapeDirection = Vector2.zero;
+            }
+        }
+    }
+
+    private void swapCameraByMouseTo()
+    {
+        if (tryOld)
+        {
+            camera.transform.position += new Vector3(-touchPosX, touchPosY, 0) * swapeSpeed;
+        }
+        else
+        {
+            Vector3 moveTowards = Vector3.MoveTowards(camera.transform.position, (camera.transform.TransformPoint(new Vector3(-mousePosX * swapeSpeed/2, -mousePosY * swapeSpeed/2, 0))), 2);
+            moveTowards.z = camera.transform.position.z;
+
+            camera.transform.position = Vector3.Slerp(moveTowards, camera.transform.position, 0.8f);
+        }
+        //camera.transform.Translate(new Vector3(posX, posY, 0).normalized * swapeSpeed);
+    }
+    private void LateUpdate()
+    {
+        ClampCameraPositionAndZoom();
+    }
+
+    #region Touch Controller Logic
     void handleTouch()
     {
         //How many touches at the moment
@@ -139,21 +201,21 @@ public class TouchFSMController : MonoBehaviour
     private void zoomIn(float deltaMagnitudeDiff)
     {
         //Otherwise change the field of view based on the change in distance between the touches.
-       // camera.fieldOfView += deltaMagnitudeDiff * perspectiveZoomSpeed*Time.deltaTime;
-        Vector3 zoomVector= camera.transform.position;
+        // camera.fieldOfView += deltaMagnitudeDiff * perspectiveZoomSpeed*Time.deltaTime;
+        Vector3 zoomVector = camera.transform.position;
         zoomVector.z = camera.transform.position.z - deltaMagnitudeDiff;
         camera.transform.position = Vector3.Lerp(zoomVector, camera.transform.position, 0.5f);
-        swapeSpeed += deltaMagnitudeDiff/8;
+        swapeSpeed += deltaMagnitudeDiff / 8;
     }
 
     private void zoomOut(float deltaMagnitudeDiff)
     {
         //Otherwise change the field of view based on the change in distance between the touches.
-       // camera.fieldOfView += deltaMagnitudeDiff * perspectiveZoomSpeed*Time.deltaTime;
+        // camera.fieldOfView += deltaMagnitudeDiff * perspectiveZoomSpeed*Time.deltaTime;
         Vector3 zoomVector = camera.transform.position;
         zoomVector.z = camera.transform.position.z - deltaMagnitudeDiff;
         camera.transform.position = Vector3.Lerp(zoomVector, camera.transform.position, 0.5f);
-        swapeSpeed += deltaMagnitudeDiff/12;
+        swapeSpeed += deltaMagnitudeDiff / 12;
     }
 
     public bool checkIfPlayerIsTouched()
@@ -171,6 +233,7 @@ public class TouchFSMController : MonoBehaviour
         return false;
 
     }
+
     public bool checkIfRoomIsTouched()
     {
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -304,29 +367,29 @@ public class TouchFSMController : MonoBehaviour
         {
             // Record initial touch position.
             case TouchPhase.Began:
-                startPos = touch.position;
+                touchStartPos = touch.position;
                 directionChosen = false;
                 break;
 
             // Determine direction by comparing the current touch position with the initial one.
             case TouchPhase.Moved:
-                direction = touch.position - startPos;
+                direction = touch.position - touchStartPos;
                 // Something that uses the chosen direction...
                 Vector3 movePos = direction;
-                posX =/* Mathf.Clamp*/(movePos.x/*, clampValue, -clampValue*/) * Time.deltaTime * swapeSpeed;
-                posY = /*Mathf.Clamp*/(movePos.y/*, clampValue, -clampValue*/) * Time.deltaTime * swapeSpeed;
+                touchPosX =/* Mathf.Clamp*/(movePos.x/*, clampValue, -clampValue*/) * Time.deltaTime * swapeSpeed;
+                touchPosY = /*Mathf.Clamp*/(movePos.y/*, clampValue, -clampValue*/) * Time.deltaTime * swapeSpeed;
                 swapCameraTo();
                 counter++;
-                if (counter==5)
+                if (counter == 5)
                 {
-                    startPos = touch.position;
+                    touchStartPos = touch.position;
                     counter = 0;
                 }
                 break;
 
             // Report that a direction has been chosen when the finger is lifted.
             case TouchPhase.Ended:
-                startPos = Vector2.zero;
+                touchStartPos = Vector2.zero;
                 direction = Vector2.zero;
                 directionChosen = true;
                 break;
@@ -344,17 +407,18 @@ public class TouchFSMController : MonoBehaviour
     {
         if (tryOld)
         {
-            camera.transform.position += new Vector3(-posX, posY, 0) * swapeSpeed;
+            camera.transform.position += new Vector3(-touchPosX, touchPosY, 0) * swapeSpeed;
         }
         else
         {
-            Vector3 moveTowards = Vector3.MoveTowards(camera.transform.position, (camera.transform.TransformPoint(new Vector3(-posX * swapeSpeed, -posY * swapeSpeed, 0))), 2);
+            Vector3 moveTowards = Vector3.MoveTowards(camera.transform.position, (camera.transform.TransformPoint(new Vector3(-touchPosX * swapeSpeed, -touchPosY * swapeSpeed, 0))), 2);
             moveTowards.z = camera.transform.position.z;
 
-            camera.transform.position = Vector3.Slerp(moveTowards, camera.transform.position, 0.8f) ;
+            camera.transform.position = Vector3.Slerp(moveTowards, camera.transform.position, 0.8f);
         }
         //camera.transform.Translate(new Vector3(posX, posY, 0).normalized * swapeSpeed);
     }
+
     public void setDragModeOn()
     {
         isDraggingCharacter = true;
@@ -365,5 +429,5 @@ public class TouchFSMController : MonoBehaviour
         isDraggingCharacter = false;
         //Debug.Log("Drag Mode on");
     }
-
+    #endregion
 }

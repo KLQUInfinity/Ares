@@ -138,6 +138,17 @@ public class LevelManager : MonoBehaviour
         roomManager.roomsBounds.Add(room, renderer.bounds);
     }
 
+    public GameObject getCharacterPhysicalContainer(GameObject charcterGameObject) {
+
+        foreach (KeyValuePair<Room, Bounds> entry in roomManager.roomsBounds)
+        {
+            if (entry.Value.Contains(charcterGameObject.transform.position))
+            {
+                return entry.Key.roomGameObject;
+            }
+        }
+        return null; //this is impossible to happen. if it happens it would be a deal breaker glitch
+    }
     public void OnSecondChange()
     {//Called each real second
         this.characterManager.OnSecondChange();

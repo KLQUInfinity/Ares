@@ -68,6 +68,16 @@ public class Dragable_Item : MonoBehaviour
     private void OnMouseDown()
     {
         // select the Character and open the ui of it
+        if (Input.GetMouseButton(0))
+        {
+            LevelManager.Instance.setDragModeOn();
+            if (!isDragable)
+            {
+                hollow.SetActive(true);
+                isDragable = true;
+
+            }
+        }
     }
 
     private void OnMouseDrag()
@@ -122,6 +132,14 @@ public class Dragable_Item : MonoBehaviour
 
                         if (hit.transform.tag.Equals("Room") /*&& hit.transform.name != containerRoom.name*/)
                         {
+                            GameObject oldContainer;
+                            if (oldContainer=LevelManager.Instance.getCharacterPhysicalContainer(this.gameObject))
+                            {
+                                if (oldContainer == hit.collider.gameObject)
+                                {
+                                    resetDragabbleItemData(); //Cancel Drag operation.
+                                    return;                                }
+                            }
                             if (!LevelManager.Instance.roomManager.getRoomWithGameObject(hit.collider.gameObject).roomGameObject)
                             {
                                 LevelManager.Instance.CalculateThisRoomBounds(new Room(hit.collider.gameObject));
@@ -167,10 +185,7 @@ public class Dragable_Item : MonoBehaviour
                 }
             }
 
-            hollow.transform.localPosition = Vector3.zero;
-            hollow.SetActive(false);
-            LevelManager.Instance.setDragModeOff();
-            isDragable = false;
+            resetDragabbleItemData(); //Cancel Drag operation.
         }
         catch (Exception c)
         {
@@ -178,6 +193,12 @@ public class Dragable_Item : MonoBehaviour
         }
     }
 
+    public void resetDragabbleItemData() {
+        hollow.transform.localPosition = Vector3.zero;
+        hollow.SetActive(false);
+        LevelManager.Instance.setDragModeOff();
+        isDragable = false;
+    }
     private Vector3 ClampHollowPositionToMapBounds(Vector3 mousPos)
     {
         float yAxisBoundry = Mathf.Clamp(mousPos.y, LevelManager.Instance.BottomBoundry.position.y - 15,

@@ -113,10 +113,10 @@ public class JobPathFinder : MonoBehaviour
 
     void moveSimply()
     {
-        if (job.jobHolder.characterGameObject.transform.position!= jobPos.transform.position)
+        if (job.jobHolder.characterGameObject.transform.position!= jobPos.transform.position+ (Vector3.up * -0.6f))
         {
             job.jobHolder.characterGameObject.transform.position = Vector3.MoveTowards(job.jobHolder.characterGameObject.transform.position
-            ,jobPos.transform.position, job.jobHolder.characterGameObject.GetComponent<CharController>().getMovementSpeed()/2* Time.deltaTime);
+            ,jobPos.transform.position+(Vector3.up*-0.6f), job.jobHolder.characterGameObject.GetComponent<CharController>().getMovementSpeed()/2* Time.deltaTime);
         }
         else
         {

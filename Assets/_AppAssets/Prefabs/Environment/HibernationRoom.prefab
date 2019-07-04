@@ -851,7 +851,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e5a16a1f3aabff2438169625fed4e1d3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0dc62db9c10e1974cb91706447cc254f, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2482,6 +2482,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5477557368673528776}
     m_Modifications:
+    - target: {fileID: 3695358671655894687, guid: 826af257dd316254b928f7cc1cf26c24,
+        type: 3}
+      propertyPath: m_Name
+      value: CapsuleBody
+      objectReference: {fileID: 0}
     - target: {fileID: 3695358671655723711, guid: 826af257dd316254b928f7cc1cf26c24,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2537,10 +2542,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3695358671655894687, guid: 826af257dd316254b928f7cc1cf26c24,
+    - target: {fileID: 3695358671655894683, guid: 826af257dd316254b928f7cc1cf26c24,
         type: 3}
-      propertyPath: m_Name
-      value: CapsuleBody
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3695358671655894681, guid: 826af257dd316254b928f7cc1cf26c24,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933423223330968612, guid: 826af257dd316254b928f7cc1cf26c24,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 826af257dd316254b928f7cc1cf26c24, type: 3}

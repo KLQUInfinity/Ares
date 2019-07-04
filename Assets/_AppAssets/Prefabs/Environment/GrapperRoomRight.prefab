@@ -647,10 +647,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisJobPath: 2
-  jobEntity: {fileID: 0}
+  jobEntity: {fileID: 2827191293223258427}
   job:
-    jobName: 
-    jobAnimation: 0
+    jobName: Carbenter
+    jobAnimation: 4
     jobHolder:
       name: 
       title: 
@@ -694,7 +694,7 @@ MonoBehaviour:
                   happiness: 0
                   jobHourTemp: 0
                   productivity: 0
-                  jobState: 1
+                  jobState: 0
                   overWorkedHoursProduct: 0
                 jobState: 0
                 staminaReductionRate: 0
@@ -709,7 +709,7 @@ MonoBehaviour:
                 workingHoursDailyLimit: 0
                 overWorkHoursProductLimit: 0
                 staminaRefillSpeedPerSecond: 0
-              jobState: 1
+              jobState: 0
               characterLevels: []
               overWorkedHoursProduct: 0
               container: {fileID: 0}
@@ -728,7 +728,7 @@ MonoBehaviour:
             workingHoursDailyLimit: 0
             overWorkHoursProductLimit: 0
             staminaRefillSpeedPerSecond: 0
-          jobState: 1
+          jobState: 0
           characterLevels: []
           overWorkedHoursProduct: 0
           container: {fileID: 0}
@@ -754,7 +754,7 @@ MonoBehaviour:
       containerEntrance: {fileID: 0}
       characterGameObject: {fileID: 0}
     jobState: 0
-    staminaReductionRate: 0
+    staminaReductionRate: 0.1
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
@@ -948,7 +948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326490953797490296}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5719998, y: 1.2299999, z: -0.74399996}
+  m_LocalPosition: {x: 1.572, y: 0.030000044, z: -0.7439999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3682900440534796344}
@@ -1340,7 +1340,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e5a16a1f3aabff2438169625fed4e1d3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0dc62db9c10e1974cb91706447cc254f, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1448,7 +1448,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102760828177478927}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6049999, y: 1.2299999, z: -0.717}
+  m_LocalPosition: {x: -1.6049998, y: 0.030000044, z: -0.71700007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1569681582643064699}
@@ -1513,10 +1513,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisJobPath: 3
-  jobEntity: {fileID: 0}
+  jobEntity: {fileID: 2827191293223258427}
   job:
-    jobName: 
-    jobAnimation: 0
+    jobName: Blumber
+    jobAnimation: 5
     jobHolder:
       name: 
       title: 
@@ -1560,7 +1560,7 @@ MonoBehaviour:
                   happiness: 0
                   jobHourTemp: 0
                   productivity: 0
-                  jobState: 1
+                  jobState: 0
                   overWorkedHoursProduct: 0
                 jobState: 0
                 staminaReductionRate: 0
@@ -1575,7 +1575,7 @@ MonoBehaviour:
                 workingHoursDailyLimit: 0
                 overWorkHoursProductLimit: 0
                 staminaRefillSpeedPerSecond: 0
-              jobState: 1
+              jobState: 0
               characterLevels: []
               overWorkedHoursProduct: 0
               container: {fileID: 0}
@@ -1594,7 +1594,7 @@ MonoBehaviour:
             workingHoursDailyLimit: 0
             overWorkHoursProductLimit: 0
             staminaRefillSpeedPerSecond: 0
-          jobState: 1
+          jobState: 0
           characterLevels: []
           overWorkedHoursProduct: 0
           container: {fileID: 0}
@@ -1620,7 +1620,7 @@ MonoBehaviour:
       containerEntrance: {fileID: 0}
       characterGameObject: {fileID: 0}
     jobState: 0
-    staminaReductionRate: 0
+    staminaReductionRate: 0.2
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
@@ -1777,7 +1777,7 @@ SpriteMask:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e5a16a1f3aabff2438169625fed4e1d3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0dc62db9c10e1974cb91706447cc254f, type: 3}
   m_MaskAlphaCutoff: 0.2
   m_FrontSortingLayerID: 0
   m_BackSortingLayerID: 0
@@ -1841,7 +1841,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4528225283602649548}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.185, y: 1.2299999, z: 0.96299994}
+  m_LocalPosition: {x: -1.1849998, y: 0.030000044, z: 0.963}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 5524128346450799196}
@@ -1871,7 +1871,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4641616648454108402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6049999, y: 1.2299999, z: -0.717}
+  m_LocalPosition: {x: -1.6049998, y: 0.030000044, z: -0.71700007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1501023323881671069}
@@ -1901,7 +1901,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5161854386136790337}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.185, y: 1.2299999, z: 0.96299994}
+  m_LocalPosition: {x: -1.1849998, y: 0.030000044, z: 0.963}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 1569681582643064699}
@@ -1931,7 +1931,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5179272761074289836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2119999, y: 1.2299999, z: 0.9539999}
+  m_LocalPosition: {x: 1.0740001, y: 0.030000044, z: 0.95399994}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 1501023323881671069}
@@ -1996,10 +1996,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisJobPath: 0
-  jobEntity: {fileID: 0}
+  jobEntity: {fileID: 2827191293223258427}
   job:
-    jobName: 
-    jobAnimation: 0
+    jobName: Carbenter
+    jobAnimation: 4
     jobHolder:
       name: 
       title: 
@@ -2043,7 +2043,7 @@ MonoBehaviour:
                   happiness: 0
                   jobHourTemp: 0
                   productivity: 0
-                  jobState: 1
+                  jobState: 0
                   overWorkedHoursProduct: 0
                 jobState: 0
                 staminaReductionRate: 0
@@ -2058,7 +2058,7 @@ MonoBehaviour:
                 workingHoursDailyLimit: 0
                 overWorkHoursProductLimit: 0
                 staminaRefillSpeedPerSecond: 0
-              jobState: 1
+              jobState: 0
               characterLevels: []
               overWorkedHoursProduct: 0
               container: {fileID: 0}
@@ -2077,7 +2077,7 @@ MonoBehaviour:
             workingHoursDailyLimit: 0
             overWorkHoursProductLimit: 0
             staminaRefillSpeedPerSecond: 0
-          jobState: 1
+          jobState: 0
           characterLevels: []
           overWorkedHoursProduct: 0
           container: {fileID: 0}
@@ -2103,7 +2103,7 @@ MonoBehaviour:
       containerEntrance: {fileID: 0}
       characterGameObject: {fileID: 0}
     jobState: 0
-    staminaReductionRate: 0
+    staminaReductionRate: 0.1
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
@@ -2729,7 +2729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8921499051778813581}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2119999, y: 1.2299999, z: 0.9539999}
+  m_LocalPosition: {x: 1.0740001, y: 0.030000044, z: 0.95399994}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 3682900440534796344}
@@ -2759,7 +2759,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8984257283026711442}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.5719998, y: 1.2299999, z: -0.74399996}
+  m_LocalPosition: {x: 1.572, y: 0.030000044, z: -0.7439999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5524128346450799196}
@@ -2824,10 +2824,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisJobPath: 1
-  jobEntity: {fileID: 0}
+  jobEntity: {fileID: 2827191293223258427}
   job:
-    jobName: 
-    jobAnimation: 0
+    jobName: Blumber
+    jobAnimation: 5
     jobHolder:
       name: 
       title: 
@@ -2871,7 +2871,7 @@ MonoBehaviour:
                   happiness: 0
                   jobHourTemp: 0
                   productivity: 0
-                  jobState: 1
+                  jobState: 0
                   overWorkedHoursProduct: 0
                 jobState: 0
                 staminaReductionRate: 0
@@ -2886,7 +2886,7 @@ MonoBehaviour:
                 workingHoursDailyLimit: 0
                 overWorkHoursProductLimit: 0
                 staminaRefillSpeedPerSecond: 0
-              jobState: 1
+              jobState: 0
               characterLevels: []
               overWorkedHoursProduct: 0
               container: {fileID: 0}
@@ -2905,7 +2905,7 @@ MonoBehaviour:
             workingHoursDailyLimit: 0
             overWorkHoursProductLimit: 0
             staminaRefillSpeedPerSecond: 0
-          jobState: 1
+          jobState: 0
           characterLevels: []
           overWorkedHoursProduct: 0
           container: {fileID: 0}
@@ -2931,7 +2931,7 @@ MonoBehaviour:
       containerEntrance: {fileID: 0}
       characterGameObject: {fileID: 0}
     jobState: 0
-    staminaReductionRate: 0
+    staminaReductionRate: 0.2
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
@@ -2952,6 +2952,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CapsuleBody
+      objectReference: {fileID: 0}
+    - target: {fileID: 412174922319337244, guid: f5d0b41c5e5077946be058e742a50c96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 412174922319432508, guid: f5d0b41c5e5077946be058e742a50c96,
         type: 3}
@@ -3006,6 +3011,21 @@ PrefabInstance:
     - target: {fileID: 412174922319432508, guid: f5d0b41c5e5077946be058e742a50c96,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412174922319337246, guid: f5d0b41c5e5077946be058e742a50c96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412174922319337240, guid: f5d0b41c5e5077946be058e742a50c96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 412174922334494618, guid: f5d0b41c5e5077946be058e742a50c96,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

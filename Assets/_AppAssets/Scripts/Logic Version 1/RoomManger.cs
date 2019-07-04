@@ -89,9 +89,6 @@ public class RoomManger : MonoBehaviour
                 room.calculateRoomProductivity();
 
             }
-
-
-
         }
     }
     public void OnMinuteChange()
