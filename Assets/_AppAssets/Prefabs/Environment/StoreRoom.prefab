@@ -1595,7 +1595,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5837520377313717377}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0df7605a75d576438a1801c11bc254b, type: 3}
   m_Name: 
@@ -1604,6 +1604,7 @@ MonoBehaviour:
   deadPoint: {fileID: 6957038400034885216}
   boxPrefab: {fileID: 3688589172782850724, guid: b69e637022c48ec4da566402982b8145,
     type: 3}
+  currentWorkflowState: 0
 --- !u!1 &5941906720941978814
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,6 +2843,10 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 2421c7bf7c5c09141b3d8885e51c6ad3, type: 2}
+    - target: {fileID: 9500000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcb03de2a0be32b4b938edd0da2ba5ad, type: 3}
 --- !u!1 &5837520377313717377 stripped
