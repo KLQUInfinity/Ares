@@ -378,6 +378,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrainningRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 315405003839096560, guid: 19a0aea8bf528834b8e4b59a3cb138fb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1356653189910989937, guid: 19a0aea8bf528834b8e4b59a3cb138fb,
         type: 3}
       propertyPath: mySlot
@@ -1213,7 +1218,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26742
+  m_Name: pb_Mesh-104756
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1919,7 +1924,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26754
+  m_Name: pb_Mesh-104760
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3866,7 +3871,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26748
+  m_Name: pb_Mesh-104762
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -4026,7 +4031,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26744
+  m_Name: pb_Mesh-104758
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -6315,6 +6320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HibernationRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 555107766806931947, guid: 7e905828b09b52a429146966a7f30ca6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1113328149425311583, guid: 7e905828b09b52a429146966a7f30ca6,
         type: 3}
       propertyPath: mySlot
@@ -7131,7 +7141,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26750
+  m_Name: pb_Mesh-104770
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -7446,7 +7456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9003,7 +9013,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1661261035}
         m_MethodName: toggleTesting
         m_Mode: 1
         m_Arguments:
@@ -9386,7 +9396,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26752
+  m_Name: pb_Mesh-104768
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -10508,7 +10518,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10862,7 +10872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -13036,7 +13046,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26746
+  m_Name: pb_Mesh-104764
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -14444,6 +14454,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 625488201829187797, guid: c5b380c576f09014b8025787cd9de644,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 625488201829187805, guid: c5b380c576f09014b8025787cd9de644,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14527,6 +14542,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ISS_Backbone
+      objectReference: {fileID: 0}
+    - target: {fileID: 1843295753732254438, guid: ac94fd0d54697894e828f65189e8fd04,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1743153264, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
       propertyPath: buildPanel
@@ -15836,7 +15856,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26740
+  m_Name: pb_Mesh-104766
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -18758,7 +18778,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26756
+  m_Name: pb_Mesh-104694
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -19447,7 +19467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -20539,7 +20559,6 @@ GameObject:
   - component: {fileID: 2017789054}
   - component: {fileID: 2017789057}
   - component: {fileID: 2017789056}
-  - component: {fileID: 2017789055}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -20568,35 +20587,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2017789055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2017789053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
 --- !u!222 &2017789056
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22280,7 +22270,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-26738
+  m_Name: pb_Mesh-104772
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
