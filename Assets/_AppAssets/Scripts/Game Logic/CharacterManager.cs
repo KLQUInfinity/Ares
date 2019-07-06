@@ -44,7 +44,7 @@ public class CharacterManager : MonoBehaviour
 
     public void OnCharacterPopulation(Room room, Character character)
     {
-        if ( room.roomGameObject.name != "HibernationRoom" && room.roomGameObject.name != "TrainningRoom")
+        if (room.roomGameObject.name != "HibernationRoom")
         {
             Job job = room.getRandomVacantJob(character);
             if (job != null)

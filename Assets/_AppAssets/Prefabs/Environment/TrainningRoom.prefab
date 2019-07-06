@@ -458,6 +458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showThisOnly: 0
 --- !u!114 &1259626342039343973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -529,6 +530,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -548,6 +550,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -567,6 +570,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -586,12 +590,14 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   isReversed: 0
   entrancePos: {fileID: 6167663497021463631}
   jobPos: {fileID: 589561476652896624}
   entrancePosNodeMirror: {fileID: 4789396265425969915}
   jobNodePosMirror: {fileID: 3194025841337618719}
   isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1 &1143239967722608353
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +613,7 @@ GameObject:
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6650896714528296129
 Transform:
   m_ObjectHideFlags: 0
@@ -668,6 +674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showThisOnly: 0
 --- !u!114 &5946027540178116208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -739,6 +746,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -758,6 +766,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -777,6 +786,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -796,12 +806,14 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   isReversed: 0
   entrancePos: {fileID: 2671039530074739788}
   jobPos: {fileID: 1143239967722608353}
   entrancePosNodeMirror: {fileID: 3779233962501798366}
   jobNodePosMirror: {fileID: 326268920149508276}
   isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1 &2671039530074739788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,6 +1290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showThisOnly: 0
 --- !u!114 &2869754999951505624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1349,6 +1362,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -1368,6 +1382,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -1387,6 +1402,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -1406,12 +1422,14 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   isReversed: 0
   entrancePos: {fileID: 6167663497021463631}
   jobPos: {fileID: 1143239967722608353}
   entrancePosNodeMirror: {fileID: 7938993295663051434}
   jobNodePosMirror: {fileID: 7627022172929126374}
   isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1 &5650468557562996484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1508,7 +1526,7 @@ GameObject:
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5585315732023558808
 Transform:
   m_ObjectHideFlags: 0
@@ -1547,7 +1565,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6171054985292971777}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1850003, y: 0.030000258, z: 0.963}
+  m_LocalPosition: {x: -1.1849998, y: 0.030000044, z: 0.963}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 8897162242395730096}
@@ -1577,7 +1595,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6584148278321675246}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6049994, y: 0.030000258, z: -0.71700007}
+  m_LocalPosition: {x: -1.6049998, y: 0.030000044, z: -0.71700007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8897162242395730096}
@@ -1717,6 +1735,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -1736,6 +1755,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -1755,6 +1775,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -1769,11 +1790,12 @@ MonoBehaviour:
       container: {fileID: 0}
       containerEntrance: {fileID: 0}
       characterGameObject: {fileID: 0}
-    jobState: 0
+    jobState: 1
     staminaReductionRate: 0.1
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   - jobName: Blumber
     jobAnimation: 5
     jobAnimationClip: {fileID: 0}
@@ -1830,6 +1852,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -1849,6 +1872,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -1868,6 +1892,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -1887,6 +1912,7 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 1
 --- !u!114 &64037089175141645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2139,6 +2165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showThisOnly: 0
 --- !u!114 &9153255031297281492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2210,6 +2237,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -2229,6 +2257,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -2248,6 +2277,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -2267,12 +2297,14 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 1
   isReversed: 0
   entrancePos: {fileID: 2671039530074739788}
   jobPos: {fileID: 589561476652896624}
   entrancePosNodeMirror: {fileID: 6584148278321675246}
   jobNodePosMirror: {fileID: 6171054985292971777}
   isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1 &7938993295663051434
 GameObject:
   m_ObjectHideFlags: 0

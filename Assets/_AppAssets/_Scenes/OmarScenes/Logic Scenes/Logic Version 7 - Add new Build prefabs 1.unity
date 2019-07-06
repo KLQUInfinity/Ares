@@ -781,11 +781,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.52
       objectReference: {fileID: 0}
-    - target: {fileID: 2481771318488808862, guid: 7e905828b09b52a429146966a7f30ca6,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.077272
-      objectReference: {fileID: 0}
     - target: {fileID: 6116198738726740886, guid: 7e905828b09b52a429146966a7f30ca6,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -831,6 +826,11 @@ PrefabInstance:
       propertyPath: producitonResource
       value: 
       objectReference: {fileID: 5409469690705242255}
+    - target: {fileID: 2481771318488808862, guid: 7e905828b09b52a429146966a7f30ca6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.077272
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e905828b09b52a429146966a7f30ca6, type: 3}
 --- !u!4 &189192508 stripped
@@ -2828,6 +2828,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -2847,6 +2848,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -2866,6 +2868,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -2885,6 +2888,7 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   - jobName: 
     jobAnimation: 0
     jobAnimationClip: {fileID: 0}
@@ -2941,6 +2945,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -2960,6 +2965,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -2979,6 +2985,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -2998,6 +3005,7 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
 --- !u!1 &1042924976
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,30 +3724,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1743153262, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 393008788, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1330705578, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1498209931, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1551315415, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 2119870465, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 4082756406682298657, guid: ac94fd0d54697894e828f65189e8fd04,
         type: 3}
       propertyPath: m_Mesh
@@ -3785,6 +3769,35 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 210372475}
+    - target: {fileID: 1843295753732254427, guid: ac94fd0d54697894e828f65189e8fd04,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743153262, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 393008788, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330705578, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498209931, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1551315415, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2119870465, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 393978277, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -3924,11 +3937,6 @@ PrefabInstance:
     - target: {fileID: 2116818849, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 1843295753732254427, guid: ac94fd0d54697894e828f65189e8fd04,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
