@@ -5,7 +5,6 @@ using TMPro;
 [RequireComponent(typeof(CharController))]
 public class Dragable_Item : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI test;
     [SerializeField] private GameObject hollow;
 
     private float distance;
@@ -120,80 +119,81 @@ public class Dragable_Item : MonoBehaviour
     /// </summary>
     private void OnMouseUp()
     {
-        try
+
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
         {
-            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
             {
+                if (hit.collider != null)
 
-                if (Physics.Raycast(ray, out hit))
-                {
-                    if (hit.collider != null)
-
-                        if (hit.transform.tag.Equals("Room") /*&& hit.transform.name != containerRoom.name*/)
+                    if (hit.transform.tag.Equals("Room") /*&& hit.transform.name != containerRoom.name*/)
+                    {
+                        GameObject oldContainer;
+                        if (oldContainer = LevelManager.Instance.getCharacterPhysicalContainer(this.gameObject))
                         {
-                            GameObject oldContainer;
-                            if (oldContainer=LevelManager.Instance.getCharacterPhysicalContainer(this.gameObject))
+                            if (oldContainer == hit.collider.gameObject)
                             {
-                                if (oldContainer == hit.collider.gameObject)
-                                {
-                                    resetDragabbleItemData(); //Cancel Drag operation.
-                                    return;                                }
+                                resetDragabbleItemData(); //Cancel Drag operation.
+                                return;
                             }
-                            if (!LevelManager.Instance.roomManager.getRoomWithGameObject(hit.collider.gameObject).roomGameObject)
-                            {
-                                LevelManager.Instance.CalculateThisRoomBounds(new Room(hit.collider.gameObject));
-                            }
-
-                            RoomEntity roomEntity = hit.transform.GetComponentInChildren<RoomEntity>();
-                            if (LevelManager.Instance.roomManager.getRoomWithGameObject(roomEntity.roomGameObject)
-                                .searchForFreeJob())
-                            {
-                                //this.GetComponent<CharacterEntity>().followRoomInnerPath(roomEntity, true);
-                                // ->>>>> LevelManager.Instance.characterManager.getCharacterWithGameObject(gameObject).containerEntrance= Calculated entrance to get out from.
-                                Slot s = roomEntity.mySlot;
-                                myCharC.GenerateFollowPathWayPoins(
-                                    s.MySlotManger.transform.GetSiblingIndex(),
-                                    s.MyDir,
-                                    s.transform.GetSiblingIndex(),
-                                    hit.transform.GetComponentInChildren<RoomEntity>()
-                                    );
-                                myCharC.MoveInPath();
-
-                                if (containerRoom)
-                                {
-                                    LevelManager.Instance.roomManager.evacuateFromARoom(containerRoom, this.gameObject);
-                                    containerRoom = null;
-                                }
-                            }
-                            else
-                            {
-                                /// <summary>
-                                /// Ask the developer whether or not to proceed and which 
-                                /// character he wants to remove from the room and put this character in his place.
-
-                                /// - if he chose to proceed and chose a character to be evacuated then the evacuated character
-                                /// Has to be evacutaed to the hibernation room back again, and this character will have his position.
-                                ///           - At this point will assign to the local variable job the job of the evacyated embloyee 
-                                ///           and the code proceeds which means that the job variable won't be equal to null any more. (Omar)
-                                ///           - relocate the evacuated character using the navigation methods' chain. (Bendary)
-                                /// - If he chose not to proceed then will do nothing in code and will cancel the navigation process(Bendary)
-                                /// </summary>
-                            }
-
                         }
-                }
-            }
+                        if (!LevelManager.Instance.roomManager.getRoomWithGameObject(hit.collider.gameObject).roomGameObject)
+                        {
+                            LevelManager.Instance.CalculateThisRoomBounds(new Room(hit.collider.gameObject));
+                        }
 
-            resetDragabbleItemData(); //Cancel Drag operation.
+                        RoomEntity roomEntity = hit.transform.GetComponentInChildren<RoomEntity>();
+                        if (LevelManager.Instance.roomManager.getRoomWithGameObject(roomEntity.roomGameObject)
+                            .searchForFreeJob())
+                        {
+                            //this.GetComponent<CharacterEntity>().followRoomInnerPath(roomEntity, true);
+                            // ->>>>> LevelManager.Instance.characterManager.getCharacterWithGameObject(gameObject).containerEntrance= Calculated entrance to get out from.
+
+                            if (oldContainer.name.Equals("TrainningRoom"))
+                            {
+                                GetComponent<Animator>().runtimeAnimatorController = myCharC.myAnimController;
+                            }
+
+                            Slot s = roomEntity.mySlot;
+                            myCharC.GenerateFollowPathWayPoins(
+                                s.MySlotManger.transform.GetSiblingIndex(),
+                                s.MyDir,
+                                s.transform.GetSiblingIndex(),
+                                hit.transform.GetComponentInChildren<RoomEntity>()
+                                );
+                            myCharC.MoveInPath();
+
+                            if (containerRoom)
+                            {
+                                LevelManager.Instance.roomManager.evacuateFromARoom(containerRoom, this.gameObject);
+                                containerRoom = null;
+                            }
+                        }
+                        else
+                        {
+                            /// <summary>
+                            /// Ask the developer whether or not to proceed and which 
+                            /// character he wants to remove from the room and put this character in his place.
+
+                            /// - if he chose to proceed and chose a character to be evacuated then the evacuated character
+                            /// Has to be evacutaed to the hibernation room back again, and this character will have his position.
+                            ///           - At this point will assign to the local variable job the job of the evacyated embloyee 
+                            ///           and the code proceeds which means that the job variable won't be equal to null any more. (Omar)
+                            ///           - relocate the evacuated character using the navigation methods' chain. (Bendary)
+                            /// - If he chose not to proceed then will do nothing in code and will cancel the navigation process(Bendary)
+                            /// </summary>
+                        }
+
+                    }
+            }
         }
-        catch (Exception c)
-        {
-            test.text = c.ToString();
-        }
+
+        resetDragabbleItemData(); //Cancel Drag operation.
     }
 
-    public void resetDragabbleItemData() {
+    public void resetDragabbleItemData()
+    {
         hollow.transform.localPosition = Vector3.zero;
         hollow.SetActive(false);
         LevelManager.Instance.setDragModeOff();

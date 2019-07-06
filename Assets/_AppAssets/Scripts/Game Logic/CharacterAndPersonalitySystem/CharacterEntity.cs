@@ -212,7 +212,7 @@ public class CharacterEntity : MonoBehaviour
     /// </summary>
     private void startJobWorkFlow()
     {
-        if (character.job!=null)
+        if (character.job != null)
         {
             if (character.job.jobWorkflow != null)
             {
@@ -254,6 +254,16 @@ public class CharacterEntity : MonoBehaviour
             //GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
         updateJobInitialDirection();
+
+        if (character.container.name.Equals("TrainningRoom"))
+        {
+            // Zoom in to that room
+
+            // Switch to training time state
+
+            // Open the ui
+            ZUIManager.Instance.OpenPopup("TrainingPopup");
+        }
     }
 
     public void updateJobInitialDirection()

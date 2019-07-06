@@ -40,6 +40,8 @@ public class CharController : MonoBehaviour
     [SerializeField] private List<Vector3> followingPath;
     #endregion
 
+    [HideInInspector] public RuntimeAnimatorController myAnimController;
+
     private Rigidbody myRB;
     private bool isMovePath;
     [SerializeField] private int pathIndex;
@@ -53,6 +55,7 @@ public class CharController : MonoBehaviour
         followingPath = new List<Vector3>();
         curPos = transform.position;
         cAnimFSM = GetComponent<CharacterAnimationFSM>();
+        myAnimController = GetComponent<Animator>().runtimeAnimatorController;
     }
 
     private void Update()

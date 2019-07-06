@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 625488201829187804}
   - component: {fileID: 625488201829187617}
   - component: {fileID: 625488201829187806}
+  - component: {fileID: 1459794859620677167}
   m_Layer: 10
   m_Name: Character
   m_TagString: Character
@@ -161,7 +162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5305af0294bd673468800762897e1ea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: {fileID: 0}
   hollow: {fileID: 625488203399646648}
   isDragable: 0
   timeToDrag: 0
@@ -241,6 +241,7 @@ MonoBehaviour:
                   jobState: 0
                   staminaReductionRate: 0
                   jobAcquisionHour: 0
+                  jobFacingDirection: 0
                 jobHourTemp: 0
                 productivity: 0
                 characterLevel:
@@ -260,6 +261,7 @@ MonoBehaviour:
               jobRoom: {fileID: 0}
               jobAcquisionHour: 0
               jobPosition: {fileID: 0}
+              jobFacingDirection: 0
             jobHourTemp: 0
             productivity: 0
             characterLevel:
@@ -279,6 +281,7 @@ MonoBehaviour:
           jobRoom: {fileID: 0}
           jobAcquisionHour: 0
           jobPosition: {fileID: 0}
+          jobFacingDirection: 0
         jobHourTemp: 0
         productivity: 0
         characterLevel:
@@ -298,6 +301,7 @@ MonoBehaviour:
       jobRoom: {fileID: 0}
       jobAcquisionHour: 0
       jobPosition: {fileID: 0}
+      jobFacingDirection: 0
     jobHourTemp: 0
     productivity: 0
     characterLevel:
@@ -378,6 +382,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1459794859620677167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625488201829187797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa75f1ec6c34a634b881aa3d8461c106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCharacterAnimationState: 0
+  fireFightingTrainingAnimator: {fileID: 0}
 --- !u!1 &625488202097439154
 GameObject:
   m_ObjectHideFlags: 0
