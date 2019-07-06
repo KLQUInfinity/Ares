@@ -6,6 +6,6 @@ public class BoxHandler : MonoBehaviour
 {
     private void OnCollisionEnter(Collision collision)
     {
-        
+
     }
 }

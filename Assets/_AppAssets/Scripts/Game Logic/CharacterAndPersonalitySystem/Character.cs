@@ -36,7 +36,7 @@ public class Character
     public GameObject container;
     public GameObject containerEntrance;
     [HideInInspector]
-    Room containerRoom;
+    public Room containerRoom;
 
 
     //-------------------------------------------

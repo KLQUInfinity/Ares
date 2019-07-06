@@ -475,6 +475,7 @@ MonoBehaviour:
   job:
     jobName: Blumber
     jobAnimation: 5
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -486,6 +487,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -497,6 +499,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -508,6 +511,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -681,6 +685,7 @@ MonoBehaviour:
   job:
     jobName: Carbenter
     jobAnimation: 4
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -692,6 +697,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -703,6 +709,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -714,6 +721,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -1287,6 +1295,7 @@ MonoBehaviour:
   job:
     jobName: Carbenter
     jobAnimation: 4
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -1298,6 +1307,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -1309,6 +1319,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -1320,6 +1331,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -1651,6 +1663,7 @@ MonoBehaviour:
   roomJobs:
   - jobName: Carbenter
     jobAnimation: 4
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -1662,6 +1675,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -1673,6 +1687,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -1684,6 +1699,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -1760,6 +1776,7 @@ MonoBehaviour:
     jobPosition: {fileID: 0}
   - jobName: Blumber
     jobAnimation: 5
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -1771,6 +1788,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -1782,6 +1800,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -1793,6 +1812,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -2136,6 +2156,7 @@ MonoBehaviour:
   job:
     jobName: Blumber
     jobAnimation: 5
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -2147,6 +2168,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -2158,6 +2180,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -2169,6 +2192,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -2580,18 +2604,58 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6079430438758525827, guid: e69d1403de8343e4485d347b860475f9,
         type: 3}
-      propertyPath: m_Enabled
+      propertyPath: m_LODs.Array.data[1].renderers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079430438758525827, guid: e69d1403de8343e4485d347b860475f9,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].renderers.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079430438758525827, guid: e69d1403de8343e4485d347b860475f9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079430438758525827, guid: e69d1403de8343e4485d347b860475f9,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.97754765
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079430438758525827, guid: e69d1403de8343e4485d347b860475f9,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.76205367
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079430438758525827, guid: e69d1403de8343e4485d347b860475f9,
+        type: 3}
+      propertyPath: m_LocalReferencePoint.y
+      value: -0.059194088
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079430438758525827, guid: e69d1403de8343e4485d347b860475f9,
+        type: 3}
+      propertyPath: m_LocalReferencePoint.z
+      value: -0.014765024
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079430438758525827, guid: e69d1403de8343e4485d347b860475f9,
+        type: 3}
+      propertyPath: m_Size
+      value: 27.96085
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079430438758525827, guid: e69d1403de8343e4485d347b860475f9,
+        type: 3}
+      propertyPath: m_LocalReferencePoint.x
+      value: 0.022537231
       objectReference: {fileID: 0}
     - target: {fileID: 5191919623848266637, guid: e69d1403de8343e4485d347b860475f9,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5191919623848266635, guid: e69d1403de8343e4485d347b860475f9,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e69d1403de8343e4485d347b860475f9, type: 3}

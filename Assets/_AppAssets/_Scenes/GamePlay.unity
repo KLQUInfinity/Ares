@@ -20,13 +20,13 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.6320754, g: 0.61120504, b: 0.61120504, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 860a66ca4259b384f9ec01b687f71c3c, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 867234a7e3cf39a4b9683a8cfb1e8c9a, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -658,7 +658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 177638, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1338,7 +1338,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-104756
+  m_Name: pb_Mesh-12342
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -2044,7 +2044,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-104760
+  m_Name: pb_Mesh-12346
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -3991,7 +3991,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-104762
+  m_Name: pb_Mesh-12348
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -4151,7 +4151,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-104758
+  m_Name: pb_Mesh-12344
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -7301,7 +7301,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-104770
+  m_Name: pb_Mesh-12356
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -9186,7 +9186,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!1 &934555743
 GameObject:
   m_ObjectHideFlags: 0
@@ -9556,7 +9556,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-104768
+  m_Name: pb_Mesh-12354
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -13206,7 +13206,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-104764
+  m_Name: pb_Mesh-12350
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -14768,26 +14768,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1743153264, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
-      propertyPath: buildPanel
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1743153264, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
-      propertyPath: buildBtnObj
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1743153264, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
-      propertyPath: zUI
-      value: 
-      objectReference: {fileID: 1490598531}
-    - target: {fileID: 1743153264, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
-      propertyPath: bg
-      value: 
-      objectReference: {fileID: 871529839}
-    - target: {fileID: 1743153264, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
-      propertyPath: closeBuildingBtnObj
-      value: 
-      objectReference: {fileID: 1258732639}
     - target: {fileID: 4082756406682298657, guid: ac94fd0d54697894e828f65189e8fd04,
         type: 3}
       propertyPath: m_Mesh
@@ -14833,6 +14813,26 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2111453949}
+    - target: {fileID: 1743153264, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
+      propertyPath: buildPanel
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743153264, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
+      propertyPath: buildBtnObj
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1743153264, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
+      propertyPath: zUI
+      value: 
+      objectReference: {fileID: 1490598531}
+    - target: {fileID: 1743153264, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
+      propertyPath: bg
+      value: 
+      objectReference: {fileID: 871529839}
+    - target: {fileID: 1743153264, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
+      propertyPath: closeBuildingBtnObj
+      value: 
+      objectReference: {fileID: 1258732639}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac94fd0d54697894e828f65189e8fd04, type: 3}
 --- !u!114 &1391103870 stripped
@@ -16016,7 +16016,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-104766
+  m_Name: pb_Mesh-12352
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -16468,7 +16468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea4ef722a9527e5449a9cb0402a09be7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testing: 0
+  testing: 1
   eventsCounter: 0
   gameplayTimeline: {fileID: 0}
   resourcesManager: {fileID: 1447483448}
@@ -18271,7 +18271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4207815f11b84a944b701d5b7cfef35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IsSaveData: 0
+  IsSaveData: 1
 --- !u!114 &1661261028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18477,7 +18477,7 @@ MonoBehaviour:
   roomManager: {fileID: 1661261028}
   characterManager: {fileID: 1661261029}
   controllersStateMachine: {fileID: 1661261033}
-  Testing: 0
+  Testing: 1
   FPSGraphTools: {fileID: 131172945}
   TopBoundry: {fileID: 53550370}
   BottomBoundry: {fileID: 1349825382}
@@ -18938,7 +18938,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-104694
+  m_Name: pb_Mesh-12200
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -22430,7 +22430,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-104772
+  m_Name: pb_Mesh-12358
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2

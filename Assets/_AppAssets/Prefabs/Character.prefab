@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 625488201829187804}
   - component: {fileID: 625488201829187617}
   - component: {fileID: 625488201829187806}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Character
   m_TagString: Character
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 635499709
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300008, guid: a68981efbbff9404eab213176a366544, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5305af0294bd673468800762897e1ea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  test: {fileID: 0}
   hollow: {fileID: 625488203399646648}
   isDragable: 0
   timeToDrag: 0
@@ -201,6 +202,7 @@ MonoBehaviour:
     job:
       jobName: 
       jobAnimation: 0
+      jobAnimationClip: {fileID: 0}
       jobHolder:
         name: 
         title: 
@@ -212,6 +214,7 @@ MonoBehaviour:
         job:
           jobName: 
           jobAnimation: 0
+          jobAnimationClip: {fileID: 0}
           jobHolder:
             name: 
             title: 
@@ -223,6 +226,7 @@ MonoBehaviour:
             job:
               jobName: 
               jobAnimation: 0
+              jobAnimationClip: {fileID: 0}
               jobHolder:
                 name: 
                 title: 
@@ -311,6 +315,7 @@ MonoBehaviour:
   characterAnimationFSM: {fileID: 0}
   characterController: {fileID: 0}
   isMovingInnerMovement: 0
+  previousFramePos: {x: 0, y: 0, z: 0}
 --- !u!114 &625488201829187807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -350,10 +355,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCharacterAnimationState: 0
-  horizontalDirection: 0
+  horizontalDirection: 1
   verticalDirection: 0
   characterAnimator: {fileID: 0}
-  walk: {fileID: 0}
+  originalAnimationClipList: []
 --- !u!95 &625488201829187806
 Animator:
   serializedVersion: 3
@@ -382,7 +387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 625488202097439157}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 625488203399646650}
   - component: {fileID: 625488203399646651}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Hollow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +474,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 635499709
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: f3954cd83f16f6143affc9f5f5a0b003, type: 3}
   m_Color: {r: 0, g: 1, b: 0.058823586, a: 1}

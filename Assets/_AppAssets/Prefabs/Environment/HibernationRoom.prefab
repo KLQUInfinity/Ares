@@ -224,6 +224,7 @@ MonoBehaviour:
   job:
     jobName: 
     jobAnimation: 0
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -235,6 +236,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -246,6 +248,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -257,6 +260,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -1806,6 +1810,7 @@ MonoBehaviour:
   job:
     jobName: 
     jobAnimation: 0
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -1817,6 +1822,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -1828,6 +1834,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -1839,6 +1846,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -1982,6 +1990,7 @@ MonoBehaviour:
   job:
     jobName: 
     jobAnimation: 0
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -1993,6 +2002,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -2004,6 +2014,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -2015,6 +2026,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -2158,6 +2170,7 @@ MonoBehaviour:
   job:
     jobName: 
     jobAnimation: 0
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -2169,6 +2182,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -2180,6 +2194,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -2191,6 +2206,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -2545,17 +2561,37 @@ PrefabInstance:
     - target: {fileID: 3695358671655894683, guid: 826af257dd316254b928f7cc1cf26c24,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3695358671655894681, guid: 826af257dd316254b928f7cc1cf26c24,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4933423223330968612, guid: 826af257dd316254b928f7cc1cf26c24,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933423223330968612, guid: 826af257dd316254b928f7cc1cf26c24,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.9814308
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933423223330968612, guid: 826af257dd316254b928f7cc1cf26c24,
+        type: 3}
+      propertyPath: m_LocalReferencePoint.y
+      value: -0.059194088
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933423223330968612, guid: 826af257dd316254b928f7cc1cf26c24,
+        type: 3}
+      propertyPath: m_Size
+      value: 42.223675
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933423223330968612, guid: 826af257dd316254b928f7cc1cf26c24,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.9015
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 826af257dd316254b928f7cc1cf26c24, type: 3}

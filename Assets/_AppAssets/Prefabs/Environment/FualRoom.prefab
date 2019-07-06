@@ -63,6 +63,7 @@ MonoBehaviour:
   job:
     jobName: Blumber
     jobAnimation: 5
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -74,6 +75,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -85,6 +87,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -96,6 +99,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -113,6 +117,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -132,6 +137,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -151,6 +157,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -170,12 +177,14 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   isReversed: 0
   entrancePos: {fileID: 1645902176398250625}
   jobPos: {fileID: 6022785575654510765}
   entrancePosNodeMirror: {fileID: 2445422385301714617}
   jobNodePosMirror: {fileID: 9046830606303984183}
   isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1 &165874765434420956
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +278,7 @@ MonoBehaviour:
   job:
     jobName: Carbenter
     jobAnimation: 4
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -280,6 +290,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -291,6 +302,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -302,6 +314,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -319,6 +332,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -338,6 +352,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -357,6 +372,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -376,12 +392,14 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   isReversed: 0
   entrancePos: {fileID: 5943045071881680469}
   jobPos: {fileID: 5441446563201808362}
   entrancePosNodeMirror: {fileID: 4965925583359945289}
   jobNodePosMirror: {fileID: 5674607849134245762}
   isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1 &572104496430283211
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1229,7 @@ MonoBehaviour:
   job:
     jobName: Carbenter
     jobAnimation: 4
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -1222,6 +1241,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -1233,6 +1253,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -1244,6 +1265,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -1261,6 +1283,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -1280,6 +1303,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -1299,6 +1323,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -1318,12 +1343,14 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   isReversed: 0
   entrancePos: {fileID: 1645902176398250625}
   jobPos: {fileID: 5441446563201808362}
   entrancePosNodeMirror: {fileID: 6858061654532499136}
   jobNodePosMirror: {fileID: 6745026035502674273}
   isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1 &4694277471580473583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,6 +1681,7 @@ MonoBehaviour:
   job:
     jobName: Blumber
     jobAnimation: 5
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -1665,6 +1693,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -1676,6 +1705,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -1687,6 +1717,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -1704,6 +1735,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -1723,6 +1755,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -1742,6 +1775,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -1761,12 +1795,14 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   isReversed: 0
   entrancePos: {fileID: 5943045071881680469}
   jobPos: {fileID: 6022785575654510765}
   entrancePosNodeMirror: {fileID: 165874765434420956}
   jobNodePosMirror: {fileID: 1185976089073545140}
   isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1 &6022785575654510765
 GameObject:
   m_ObjectHideFlags: 0
@@ -1903,6 +1939,7 @@ MonoBehaviour:
   roomJobs:
   - jobName: Carbenter
     jobAnimation: 4
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -1914,6 +1951,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -1925,6 +1963,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -1936,6 +1975,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -1953,6 +1993,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -1972,6 +2013,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -1991,6 +2033,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -2010,8 +2053,10 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   - jobName: Blumber
     jobAnimation: 5
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -2023,6 +2068,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -2034,6 +2080,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -2045,6 +2092,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -2062,6 +2110,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -2081,6 +2130,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -2100,6 +2150,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -2119,6 +2170,7 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
 --- !u!1 &6745026035502674273
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,17 +2648,32 @@ PrefabInstance:
     - target: {fileID: 2732995174177359713, guid: 14b1f3b7dbb63de4c856e6801bc8e6d7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2732995174177359719, guid: 14b1f3b7dbb63de4c856e6801bc8e6d7,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2891381628953565733, guid: 14b1f3b7dbb63de4c856e6801bc8e6d7,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891381628953565733, guid: 14b1f3b7dbb63de4c856e6801bc8e6d7,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.9814308
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891381628953565733, guid: 14b1f3b7dbb63de4c856e6801bc8e6d7,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.57630205
+      objectReference: {fileID: 0}
+    - target: {fileID: 2891381628953565733, guid: 14b1f3b7dbb63de4c856e6801bc8e6d7,
+        type: 3}
+      propertyPath: m_LODs.Array.data[2].screenRelativeHeight
+      value: 0.040146895
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14b1f3b7dbb63de4c856e6801bc8e6d7, type: 3}

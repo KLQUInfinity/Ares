@@ -651,6 +651,7 @@ MonoBehaviour:
   job:
     jobName: Carbenter
     jobAnimation: 4
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -662,6 +663,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -673,6 +675,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -684,6 +687,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -1033,6 +1037,7 @@ MonoBehaviour:
   roomJobs:
   - jobName: Carbenter
     jobAnimation: 4
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -1044,6 +1049,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -1055,6 +1061,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -1066,6 +1073,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -1142,6 +1150,7 @@ MonoBehaviour:
     jobPosition: {fileID: 0}
   - jobName: Blumber
     jobAnimation: 5
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -1153,6 +1162,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -1164,6 +1174,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -1175,6 +1186,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -1517,6 +1529,7 @@ MonoBehaviour:
   job:
     jobName: Blumber
     jobAnimation: 5
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -1528,6 +1541,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -1539,6 +1553,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -1550,6 +1565,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -2000,6 +2016,7 @@ MonoBehaviour:
   job:
     jobName: Carbenter
     jobAnimation: 4
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -2011,6 +2028,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -2022,6 +2040,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -2033,6 +2052,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -2828,6 +2848,7 @@ MonoBehaviour:
   job:
     jobName: Blumber
     jobAnimation: 5
+    jobAnimationClip: {fileID: 0}
     jobHolder:
       name: 
       title: 
@@ -2839,6 +2860,7 @@ MonoBehaviour:
       job:
         jobName: 
         jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
         jobHolder:
           name: 
           title: 
@@ -2850,6 +2872,7 @@ MonoBehaviour:
           job:
             jobName: 
             jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
             jobHolder:
               name: 
               title: 
@@ -2861,6 +2884,7 @@ MonoBehaviour:
               job:
                 jobName: 
                 jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
                 jobHolder:
                   name: 
                   title: 
@@ -3016,17 +3040,27 @@ PrefabInstance:
     - target: {fileID: 412174922319337246, guid: f5d0b41c5e5077946be058e742a50c96,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 412174922319337240, guid: f5d0b41c5e5077946be058e742a50c96,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 412174922334494618, guid: f5d0b41c5e5077946be058e742a50c96,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 412174922334494618, guid: f5d0b41c5e5077946be058e742a50c96,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.97754765
+      objectReference: {fileID: 0}
+    - target: {fileID: 412174922334494618, guid: f5d0b41c5e5077946be058e742a50c96,
+        type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.8848132
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5d0b41c5e5077946be058e742a50c96, type: 3}
