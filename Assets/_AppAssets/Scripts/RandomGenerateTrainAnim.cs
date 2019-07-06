@@ -10,7 +10,7 @@ public class RandomGenerateTrainAnim : MonoBehaviour
     [SerializeField] private RoomEntity trainingRoom;
 
     [SerializeField] private RuntimeAnimatorController charTrainAnime;
-    private Button[] animBtns;
+    [SerializeField] private Button[] animBtns;
 
     private void Start()
     {
@@ -32,17 +32,19 @@ public class RandomGenerateTrainAnim : MonoBehaviour
 
 
         int index;
+
         for (int i = 0; i < animControllers.Length; i++)
         {
             // Randomize the animation controller
             index = Random.Range(0, objs.Count);
             animBtnObj[i].runtimeAnimatorController = animControllers[objs[index]];
-            
+            int slot = objs[index]+1;
+            print(index + "  " + (objs[index] + 1));
             // Add listener to button
-            animBtns[i].onClick.AddListener(() => charcter.GetComponent<TrainingAnimationsManager>().runThisAnimation(objs[index] + 1));
+            animBtns[i].onClick.AddListener(() => charcter.GetComponent<TrainingAnimationsManager>().runThisAnimation(slot));
 
             // Remove the index from the list
-            objs.RemoveAt(index);
+            objs.Remove(objs[index]);
         }
     }
 }

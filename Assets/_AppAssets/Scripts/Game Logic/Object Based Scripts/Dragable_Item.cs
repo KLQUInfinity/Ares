@@ -153,6 +153,7 @@ public class Dragable_Item : MonoBehaviour
                             if (oldContainer.name.Equals("TrainningRoom"))
                             {
                                 GetComponent<Animator>().runtimeAnimatorController = myCharC.myAnimController;
+                                oldContainer.transform.GetChild(1).GetChild(0).gameObject.SetActive(false);
                             }
 
                             Slot s = roomEntity.mySlot;
