@@ -88,7 +88,9 @@ public class BuildManager : MonoBehaviour
                         ZUIManager.Instance.ClosePopup("BuildPopup");
                         bg.SetActive(false);
 
+
                         // Check in that the slot is taken
+                        hit.transform.GetComponent<Slot>().RoomObj = capsole;
                         hit.transform.GetComponent<Slot>().BuildThisSlot(currChosenBuildPrefab);
                     }
                 }
