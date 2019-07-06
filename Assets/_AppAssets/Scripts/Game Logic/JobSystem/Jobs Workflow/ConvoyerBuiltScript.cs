@@ -53,19 +53,20 @@ public class ConvoyerBuiltScript : MonoBehaviour, IJobWorkflow
     {
         if (conveyorBeltJob.jobState == JobState.Occupied)
         {
-            if (!isAnimationClipSwaped)
+
+            if (boxesQueue.Count > 0)
             {
-                isAnimationClipSwaped = true;
-            }
-            if (boxesQueue.Count>0)
-            {
+                if (!isAnimationClipSwaped)
+                {
+                    changeAnimationToWalk();
+                }
                 switch (boxesQueue.Peek().boxState)
                 {
                     case JobLoadState.created:
                         changeAnimationToIdle();
                         break;
                     case JobLoadState.moving:
-                        if (!isBoxCarried && currentWorkflowState!= JobWorkflowSate.pause)
+                        if (!isBoxCarried && currentWorkflowState != JobWorkflowSate.pause)
                         {
                             changeAnimationToIdle();
                         }
@@ -98,7 +99,10 @@ public class ConvoyerBuiltScript : MonoBehaviour, IJobWorkflow
             if (boxesQueue.Count != 0)
             {
                 currentWorkflowState = JobWorkflowSate.start;
+                Destroy(boxesQueue.Peek().gameObject);
                 boxesQueue = new Queue<ResourceBox>();
+                isAnimationClipSwaped = false;
+                isBoxCarried = false;
             }
 
         }
@@ -131,12 +135,19 @@ public class ConvoyerBuiltScript : MonoBehaviour, IJobWorkflow
         //updateCharacterAnimator();
         changeAnimationToJob();
         StartCoroutine("continueWorkflow");
+
     }
 
-    private void changeAnimationToIdle() {
+    private void changeAnimationToWalk()
+    {
+        conveyorBeltJob.jobHolder.characterGameObject.GetComponent<CharacterEntity>().characterAnimationFSM.changeAnimationStateTo(CharacterAnimationsState.Walking);
+    }
+    private void changeAnimationToIdle()
+    {
         conveyorBeltJob.jobHolder.characterGameObject.GetComponent<CharacterEntity>().characterAnimationFSM.changeAnimationStateTo(waitingAnimationState);
     }
-    private void changeAnimationToJob() {
+    private void changeAnimationToJob()
+    {
         conveyorBeltJob.jobHolder.characterGameObject.GetComponent<CharacterEntity>().characterAnimationFSM.changeAnimationStateTo(conveyorBeltJob.jobAnimation);
     }
     private void updateCharacterAnimator()
@@ -145,7 +156,8 @@ public class ConvoyerBuiltScript : MonoBehaviour, IJobWorkflow
         conveyorBeltJob.jobHolder.characterGameObject.GetComponent<CharacterEntity>().characterAnimationFSM.populateJobAnimationClip(conveyorBeltJob.jobHolder.job.jobAnimation, conveyorBeltJob.jobAnimationClip);
     }
 
-    IEnumerator continueWorkflow() {
+    IEnumerator continueWorkflow()
+    {
         yield return new WaitForSeconds(0.8f);
         isBoxCarried = true;
     }
@@ -154,6 +166,8 @@ public class ConvoyerBuiltScript : MonoBehaviour, IJobWorkflow
         ResourceBox aBox = instantiateResourceBox();
         if (aBox != null)
         {
+            changeAnimationToIdle();
+            isAnimationClipSwaped = true;
             boxesQueue.Enqueue(aBox);
             updateWorkflow();
         }
@@ -182,7 +196,6 @@ public class ConvoyerBuiltScript : MonoBehaviour, IJobWorkflow
     public void updateWorkflow()
     {
         currentWorkflowState = JobWorkflowSate.update;
-
         if (isConveyorBuildWorking)
         {
             //if (boxesQueue.Peek().boxState != JobLoadState.moving)

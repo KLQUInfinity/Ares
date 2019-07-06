@@ -2,6 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+public enum RoomEntrance
+{
+    LeftEntrance,
+    RightEntrance
+}
+
 [RequireComponent(typeof(CharacterAnimationFSM))]
 public class CharacterEntity : MonoBehaviour
 {
@@ -11,13 +18,14 @@ public class CharacterEntity : MonoBehaviour
     public CharController characterController;
     [HideInInspector]
     public bool isMovingInnerMovement;
+    public bool isMovingOuterMovement;
     private float walkingSpeed;
 
     //------------------------------------------------
     public Vector3 previousFramePos;
 
     //------------------------------------------------
-    HorizontalDirecton roomSlotDirection;
+    HorizontalDirecton roomEntrance;
     // Start is called before the first frame update
 
     void Start()
@@ -29,39 +37,46 @@ public class CharacterEntity : MonoBehaviour
         LevelManager.Instance.characterManager.characters.Add(character);
         characterAnimationFSM = GetComponent<CharacterAnimationFSM>();
         characterController = GetComponent<CharController>();
-        previousFramePos = transform.position;
+        previousFramePos = transform.localPosition;
         fillCharacterData();
     }
 
     private void Update()
     {
         updateCharacterDirectionHorizontally();
+        if (!isMovingOuterMovement)
+        {
+            updateCharacterDirectionVertically();
+        }
     }
     #region Character direction adjustment each frame logic
-
+    //float 
     public void updateCharacterDirectionHorizontally()
     {
-        if (transform.position != previousFramePos)
+        if (transform.hasChanged)
         {
-            //if (characterAnimationFSM.currentCharacterAnimationState!=CharacterAnimationsState.Floating)
+            if (transform.position != previousFramePos)
             {
-                if (mapPositionsDifference(transform.position.x, previousFramePos.x) > 0 && characterAnimationFSM.horizontalDirection == HorizontalDirecton.Left)
+                //if (characterAnimationFSM.currentCharacterAnimationState != CharacterAnimationsState.Floating)
                 {
-                    transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0, transform.rotation.z));
-                    characterAnimationFSM.horizontalDirection = HorizontalDirecton.Right;
+                    if (mapPositionsDifference(transform.position.x, previousFramePos.x) > 0 && characterAnimationFSM.horizontalDirection == HorizontalDirecton.Left)
+                    {
+                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0, transform.rotation.z));
+                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Right;
+                        //applyHorizontalDirectionAccordingToroomEntrance(HorizontalDirecton.Right);
 
-                }
-                else if (mapPositionsDifference(transform.position.x, previousFramePos.x) < 0 && characterAnimationFSM.horizontalDirection == HorizontalDirecton.Right)
-                {
-                    transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 180, transform.rotation.z));
-                    characterAnimationFSM.horizontalDirection = HorizontalDirecton.Left;
-
+                    }
+                    else if (mapPositionsDifference(transform.position.x, previousFramePos.x) < 0 && characterAnimationFSM.horizontalDirection == HorizontalDirecton.Right)
+                    {
+                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 180, transform.rotation.z));
+                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Left;
+                        //applyHorizontalDirectionAccordingToroomEntrance(HorizontalDirecton.Left);
+                    }
                 }
             }
-
             previousFramePos = transform.position;
+            transform.hasChanged = false;
         }
-
     }
 
     public int mapPositionsDifference(float destination, float source)
@@ -90,11 +105,11 @@ public class CharacterEntity : MonoBehaviour
         {
             if (destination > source)
             {
-                direction = -1;
+                direction = 1;
             }
             else if (destination < source)
             {
-                direction = 1;
+                direction = -1;
             }
         }
         else if (destination == 0 && source > 0)
@@ -116,7 +131,120 @@ public class CharacterEntity : MonoBehaviour
         return direction;
     }
 
+    public void applyHorizontalDirectionAccordingToroomEntrance(HorizontalDirecton direction)
+    {
+        switch (roomEntrance)
+        {
+            case HorizontalDirecton.Right:
+                switch (direction)
+                {
+                    case HorizontalDirecton.Right:
+                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 180, transform.rotation.z));
+                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Left;
+                        break;
+                    case HorizontalDirecton.Left:
+                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0, transform.rotation.z));
+                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Right;
+                        break;
+                }
+                break;
+            case HorizontalDirecton.Left:
+                switch (direction)
+                {
+                    case HorizontalDirecton.Right:
+                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 180, transform.rotation.z));
+                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Right;
+                        break;
+                    case HorizontalDirecton.Left:
+                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0, transform.rotation.z));
+                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Left;
+                        break;
+                }
+                break;
+        }
+    }
+    internal void setCharacterDirection(HorizontalDirecton direction)
+    {
+        switch (roomEntrance)
+        {
+            case HorizontalDirecton.Right:
+                switch (direction)
+                {
+
+                    case HorizontalDirecton.Left:
+                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 180, transform.rotation.z));
+                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Left;
+                        break;
+                    case HorizontalDirecton.Right:
+                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0, transform.rotation.z));
+                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Right;
+                        break;
+
+                }
+                break;
+            case HorizontalDirecton.Left:
+                switch (direction)
+                {
+
+                    case HorizontalDirecton.Left:
+                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 180, transform.rotation.z));
+                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Left;
+                        break;
+                    case HorizontalDirecton.Right:
+                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0, transform.rotation.z));
+                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Right;
+                        break;
+
+                }
+                break;
+        }
+
+    }
+
+    #region  Adjust player vertical position
+    public void updateCharacterDirectionVertically() {
+
+        Collider[] cols = Physics.OverlapSphere(transform.position, 1.3f);
+
+        if (cols.Length!=0)
+        {
+            foreach (var col in cols)
+            {
+                if (col.gameObject.tag=="Room")
+                {
+                    transform.position = new Vector3(transform.position.x, transform.position.y- 0.397f, transform.position.z);
+                    //0.397
+                }
+            }
+        }
+    }
+    public Vector3 updateCharacterDirectionVertically(Vector3 pathNodePos) {
+
+        Collider[] cols = Physics.OverlapSphere(transform.position, 1.3f);
+
+        if (cols.Length!=0)
+        {
+            foreach (var col in cols)
+            {
+                if (col.gameObject.tag=="Room")
+                {
+                    pathNodePos.y -= 0.397f;
+                    //0.397
+                }
+            }
+        }
+        return pathNodePos;
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, 1.3f);
+    }
     #endregion
+
+    #endregion
+
 
     public void fillCharacterData()
     {
@@ -130,16 +258,18 @@ public class CharacterEntity : MonoBehaviour
 
     public void OnPathFollowingEnd(SlotDir enteranceDir)
     {
+        isMovingOuterMovement = false;
+
         RoomEntity roomEntity = character.container.GetComponentInChildren<RoomEntity>();
         if (enteranceDir == SlotDir.Left)
         {
             character.containerEntrance = roomEntity.leftEntrance;
-            roomSlotDirection = HorizontalDirecton.Left;
+            roomEntrance = HorizontalDirecton.Left;
         }
         else if (enteranceDir == SlotDir.Right)
         {
             character.containerEntrance = roomEntity.rightEntrance;
-            roomSlotDirection = HorizontalDirecton.Right;
+            roomEntrance = HorizontalDirecton.Right;
         }
         //characterController.TriggerGravity(true);
 
@@ -169,50 +299,13 @@ public class CharacterEntity : MonoBehaviour
         }
     }
 
-    internal void setCharacterDirection(HorizontalDirecton direction)
-    {
-        switch (character.container.GetComponentInChildren<RoomEntity>().mySlot.MyDir)
-        {
-            case SlotDir.Right:
-                switch (direction)
-                {
-
-                    case HorizontalDirecton.Left:
-                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 180, transform.rotation.z));
-                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Left;
-                        break;
-                    case HorizontalDirecton.Right:
-                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0, transform.rotation.z));
-                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Right;
-                        break;
-
-                }
-                break;
-            case SlotDir.Left:
-                switch (direction)
-                {
-
-                    case HorizontalDirecton.Right:
-                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 180, transform.rotation.z));
-                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Left;
-                        break;
-                    case HorizontalDirecton.Left:
-                        transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0, transform.rotation.z));
-                        characterAnimationFSM.horizontalDirection = HorizontalDirecton.Right;
-                        break;
-
-                }
-                break;
-        }
-
-    }
 
     /// <summary>
     /// Will call workflow classes methods that is build using component pattern
     /// </summary>
     private void startJobWorkFlow()
     {
-        if (character.job!=null)
+        if (character.job != null)
         {
             if (character.job.jobWorkflow != null)
             {
@@ -223,6 +316,7 @@ public class CharacterEntity : MonoBehaviour
 
     public void OnMovingInOuterPath()
     {
+        isMovingOuterMovement = true;
         GameObject Backbone = GameObject.FindGameObjectWithTag("Backbone");
 
         if (tellIsCharacterInsideBackbone(Backbone))
@@ -258,6 +352,7 @@ public class CharacterEntity : MonoBehaviour
 
     public void updateJobInitialDirection()
     {
+        //applyHorizontalDirectionAccordingToroomEntrance()
         setCharacterDirection(character.job.jobFacingDirection);
     }
 

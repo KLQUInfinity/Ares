@@ -72,7 +72,7 @@ public class CharController : MonoBehaviour
                     return;
                 }
                 curPos = followingPath[pathIndex - 1];
-                Flip();
+                //Flip();
             }
 
             transform.position = Vector3.MoveTowards(transform.position, followingPath[pathIndex], speed * Time.deltaTime);
@@ -226,7 +226,7 @@ public class CharController : MonoBehaviour
         }
         pathIndex = 0;
         curPos = transform.position;
-        Flip();
+        //Flip();
         isMovePath = true;
     }
     public float getMovementSpeed()
