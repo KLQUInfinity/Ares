@@ -45,7 +45,7 @@ public class JobPathFinder : MonoBehaviour
     }
     private void OnDrawGizmos()
     {
-       // Init();
+        Init();
     }
     void Init()
     {
