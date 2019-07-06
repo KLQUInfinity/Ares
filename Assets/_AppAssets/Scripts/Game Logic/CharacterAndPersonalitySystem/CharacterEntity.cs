@@ -63,6 +63,7 @@ public class CharacterEntity : MonoBehaviour
         }
 
     }
+
     public int mapPositionsDifference(float destination, float source)
     {
         int direction = 0;
@@ -211,9 +212,12 @@ public class CharacterEntity : MonoBehaviour
     /// </summary>
     private void startJobWorkFlow()
     {
-        if (character.job.jobWorkflow != null)
+        if (character.job!=null)
         {
-            character.job.jobWorkflow.startWorkflow();
+            if (character.job.jobWorkflow != null)
+            {
+                character.job.jobWorkflow.startWorkflow();
+            }
         }
     }
 
