@@ -14,14 +14,16 @@ public class RandomGenerateTrainAnim : MonoBehaviour
     [SerializeField] private Button[] animBtns;
 
     #region Tutorial
-    [SerializeField] private TextMeshProUGUI tutorialTxt;
+    [SerializeField] private FixTextMeshPro tutorialTxt;
     [SerializeField] private List<string> arTutorial;
     [SerializeField] private List<string> enTutorial;
-
     [SerializeField] private float textDelay;
+    [SerializeField] private UIElement animChoser;
+
     private int lineIndex;
 
     private bool isArabic;
+    private bool isTutorialTextTimerRun;
     #endregion
 
     public void GenerateRandome()
@@ -49,7 +51,7 @@ public class RandomGenerateTrainAnim : MonoBehaviour
             // Add listener to button
             animBtns[i].onClick.RemoveAllListeners();
             animBtns[i].onClick.AddListener(() => charcter.GetComponent<TrainingAnimationsManager>().runThisAnimation(slot));
-            animBtns[i].onClick.AddListener(() => ZUIManager.Instance.ClosePopup("TrainingPopup"));
+            animBtns[i].onClick.AddListener(() => ZUIManager.Instance.OpenMenu("UIMenu"));
 
             // Remove the index from the list
             objs.Remove(objs[index]);
@@ -59,20 +61,26 @@ public class RandomGenerateTrainAnim : MonoBehaviour
     public void StartTutorial()
     {
         isArabic = true; /*(PlayerPrefs.GetString("Lang").Equals("ar")) ? true : false;*/
-
-
+        isTutorialTextTimerRun = true;
+        StartCoroutine(TutorialTimer());
     }
 
     IEnumerator TutorialTimer()
     {
-        while (true)
+        while (isTutorialTextTimerRun)
         {
             if (lineIndex != 0)
             {
                 yield return new WaitForSeconds(textDelay);
             }
 
-            //tutorialTxt.text =
-    }
+            tutorialTxt.text = (isArabic) ? arTutorial[lineIndex] : enTutorial[lineIndex];
+            lineIndex++;
+            if (lineIndex >= arTutorial.Count)
+            {
+                isTutorialTextTimerRun = false;
+                animChoser.SwitchVisibility();
+            }
+        }
     }
 }

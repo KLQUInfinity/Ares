@@ -359,7 +359,7 @@ public class CharacterEntity : MonoBehaviour
 
             // Open the UI and Fire
             character.container.transform.GetChild(1).GetChild(0).gameObject.SetActive(true);
-            ZUIManager.Instance.OpenPopup("TrainingPopup");
+            ZUIManager.Instance.OpenMenu("TrainingMenu");
         }
     }
 
