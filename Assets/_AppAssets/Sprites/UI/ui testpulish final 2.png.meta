@@ -1,8 +1,10 @@
 fileFormatVersion: 2
-guid: 7839ac721385e3f4bac7b7efe1fe293c
+guid: 9849decccd4b12142b4e74a4e7cc5d0c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ui drag_0
+    21300000: ui testpulish final 2_0
+    21300002: ui testpulish final 2_1
+    21300004: ui testpulish final 2_2
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -118,11 +120,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ui drag_0
+      name: ui testpulish final 2_0
       rect:
         serializedVersion: 2
-        x: 272
-        y: 243
+        x: 94
+        y: 361
         width: 1486
         height: 762
       alignment: 0
@@ -132,7 +134,47 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 427c51c9d0034054d956018bfdb3b7ea
+      spriteID: 188d9173d7befb34c9dd1d40d854ab11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui testpulish final 2_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 88
+        width: 105
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c96dde97552ff4da3754757379a019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ui testpulish final 2_2
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 88
+        width: 105
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae965edacdd6d24eb539bc926c93ffb
       vertices: []
       indices: 
       edges: []
@@ -140,7 +182,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1165c748293370048a75c688849a0422
+    spriteID: 81b8044b700671c4c85e17863c0df8f8
     vertices: []
     indices: 
     edges: []
