@@ -49,4 +49,9 @@ public class LangSetting : MonoBehaviour
                 break;
         }
     }
+
+    //public void ChangeTxt(string arText,string enText)
+    //{
+    //    this.
+    //}
 }

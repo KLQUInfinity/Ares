@@ -22,12 +22,13 @@ public class TrainingAnimationsManager : MonoBehaviour
     {
         currentCharacterAnimationState = CharacterTrainingAnimationsState.Idle;
         fireFightingTrainingAnimator = GetComponent<Animator>();
-        fireFightingTrainingAnimator.SetBool(currentCharacterAnimationState.ToString(),true);
+        fireFightingTrainingAnimator.SetBool(currentCharacterAnimationState.ToString(), true);
     }
 
 
 
-    public void runThisAnimation (int animationEnumIndex){
+    public void runThisAnimation(int animationEnumIndex)
+    {
         //Convert the enum index to enum variable
         changeAnimationStateTo((CharacterTrainingAnimationsState)animationEnumIndex);
     }

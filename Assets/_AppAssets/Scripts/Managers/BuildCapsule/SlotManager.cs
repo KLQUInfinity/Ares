@@ -134,6 +134,7 @@ public class SlotManager : MonoBehaviour
             }
         }
 
+        slot.RoomObj = capsole;
         slot.BuildThisSlot(roomPrefab.name);
         LevelManager.Instance.CalculateThisRoomBounds(new Room(capsole));
     }

@@ -350,6 +350,17 @@ public class CharacterEntity : MonoBehaviour
             //GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
         updateJobInitialDirection();
+
+        if (character.container.name.Equals("TrainningRoom"))
+        {
+            // Zoom in to that room
+
+            // Switch to training time state
+
+            // Open the UI and Fire
+            character.container.transform.GetChild(1).GetChild(0).gameObject.SetActive(true);
+            ZUIManager.Instance.OpenPopup("TrainingPopup");
+        }
     }
 
     public void updateJobInitialDirection()

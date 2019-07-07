@@ -8,6 +8,7 @@ public class Slot : MonoBehaviour
     [HideInInspector] public SlotManager MySlotManger;
     [HideInInspector] public SpriteRenderer SlotHighlight;
     [HideInInspector] public Collider MyCollider;
+    [HideInInspector] public GameObject RoomObj;
 
     public SlotDir MyDir;
 

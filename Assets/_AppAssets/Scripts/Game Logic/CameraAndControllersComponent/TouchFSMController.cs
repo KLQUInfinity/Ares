@@ -251,6 +251,8 @@ public class TouchFSMController : MonoBehaviour
     public void Select(GameObject gameObj)
     {//Select on single click
         //Select character's code on single click goes here
+
+        ZUIManager.Instance.OpenSideMenu("PersonaSideMenu");
     }
     public void SelectAndZoom(GameObject gameObj)
     {//Select on double click

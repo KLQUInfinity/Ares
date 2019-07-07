@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class TimeDispalyer : MonoBehaviour
 {
@@ -10,21 +10,28 @@ public class TimeDispalyer : MonoBehaviour
         days,
         hours
     }
-    [SerializeField]
-    TimeUnit timeUnit;
-    [SerializeField]
-    Text timeTxt;
-    // Update is called once per frame
+
+    [SerializeField] private TimeUnit timeUnit;
+
+    private TextMeshProUGUI timeTxt;
+
+
+    private void Start()
+    {
+        timeTxt = GetComponent<TextMeshProUGUI>();
+    }
+
     void Update()
     {
         switch (timeUnit)
         {
             case TimeUnit.days:
-                timeTxt.text = "Day " + (GameBrain.Instance.timeManager.TotalGameDays-
-                    GameBrain.Instance.timeManager.gameTime.gameDay);
+                timeTxt.text = (GameBrain.Instance.timeManager.TotalGameDays -
+                    GameBrain.Instance.timeManager.gameTime.gameDay).ToString();
                 break;
             case TimeUnit.hours:
-                timeTxt.text = (24-GameBrain.Instance.timeManager.gameTime.gameHour) + " OClock";
+
+                timeTxt.text = (24 - GameBrain.Instance.timeManager.gameTime.gameHour) + ":00";
                 break;
         }
     }
