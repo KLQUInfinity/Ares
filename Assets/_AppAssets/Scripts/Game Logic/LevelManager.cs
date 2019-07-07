@@ -102,8 +102,7 @@ public class LevelManager : MonoBehaviour
     {//sadfasdfadsf
         foreach (Room room in roomManager.rooms)
         {
-            var renderer = room.roomGameObject.transform.GetChild(0).
-                GetChild(1).GetComponentInChildren<Renderer>();
+            var renderer = room.roomGameObject.GetComponentInChildren<Renderer>();
             //Bounds bounds = new Bounds(renderers[0].bounds.center, new Vector3(0, 0, 0));
             //foreach (var renderer in renderers)
             //{
@@ -129,8 +128,7 @@ public class LevelManager : MonoBehaviour
         //    if (renderer != renderers[0])
         //        bounds.Encapsulate(renderer.bounds);
         //}
-        var renderer = room.roomGameObject.transform.GetChild(0).
-            GetChild(1).GetComponentInChildren<Renderer>();
+        var renderer = room.roomGameObject.GetComponentInChildren<Renderer>();
         if (!roomManager.rooms.Contains(room))
         {
             roomManager.rooms.Add(room);

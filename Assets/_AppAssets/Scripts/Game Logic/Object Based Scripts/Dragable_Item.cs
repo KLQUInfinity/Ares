@@ -61,6 +61,7 @@ public class Dragable_Item : MonoBehaviour
     {
         if (isDragable)
         {
+
         }
     }
 

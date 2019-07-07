@@ -11,8 +11,6 @@ public class CharacterManager : MonoBehaviour
     public List<CharacterLevel> charactersLevels;
     void Start()
     {
-
-
         Init();
     }
 

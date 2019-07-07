@@ -119,6 +119,9 @@ public class RoomManger : MonoBehaviour
         //LevelManager.Instance.roomManager.getRoomWithGameObject(drag)
         foreach (KeyValuePair<Room,Bounds> entry in roomsBounds)
         {
+            var s= entry.Key.roomGameObject.name;
+            var n = draggableItem.gameObject.name;
+
             if (entry.Value.Contains(draggableItem.transform.position))
             {
                 populateToARoom(entry.Key.roomGameObject ,draggableItem);
