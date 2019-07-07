@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class RandomGenerateTrainAnim : MonoBehaviour
 {
@@ -11,6 +12,17 @@ public class RandomGenerateTrainAnim : MonoBehaviour
 
     [SerializeField] private RuntimeAnimatorController charTrainAnime;
     [SerializeField] private Button[] animBtns;
+
+    #region Tutorial
+    [SerializeField] private TextMeshProUGUI tutorialTxt;
+    [SerializeField] private List<string> arTutorial;
+    [SerializeField] private List<string> enTutorial;
+
+    [SerializeField] private float textDelay;
+    private int lineIndex;
+
+    private bool isArabic;
+    #endregion
 
     public void GenerateRandome()
     {
@@ -42,5 +54,25 @@ public class RandomGenerateTrainAnim : MonoBehaviour
             // Remove the index from the list
             objs.Remove(objs[index]);
         }
+    }
+
+    public void StartTutorial()
+    {
+        isArabic = true; /*(PlayerPrefs.GetString("Lang").Equals("ar")) ? true : false;*/
+
+
+    }
+
+    IEnumerator TutorialTimer()
+    {
+        while (true)
+        {
+            if (lineIndex != 0)
+            {
+                yield return new WaitForSeconds(textDelay);
+            }
+
+            //tutorialTxt.text =
+    }
     }
 }
