@@ -11,7 +11,6 @@ public enum CharacterAnimationsState
     Job1,
     Job2,
     Job3,
-
 }
 public enum HorizontalDirecton
 {

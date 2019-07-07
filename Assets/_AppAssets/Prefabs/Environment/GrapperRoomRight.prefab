@@ -387,6 +387,7 @@ Transform:
   - {fileID: 5327483895210959751}
   - {fileID: 1901226247660359717}
   - {fileID: 4159617103411468002}
+  - {fileID: 8547741669714230544}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -634,6 +635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showThisOnly: 0
 --- !u!114 &948223899058747401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,6 +707,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -724,6 +727,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -743,6 +747,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -762,12 +767,14 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   isReversed: 0
   entrancePos: {fileID: 8624776504939689904}
   jobPos: {fileID: 4093669412532596538}
   entrancePosNodeMirror: {fileID: 1326490953797490296}
   jobNodePosMirror: {fileID: 8921499051778813581}
   isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1 &865628231892452916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1098,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -1110,6 +1118,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -1129,6 +1138,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -1148,6 +1158,7 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   - jobName: Blumber
     jobAnimation: 5
     jobAnimationClip: {fileID: 0}
@@ -1204,6 +1215,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -1223,6 +1235,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -1242,6 +1255,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -1261,6 +1275,7 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
 --- !u!114 &6970496170538672869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,6 +1527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showThisOnly: 0
 --- !u!114 &694599041388274183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1583,6 +1599,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -1602,6 +1619,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -1621,6 +1639,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -1640,12 +1659,14 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   isReversed: 0
   entrancePos: {fileID: 8624776504939689904}
   jobPos: {fileID: 6972481866112254605}
   entrancePosNodeMirror: {fileID: 8984257283026711442}
   jobNodePosMirror: {fileID: 4528225283602649548}
   isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1 &2976271226358370488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1999,6 +2020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showThisOnly: 0
 --- !u!114 &2515964171029754420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2070,6 +2092,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -2089,6 +2112,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -2108,6 +2132,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -2127,12 +2152,14 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   isReversed: 0
   entrancePos: {fileID: 6824602441391929336}
   jobPos: {fileID: 4093669412532596538}
   entrancePosNodeMirror: {fileID: 4641616648454108402}
   jobNodePosMirror: {fileID: 5179272761074289836}
   isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1 &5214790821939768833
 GameObject:
   m_ObjectHideFlags: 0
@@ -2831,6 +2858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  showThisOnly: 0
 --- !u!114 &696407081154172597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2902,6 +2930,7 @@ MonoBehaviour:
                 jobRoom: {fileID: 0}
                 jobAcquisionHour: 0
                 jobPosition: {fileID: 0}
+                jobFacingDirection: 0
               jobHourTemp: 0
               productivity: 0
               characterLevel:
@@ -2921,6 +2950,7 @@ MonoBehaviour:
             jobRoom: {fileID: 0}
             jobAcquisionHour: 0
             jobPosition: {fileID: 0}
+            jobFacingDirection: 0
           jobHourTemp: 0
           productivity: 0
           characterLevel:
@@ -2940,6 +2970,7 @@ MonoBehaviour:
         jobRoom: {fileID: 0}
         jobAcquisionHour: 0
         jobPosition: {fileID: 0}
+        jobFacingDirection: 0
       jobHourTemp: 0
       productivity: 0
       characterLevel:
@@ -2959,12 +2990,14 @@ MonoBehaviour:
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
     jobPosition: {fileID: 0}
+    jobFacingDirection: 0
   isReversed: 0
   entrancePos: {fileID: 6824602441391929336}
   jobPos: {fileID: 6972481866112254605}
   entrancePosNodeMirror: {fileID: 2102760828177478927}
   jobNodePosMirror: {fileID: 5161854386136790337}
   isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1001 &7591190838160112543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3069,4 +3102,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 412174922319432508, guid: f5d0b41c5e5077946be058e742a50c96,
     type: 3}
   m_PrefabInstance: {fileID: 7591190838160112543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8547741669713831824
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3954006412944825289}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_Name
+      value: GrabberVacum
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.09999794
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.45030046
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.70710564
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0000020116568
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.707108
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0000020340085
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 20500000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.9593346
+      objectReference: {fileID: 0}
+    - target: {fileID: 20500000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+      propertyPath: m_LODs.Array.data[1].screenRelativeHeight
+      value: 0.86990345
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0dc343cc84845f44da6c07b0fd48b1cd, type: 3}
+--- !u!4 &8547741669714230544 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 0dc343cc84845f44da6c07b0fd48b1cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 8547741669713831824}
   m_PrefabAsset: {fileID: 0}

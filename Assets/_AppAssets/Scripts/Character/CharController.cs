@@ -149,7 +149,7 @@ public class CharController : MonoBehaviour
     {
         followingPath.Clear();
         if (currBBSlotIndex == nextBBSlotIndex)
-        {
+        {//If on the same vertical level
             followingPath.Add(GetSingleWayPoint(nextBBSlotIndex, nextSlotDir, nextSlotIndex));
             if (followingPath[followingPath.Count - 1].x > transform.position.x)
             {
@@ -163,7 +163,7 @@ public class CharController : MonoBehaviour
             }
         }
         else if (currBBSlotIndex != nextBBSlotIndex)
-        {
+        {//If not on the same vertical level
             Vector3 wayPoint;
             if (currBBSlotIndex > nextBBSlotIndex)
             {// For up move in back bone
@@ -183,6 +183,7 @@ public class CharController : MonoBehaviour
                     followingPath.Add(wayPoint);
                 }
             }
+
             followingPath.Add(GetSingleWayPoint(nextBBSlotIndex, nextSlotDir, nextSlotIndex));
 
             if (followingPath[followingPath.Count - 1].x > followingPath[followingPath.Count - 2].x)

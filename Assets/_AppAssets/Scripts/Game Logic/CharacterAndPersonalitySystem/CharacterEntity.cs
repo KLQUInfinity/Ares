@@ -44,10 +44,10 @@ public class CharacterEntity : MonoBehaviour
     private void Update()
     {
         updateCharacterDirectionHorizontally();
-        if (!isMovingOuterMovement)
-        {
-            updateCharacterDirectionVertically();
-        }
+        //if (!isMovingOuterMovement)
+        //{
+        //    updateCharacterDirectionVertically();
+        //}
     }
     #region Character direction adjustment each frame logic
     //float 
@@ -317,24 +317,26 @@ public class CharacterEntity : MonoBehaviour
     public void OnMovingInOuterPath()
     {
         isMovingOuterMovement = true;
-        GameObject Backbone = GameObject.FindGameObjectWithTag("Backbone");
+        //GameObject Backbone = GameObject.FindGameObjectWithTag("Backbone");
 
-        if (tellIsCharacterInsideBackbone(Backbone))
-        {
-            characterController.TriggerGravity(false);
-            character.container = Backbone;
-            characterAnimationFSM.changeAnimationStateTo(CharacterAnimationsState.Floating);
-        }
-        else
-        {
-            //Put the character on the ground here :)
+        //if (tellIsCharacterInsideBackbone(Backbone))
+        //{
+        //    //characterController.TriggerGravity(false);
+        //    character.container = Backbone;
+        //    characterAnimationFSM.changeAnimationStateTo(CharacterAnimationsState.Floating);
+        //}
+        //else
+        //{
+        //    //Put the character on the ground here :)
 
-            //if (character.container.tag!="BaseRoom" && character.container.tag != "TrainingRoom")
-            //{
-            //    characterController.TriggerGravity(true);
-            //}
-            characterAnimationFSM.changeAnimationStateTo(CharacterAnimationsState.Walking);
-        }
+        //    //if (character.container.tag!="BaseRoom" && character.container.tag != "TrainingRoom")
+        //    //{
+        //    //    characterController.TriggerGravity(true);
+        //    //}
+        //    characterAnimationFSM.changeAnimationStateTo(CharacterAnimationsState.Walking);
+        //}
+        characterAnimationFSM.changeAnimationStateTo(CharacterAnimationsState.Floating);
+
     }
 
     public void OnPathPositionReached(bool isRevesed)
