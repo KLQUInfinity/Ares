@@ -76,6 +76,13 @@ public class CharacterManager : MonoBehaviour
         character.characterLevel.totalLevelDaysWorkedHours[GameBrain.Instance.timeManager.gameTime.gameDay] = new GameTime();
     }
 
+    public void addNewCharacter(Character character)
+    {
+        characters.Add(character);
+        character.Init();
+        Init();
+    }
+
     #region Time related methods
     public void OnSecondChange()
     {//Called each real second

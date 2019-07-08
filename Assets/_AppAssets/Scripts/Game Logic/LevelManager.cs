@@ -86,9 +86,9 @@ public class LevelManager : MonoBehaviour
 
     public void CreateChar(RoomEntity roomEntity)
     {
-        Vector3 pos = new Vector3(hippernationRoom.position.x, hippernationRoom.position.y, charPrefab.transform.position.z);
-        GameObject character = Instantiate(charPrefab, pos, Quaternion.identity) as GameObject;
-        //character.GetComponent<CharacterEntity>().character = new Character();
+        //Vector3 pos = new Vector3(hippernationRoom.position.x, hippernationRoom.position.y, charPrefab.transform.position.z);
+        //GameObject character = Instantiate(charPrefab, pos, Quaternion.identity) as GameObject;
+        //characterManager.addNewCharacter(character.GetComponent<CharacterEntity>().character);
 
         //Slot s = roomEntity.mySlot;
         //character.GetComponent<CharController>().GenerateFollowPathWayPoins(
@@ -97,7 +97,7 @@ public class LevelManager : MonoBehaviour
         //    s.transform.GetSiblingIndex(),
         //    roomEntity
         //    );
-        //character.GetComponent<CharController>().MoveInPath();
+        ////character.GetComponent<CharController>().MoveInPath();
     }
 
     private void OnDrawGizmos()
