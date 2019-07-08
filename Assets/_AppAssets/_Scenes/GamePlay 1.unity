@@ -1255,7 +1255,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-81378
+  m_Name: pb_Mesh-2350
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -2342,7 +2342,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-81382
+  m_Name: pb_Mesh-2354
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -4512,7 +4512,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-81384
+  m_Name: pb_Mesh-2356
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -4865,7 +4865,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-81380
+  m_Name: pb_Mesh-2352
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -5860,16 +5860,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1490598531}
-        m_MethodName: 
+      - m_Target: {fileID: 1661261035}
+        m_MethodName: CreateNewChar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: Popup, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -9548,7 +9548,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-81392
+  m_Name: pb_Mesh-2364
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -12359,7 +12359,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-81390
+  m_Name: pb_Mesh-2362
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -16135,7 +16135,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-81386
+  m_Name: pb_Mesh-2358
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -18495,7 +18495,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-81388
+  m_Name: pb_Mesh-2360
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -23149,7 +23149,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-81316
+  m_Name: pb_Mesh-2288
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -28082,7 +28082,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-81394
+  m_Name: pb_Mesh-2366
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2

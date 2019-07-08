@@ -59,10 +59,16 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public void CreateNewChar()
+    {
+        CreateChar(hippernationRoom.gameObject.GetComponentInChildren<RoomEntity>());
+    }
+
     public void CreateChar(RoomEntity roomEntity)
     {
         Vector3 pos = new Vector3(hippernationRoom.position.x, hippernationRoom.position.y, charPrefab.transform.position.z);
         GameObject character = Instantiate(charPrefab, pos, Quaternion.identity) as GameObject;
+        //character.GetComponent<CharacterEntity>().character = new Character();
 
         Slot s = roomEntity.mySlot;
         character.GetComponent<CharController>().GenerateFollowPathWayPoins(
