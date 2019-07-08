@@ -21791,7 +21791,6 @@ GameObject:
   - component: {fileID: 1661261033}
   - component: {fileID: 1661261032}
   - component: {fileID: 1661261031}
-  - component: {fileID: 1661261030}
   - component: {fileID: 1661261029}
   - component: {fileID: 1661261028}
   - component: {fileID: 1661261027}
@@ -21856,55 +21855,6 @@ MonoBehaviour:
     workingHoursDailyLimit: 0
     overWorkHoursProductLimit: 0
     staminaRefillSpeedPerSecond: 0
---- !u!114 &1661261030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1661261026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f65dbb48fa3fd8c40b0bae1c8becaf80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TotalGameDays: 12
-  gameTime:
-    gameHour: 0
-    gameDay: 0
-    realSecond: 0
-    realMinute: 0
-    realHour: 0
-  isUpdating: 0
-  eventsTime:
-  - eventName: 
-    eventTime:
-      gameHour: 0
-      gameDay: 0
-      realSecond: 0
-      realMinute: 0
-      realHour: 0
-  - eventName: 
-    eventTime:
-      gameHour: 0
-      gameDay: 0
-      realSecond: 0
-      realMinute: 0
-      realHour: 0
-  - eventName: 
-    eventTime:
-      gameHour: 0
-      gameDay: 0
-      realSecond: 0
-      realMinute: 0
-      realHour: 0
-  - eventName: 
-    eventTime:
-      gameHour: 0
-      gameDay: 0
-      realSecond: 0
-      realMinute: 0
-      realHour: 0
 --- !u!114 &1661261031
 MonoBehaviour:
   m_ObjectHideFlags: 0
