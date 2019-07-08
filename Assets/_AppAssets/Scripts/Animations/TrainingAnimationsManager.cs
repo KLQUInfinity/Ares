@@ -18,6 +18,8 @@ public class TrainingAnimationsManager : MonoBehaviour
 {
     public CharacterTrainingAnimationsState currentCharacterAnimationState;
     public Animator fireFightingTrainingAnimator;
+    public RandomGenerateTrainAnim randomGenerateTrain;
+
     private void Start()
     {
         currentCharacterAnimationState = CharacterTrainingAnimationsState.Idle;
@@ -31,6 +33,10 @@ public class TrainingAnimationsManager : MonoBehaviour
     {
         //Convert the enum index to enum variable
         changeAnimationStateTo((CharacterTrainingAnimationsState)animationEnumIndex);
+        if ((CharacterTrainingAnimationsState)animationEnumIndex != CharacterTrainingAnimationsState.Idle)
+        {
+            randomGenerateTrain.ShowResult((CharacterTrainingAnimationsState)animationEnumIndex);
+        }
     }
 
     public void changeAnimationStateTo(CharacterTrainingAnimationsState animationState)
@@ -50,5 +56,4 @@ public class TrainingAnimationsManager : MonoBehaviour
             }
         }
     }
-
 }
