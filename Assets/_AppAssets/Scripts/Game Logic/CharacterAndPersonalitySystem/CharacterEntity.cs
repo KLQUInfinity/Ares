@@ -20,6 +20,7 @@ public class CharacterEntity : MonoBehaviour
     public bool isMovingInnerMovement;
     public bool isMovingOuterMovement;
     private float walkingSpeed;
+    private bool isFristTime = true;
 
     //------------------------------------------------
     public Vector3 previousFramePos;
@@ -202,31 +203,33 @@ public class CharacterEntity : MonoBehaviour
     }
 
     #region  Adjust player vertical position
-    public void updateCharacterDirectionVertically() {
+    public void updateCharacterDirectionVertically()
+    {
 
         Collider[] cols = Physics.OverlapSphere(transform.position, 1.3f);
 
-        if (cols.Length!=0)
+        if (cols.Length != 0)
         {
             foreach (var col in cols)
             {
-                if (col.gameObject.tag=="Room")
+                if (col.gameObject.tag == "Room")
                 {
-                    transform.position = new Vector3(transform.position.x, transform.position.y- 0.397f, transform.position.z);
+                    transform.position = new Vector3(transform.position.x, transform.position.y - 0.397f, transform.position.z);
                     //0.397
                 }
             }
         }
     }
-    public Vector3 updateCharacterDirectionVertically(Vector3 pathNodePos) {
+    public Vector3 updateCharacterDirectionVertically(Vector3 pathNodePos)
+    {
 
         Collider[] cols = Physics.OverlapSphere(transform.position, 1.3f);
 
-        if (cols.Length!=0)
+        if (cols.Length != 0)
         {
             foreach (var col in cols)
             {
-                if (col.gameObject.tag=="Room")
+                if (col.gameObject.tag == "Room")
                 {
                     pathNodePos.y -= 0.397f;
                     //0.397
@@ -351,8 +354,9 @@ public class CharacterEntity : MonoBehaviour
         }
         updateJobInitialDirection();
 
-        if (character.container.name.Equals("TrainningRoom"))
+        if (character.container.name.Equals("TrainningRoom") && !isFristTime)
         {
+
             // Zoom in to that room
 
             // Switch to training time state
@@ -360,6 +364,10 @@ public class CharacterEntity : MonoBehaviour
             // Open the UI and Fire
             character.container.transform.GetChild(1).GetChild(0).gameObject.SetActive(true);
             ZUIManager.Instance.OpenMenu("TrainingMenu");
+        }
+        else
+        {
+            isFristTime = false;
         }
     }
 

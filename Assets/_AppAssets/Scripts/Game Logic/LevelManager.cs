@@ -38,6 +38,8 @@ public class LevelManager : MonoBehaviour
         /** Order of methods calling is critical**/
         Init();
         calculateRoomsBounds();
+
+
         if (_Instance == null)
         {
             _Instance = this;
@@ -49,6 +51,7 @@ public class LevelManager : MonoBehaviour
     {
         //asdfasdfasdfadsf
         //Debug.Log((roomsBounds[Environment.transform.GetChild(0).gameObject].size.x + roomsBounds[Environment.transform.GetChild(0).gameObject].size.y) / 2 - 2.5f);
+        CreateCharForStaticRooms();
     }
 
     private void Init()
@@ -56,6 +59,23 @@ public class LevelManager : MonoBehaviour
         foreach (Transform roomTransform in Environment.transform)
         {
             roomManager.rooms.Add(new Room(roomTransform.gameObject));
+        }
+    }
+
+    private void CreateCharForStaticRooms()
+    {
+        foreach (KeyValuePair<Room, Bounds> entry in roomManager.roomsBounds)
+        {
+            var id = entry.Key.roomGameObject.name;
+
+            int num = PlayerPrefs.GetInt(id + " CharNum");
+
+            PlayerPrefs.SetInt(id + " CharNum", 0);
+
+            for (int i = 0; i < num; i++)
+            {
+                CreateChar(entry.Key.roomGameObject.GetComponentInChildren<RoomEntity>());
+            }
         }
     }
 
@@ -70,14 +90,14 @@ public class LevelManager : MonoBehaviour
         GameObject character = Instantiate(charPrefab, pos, Quaternion.identity) as GameObject;
         //character.GetComponent<CharacterEntity>().character = new Character();
 
-        Slot s = roomEntity.mySlot;
-        character.GetComponent<CharController>().GenerateFollowPathWayPoins(
-            s.MySlotManger.transform.GetSiblingIndex(),
-            s.MyDir,
-            s.transform.GetSiblingIndex(),
-            roomEntity
-            );
-        character.GetComponent<CharController>().MoveInPath();
+        //Slot s = roomEntity.mySlot;
+        //character.GetComponent<CharController>().GenerateFollowPathWayPoins(
+        //    s.MySlotManger.transform.GetSiblingIndex(),
+        //    s.MyDir,
+        //    s.transform.GetSiblingIndex(),
+        //    roomEntity
+        //    );
+        //character.GetComponent<CharController>().MoveInPath();
     }
 
     private void OnDrawGizmos()
