@@ -22005,6 +22005,8 @@ MonoBehaviour:
   roomManager: {fileID: 1661261028}
   characterManager: {fileID: 1661261029}
   controllersStateMachine: {fileID: 1661261033}
+  charPrefab: {fileID: 625488201829187797, guid: c5b380c576f09014b8025787cd9de644,
+    type: 3}
   Testing: 1
   FPSGraphTools: {fileID: 131172945}
   TopBoundry: {fileID: 53550370}

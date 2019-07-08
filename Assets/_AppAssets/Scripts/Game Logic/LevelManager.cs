@@ -15,7 +15,8 @@ public class LevelManager : MonoBehaviour
     public CharacterManager characterManager;
     public ClickStateMachine controllersStateMachine;
 
-
+    [SerializeField] private GameObject charPrefab;
+    [SerializeField] private Transform hippernationRoom;
     public bool Testing;
     public GameObject FPSGraphTools;
     #region Map Boundries
@@ -58,11 +59,21 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CreateChar(RoomEntity roomEntity)
     {
+        Vector3 pos = new Vector3(hippernationRoom.position.x, hippernationRoom.position.y, charPrefab.transform.position.z);
+        GameObject character = Instantiate(charPrefab, pos, Quaternion.identity) as GameObject;
 
+        Slot s = roomEntity.mySlot;
+        character.GetComponent<CharController>().GenerateFollowPathWayPoins(
+            s.MySlotManger.transform.GetSiblingIndex(),
+            s.MyDir,
+            s.transform.GetSiblingIndex(),
+            roomEntity
+            );
+        character.GetComponent<CharController>().MoveInPath();
     }
+
     private void OnDrawGizmos()
     {
         foreach (var room in roomManager.roomsBounds.Values)
@@ -136,7 +147,8 @@ public class LevelManager : MonoBehaviour
         roomManager.roomsBounds.Add(room, renderer.bounds);
     }
 
-    public GameObject getCharacterPhysicalContainer(GameObject charcterGameObject) {
+    public GameObject getCharacterPhysicalContainer(GameObject charcterGameObject)
+    {
 
         foreach (KeyValuePair<Room, Bounds> entry in roomManager.roomsBounds)
         {

@@ -11,6 +11,7 @@ public class RoomEntity : MonoBehaviour
     public JobPathFinder[] jobPathFinders;
     public productionJobType productionJobType;
     public CapsuleProcessesData DebuggingUI;
+    public int NumOfCharInRoom;
     public void Start()
     {
         roomGameObject = this.gameObject.transform.parent.gameObject;
@@ -41,6 +42,18 @@ public class RoomEntity : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public void AddCharCountToRoom()
+    {
+        NumOfCharInRoom++;
+        PlayerPrefs.SetInt(transform.parent.name + " CharNum", NumOfCharInRoom);
+    }
+
+    public void SubCharCountToRoom()
+    {
+        NumOfCharInRoom--;
+        PlayerPrefs.SetInt(transform.parent.name + " CharNum", NumOfCharInRoom);
     }
 
 }

@@ -1,35 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &223750699454996710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 225092757597150950}
-  m_Layer: 0
-  m_Name: rightEntrance
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &225092757597150950
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223750699454996710}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.572, y: 0.030000044, z: -0.7439999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 5767512614831816345}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555107766806931947
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,6 +62,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hoverer: {fileID: 0}
+--- !u!1 &1134819076985909268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7201247292172711667}
+  m_Layer: 0
+  m_Name: Job3Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &7201247292172711667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134819076985909268}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5477557368673528776}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1350363906828178622
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +124,7 @@ Transform:
   - {fileID: 1319130118077271278}
   - {fileID: 7474935067562875250}
   m_Father: {fileID: 5477557368673528776}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2722659486646997251
 MonoBehaviour:
@@ -152,11 +152,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thisJobPath: 0
-  jobEntity: {fileID: 0}
+  jobEntity: {fileID: 1917183654800646405}
   job:
     jobName: 
     jobAnimation: 0
-    jobAnimationClip: {fileID: 0}
+    jobAnimationClip: {fileID: 7400000, guid: 305a8b72d0b534f4db595accc0a001e4, type: 2}
     jobHolder:
       name: 
       title: 
@@ -203,7 +203,7 @@ MonoBehaviour:
                   happiness: 0
                   jobHourTemp: 0
                   productivity: 0
-                  jobState: 1
+                  jobState: 0
                   overWorkedHoursProduct: 0
                 jobState: 0
                 staminaReductionRate: 0
@@ -219,7 +219,7 @@ MonoBehaviour:
                 workingHoursDailyLimit: 0
                 overWorkHoursProductLimit: 0
                 staminaRefillSpeedPerSecond: 0
-              jobState: 1
+              jobState: 0
               characterLevels: []
               overWorkedHoursProduct: 0
               container: {fileID: 0}
@@ -239,7 +239,7 @@ MonoBehaviour:
             workingHoursDailyLimit: 0
             overWorkHoursProductLimit: 0
             staminaRefillSpeedPerSecond: 0
-          jobState: 1
+          jobState: 0
           characterLevels: []
           overWorkedHoursProduct: 0
           container: {fileID: 0}
@@ -259,7 +259,7 @@ MonoBehaviour:
         workingHoursDailyLimit: 0
         overWorkHoursProductLimit: 0
         staminaRefillSpeedPerSecond: 0
-      jobState: 1
+      jobState: 0
       characterLevels: []
       overWorkedHoursProduct: 0
       container: {fileID: 0}
@@ -269,8 +269,8 @@ MonoBehaviour:
     staminaReductionRate: 0
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
-    jobPosition: {fileID: 0}
-    jobFacingDirection: 0
+    jobPosition: {fileID: 1391472959586273985}
+    jobFacingDirection: 1
   isReversed: 0
   entrancePos: {fileID: 6651353927459550962}
   jobPos: {fileID: 1391472959586273985}
@@ -302,13 +302,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391472959586273985}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5799997, y: 0, z: 3.1799996}
+  m_LocalPosition: {x: 11.42, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5477557368673528776}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1826594845528700703
+--- !u!1 &1618950712178559906
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -316,26 +316,26 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6487985994431936159}
+  - component: {fileID: 729999170674495728}
   m_Layer: 0
-  m_Name: rightEntrance
+  m_Name: Job1Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &6487985994431936159
+--- !u!4 &729999170674495728
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826594845528700703}
+  m_GameObject: {fileID: 1618950712178559906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.572, y: 0.030000044, z: -0.7439999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.4259999, y: 0.030000044, z: 0}
+  m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
-  m_Father: {fileID: 4815169026972613733}
+  m_Father: {fileID: 9040779875877942480}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2268212074102291674
@@ -486,6 +486,66 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &3003355915365182498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4319175131786521298}
+  m_Layer: 0
+  m_Name: Job5Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &4319175131786521298
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3003355915365182498}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.42, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5477557368673528776}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3108521050103021884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 544879174893579401}
+  m_Layer: 0
+  m_Name: leftEntrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &544879174893579401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3108521050103021884}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.030000044, z: -0.71700007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5797427854962850252}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3514676933355926552
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,36 +861,6 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!1 &3654717273253552418
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6116198738726740886}
-  m_Layer: 0
-  m_Name: leftEntrance
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &6116198738726740886
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3654717273253552418}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6049998, y: 0.030000044, z: -0.71700007}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 301395696878790068}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3799507982035533935
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,13 +885,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3799507982035533935}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.6049998, y: 0.030000044, z: -0.71700007}
+  m_LocalPosition: {x: 0, y: 0.030000044, z: -0.71700007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6921580441781287128}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3873350075984034014
+--- !u!1 &3894168074663777052
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -869,7 +899,193 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8868962877001830249}
+  - component: {fileID: 5797427854962850252}
+  - component: {fileID: 7097707862944135245}
+  - component: {fileID: 5046076875539417275}
+  m_Layer: 0
+  m_Name: leftEntranceToJob2Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &5797427854962850252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894168074663777052}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -4.1, z: 0}
+  m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
+  m_Children:
+  - {fileID: 3957300146892071730}
+  - {fileID: 544879174893579401}
+  m_Father: {fileID: 5477557368673528776}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7097707862944135245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894168074663777052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showThisOnly: 0
+--- !u!114 &5046076875539417275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894168074663777052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a824e94057c71c4b9201374866ab68a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisJobPath: 0
+  jobEntity: {fileID: 1917183654800646405}
+  job:
+    jobName: 
+    jobAnimation: 0
+    jobAnimationClip: {fileID: 7400000, guid: 305a8b72d0b534f4db595accc0a001e4, type: 2}
+    jobHolder:
+      name: 
+      title: 
+      age: 
+      wakeUpDay: 0
+      wakeUpHour: 0
+      stamina: 0
+      happiness: 0
+      job:
+        jobName: 
+        jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
+        jobHolder:
+          name: 
+          title: 
+          age: 
+          wakeUpDay: 0
+          wakeUpHour: 0
+          stamina: 0
+          happiness: 0
+          job:
+            jobName: 
+            jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
+            jobHolder:
+              name: 
+              title: 
+              age: 
+              wakeUpDay: 0
+              wakeUpHour: 0
+              stamina: 0
+              happiness: 0
+              job:
+                jobName: 
+                jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
+                jobHolder:
+                  name: 
+                  title: 
+                  age: 
+                  wakeUpDay: 0
+                  wakeUpHour: 0
+                  stamina: 0
+                  happiness: 0
+                  jobHourTemp: 0
+                  productivity: 0
+                  jobState: 0
+                  overWorkedHoursProduct: 0
+                jobState: 0
+                staminaReductionRate: 0
+                jobRoom: {fileID: 0}
+                jobAcquisionHour: 0
+                jobPosition: {fileID: 0}
+                jobFacingDirection: 0
+              jobHourTemp: 0
+              productivity: 0
+              characterLevel:
+                levelProductionCyclePeriod: 0
+                doneProductionCycles: 0
+                workingHoursDailyLimit: 0
+                overWorkHoursProductLimit: 0
+                staminaRefillSpeedPerSecond: 0
+              jobState: 0
+              characterLevels: []
+              overWorkedHoursProduct: 0
+              container: {fileID: 0}
+              containerEntrance: {fileID: 0}
+              characterGameObject: {fileID: 0}
+            jobState: 0
+            staminaReductionRate: 0
+            jobRoom: {fileID: 0}
+            jobAcquisionHour: 0
+            jobPosition: {fileID: 0}
+            jobFacingDirection: 0
+          jobHourTemp: 0
+          productivity: 0
+          characterLevel:
+            levelProductionCyclePeriod: 0
+            doneProductionCycles: 0
+            workingHoursDailyLimit: 0
+            overWorkHoursProductLimit: 0
+            staminaRefillSpeedPerSecond: 0
+          jobState: 0
+          characterLevels: []
+          overWorkedHoursProduct: 0
+          container: {fileID: 0}
+          containerEntrance: {fileID: 0}
+          characterGameObject: {fileID: 0}
+        jobState: 0
+        staminaReductionRate: 0
+        jobRoom: {fileID: 0}
+        jobAcquisionHour: 0
+        jobPosition: {fileID: 0}
+        jobFacingDirection: 0
+      jobHourTemp: 0
+      productivity: 0
+      characterLevel:
+        levelProductionCyclePeriod: 0
+        doneProductionCycles: 0
+        workingHoursDailyLimit: 0
+        overWorkHoursProductLimit: 0
+        staminaRefillSpeedPerSecond: 0
+      jobState: 0
+      characterLevels: []
+      overWorkedHoursProduct: 0
+      container: {fileID: 0}
+      containerEntrance: {fileID: 0}
+      characterGameObject: {fileID: 0}
+    jobState: 0
+    staminaReductionRate: 0
+    jobRoom: {fileID: 0}
+    jobAcquisionHour: 0
+    jobPosition: {fileID: 1391472959586273985}
+    jobFacingDirection: 1
+  isReversed: 0
+  entrancePos: {fileID: 6651353927459550962}
+  jobPos: {fileID: 4425874686275792253}
+  entrancePosNodeMirror: {fileID: 3108521050103021884}
+  jobNodePosMirror: {fileID: 4163826331344252120}
+  isFollowingPath: 0
+  innerPathNodes: []
+--- !u!1 &4163826331344252120
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3957300146892071730}
   m_Layer: 0
   m_Name: Job1Pos
   m_TagString: Untagged
@@ -877,18 +1093,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &8868962877001830249
+--- !u!4 &3957300146892071730
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3873350075984034014}
+  m_GameObject: {fileID: 4163826331344252120}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.074, y: 0.030000044, z: 0.95399994}
+  m_LocalPosition: {x: 1.782, y: 0.030000044, z: 0}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
-  m_Father: {fileID: 5767512614831816345}
+  m_Father: {fileID: 5797427854962850252}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4254781704383741658
@@ -930,7 +1146,7 @@ RectTransform:
   - {fileID: 2805342969156921760}
   - {fileID: 2370735217822773877}
   m_Father: {fileID: 5477557368673528776}
-  m_RootOrder: 10
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1040,11 +1256,41 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4425874686275792253}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.9499998, y: 0, z: 3.2099998}
+  m_LocalPosition: {x: 5.94, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5477557368673528776}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4595179645589161192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 325379662742424103}
+  m_Layer: 0
+  m_Name: Job1Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &325379662742424103
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4595179645589161192}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.782, y: 0.030000044, z: 0}
+  m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
+  m_Children: []
+  m_Father: {fileID: 5513596129521967131}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4652483094014169321
 GameObject:
@@ -1224,7 +1470,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4909076651258213306}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.074, y: 0.030000044, z: 0.95399994}
+  m_LocalPosition: {x: 3.4259999, y: 0.030000044, z: 0}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 6921580441781287128}
@@ -1299,7 +1545,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!1 &5380508555871406723
+--- !u!1 &5042870958023280945
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1307,28 +1553,184 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3067249834293900154}
+  - component: {fileID: 9040779875877942480}
+  - component: {fileID: 4095496393364497263}
+  - component: {fileID: 2177790874802091168}
   m_Layer: 0
-  m_Name: Job2Pos
+  m_Name: leftEntranceToJob5Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &3067249834293900154
+--- !u!4 &9040779875877942480
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5380508555871406723}
+  m_GameObject: {fileID: 5042870958023280945}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1849998, y: 0.030000044, z: 0.963}
-  m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
-  m_Children: []
-  m_Father: {fileID: 4815169026972613733}
-  m_RootOrder: 1
+  m_LocalPosition: {x: 0, y: -4.1, z: 0}
+  m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
+  m_Children:
+  - {fileID: 729999170674495728}
+  - {fileID: 1654520222113427166}
+  m_Father: {fileID: 5477557368673528776}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4095496393364497263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5042870958023280945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showThisOnly: 0
+--- !u!114 &2177790874802091168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5042870958023280945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a824e94057c71c4b9201374866ab68a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisJobPath: 0
+  jobEntity: {fileID: 1917183654800646405}
+  job:
+    jobName: 
+    jobAnimation: 0
+    jobAnimationClip: {fileID: 7400000, guid: 305a8b72d0b534f4db595accc0a001e4, type: 2}
+    jobHolder:
+      name: 
+      title: 
+      age: 
+      wakeUpDay: 0
+      wakeUpHour: 0
+      stamina: 0
+      happiness: 0
+      job:
+        jobName: 
+        jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
+        jobHolder:
+          name: 
+          title: 
+          age: 
+          wakeUpDay: 0
+          wakeUpHour: 0
+          stamina: 0
+          happiness: 0
+          job:
+            jobName: 
+            jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
+            jobHolder:
+              name: 
+              title: 
+              age: 
+              wakeUpDay: 0
+              wakeUpHour: 0
+              stamina: 0
+              happiness: 0
+              job:
+                jobName: 
+                jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
+                jobHolder:
+                  name: 
+                  title: 
+                  age: 
+                  wakeUpDay: 0
+                  wakeUpHour: 0
+                  stamina: 0
+                  happiness: 0
+                  jobHourTemp: 0
+                  productivity: 0
+                  jobState: 0
+                  overWorkedHoursProduct: 0
+                jobState: 0
+                staminaReductionRate: 0
+                jobRoom: {fileID: 0}
+                jobAcquisionHour: 0
+                jobPosition: {fileID: 0}
+                jobFacingDirection: 0
+              jobHourTemp: 0
+              productivity: 0
+              characterLevel:
+                levelProductionCyclePeriod: 0
+                doneProductionCycles: 0
+                workingHoursDailyLimit: 0
+                overWorkHoursProductLimit: 0
+                staminaRefillSpeedPerSecond: 0
+              jobState: 0
+              characterLevels: []
+              overWorkedHoursProduct: 0
+              container: {fileID: 0}
+              containerEntrance: {fileID: 0}
+              characterGameObject: {fileID: 0}
+            jobState: 0
+            staminaReductionRate: 0
+            jobRoom: {fileID: 0}
+            jobAcquisionHour: 0
+            jobPosition: {fileID: 0}
+            jobFacingDirection: 0
+          jobHourTemp: 0
+          productivity: 0
+          characterLevel:
+            levelProductionCyclePeriod: 0
+            doneProductionCycles: 0
+            workingHoursDailyLimit: 0
+            overWorkHoursProductLimit: 0
+            staminaRefillSpeedPerSecond: 0
+          jobState: 0
+          characterLevels: []
+          overWorkedHoursProduct: 0
+          container: {fileID: 0}
+          containerEntrance: {fileID: 0}
+          characterGameObject: {fileID: 0}
+        jobState: 0
+        staminaReductionRate: 0
+        jobRoom: {fileID: 0}
+        jobAcquisionHour: 0
+        jobPosition: {fileID: 0}
+        jobFacingDirection: 0
+      jobHourTemp: 0
+      productivity: 0
+      characterLevel:
+        levelProductionCyclePeriod: 0
+        doneProductionCycles: 0
+        workingHoursDailyLimit: 0
+        overWorkHoursProductLimit: 0
+        staminaRefillSpeedPerSecond: 0
+      jobState: 0
+      characterLevels: []
+      overWorkedHoursProduct: 0
+      container: {fileID: 0}
+      containerEntrance: {fileID: 0}
+      characterGameObject: {fileID: 0}
+    jobState: 0
+    staminaReductionRate: 0
+    jobRoom: {fileID: 0}
+    jobAcquisionHour: 0
+    jobPosition: {fileID: 1391472959586273985}
+    jobFacingDirection: 1
+  isReversed: 0
+  entrancePos: {fileID: 6651353927459550962}
+  jobPos: {fileID: 3003355915365182498}
+  entrancePosNodeMirror: {fileID: 7919100897358349194}
+  jobNodePosMirror: {fileID: 1618950712178559906}
+  isFollowingPath: 0
+  innerPathNodes: []
 --- !u!1 &6218201433024182397
 GameObject:
   m_ObjectHideFlags: 0
@@ -1404,6 +1806,252 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!1 &6269113600797020990
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5522060304467848927}
+  m_Layer: 0
+  m_Name: Job4Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &5522060304467848927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6269113600797020990}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.94, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5477557368673528776}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6530443663065282015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2807931320645161394}
+  - component: {fileID: 7249945269965152654}
+  - component: {fileID: 3571830086064117000}
+  m_Layer: 0
+  m_Name: leftEntranceToJob3Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &2807931320645161394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6530443663065282015}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -4.1, z: 0}
+  m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
+  m_Children:
+  - {fileID: 4374796519362063114}
+  - {fileID: 194921245013093425}
+  m_Father: {fileID: 5477557368673528776}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7249945269965152654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6530443663065282015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showThisOnly: 0
+--- !u!114 &3571830086064117000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6530443663065282015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a824e94057c71c4b9201374866ab68a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisJobPath: 0
+  jobEntity: {fileID: 1917183654800646405}
+  job:
+    jobName: 
+    jobAnimation: 0
+    jobAnimationClip: {fileID: 7400000, guid: 305a8b72d0b534f4db595accc0a001e4, type: 2}
+    jobHolder:
+      name: 
+      title: 
+      age: 
+      wakeUpDay: 0
+      wakeUpHour: 0
+      stamina: 0
+      happiness: 0
+      job:
+        jobName: 
+        jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
+        jobHolder:
+          name: 
+          title: 
+          age: 
+          wakeUpDay: 0
+          wakeUpHour: 0
+          stamina: 0
+          happiness: 0
+          job:
+            jobName: 
+            jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
+            jobHolder:
+              name: 
+              title: 
+              age: 
+              wakeUpDay: 0
+              wakeUpHour: 0
+              stamina: 0
+              happiness: 0
+              job:
+                jobName: 
+                jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
+                jobHolder:
+                  name: 
+                  title: 
+                  age: 
+                  wakeUpDay: 0
+                  wakeUpHour: 0
+                  stamina: 0
+                  happiness: 0
+                  jobHourTemp: 0
+                  productivity: 0
+                  jobState: 0
+                  overWorkedHoursProduct: 0
+                jobState: 0
+                staminaReductionRate: 0
+                jobRoom: {fileID: 0}
+                jobAcquisionHour: 0
+                jobPosition: {fileID: 0}
+                jobFacingDirection: 0
+              jobHourTemp: 0
+              productivity: 0
+              characterLevel:
+                levelProductionCyclePeriod: 0
+                doneProductionCycles: 0
+                workingHoursDailyLimit: 0
+                overWorkHoursProductLimit: 0
+                staminaRefillSpeedPerSecond: 0
+              jobState: 0
+              characterLevels: []
+              overWorkedHoursProduct: 0
+              container: {fileID: 0}
+              containerEntrance: {fileID: 0}
+              characterGameObject: {fileID: 0}
+            jobState: 0
+            staminaReductionRate: 0
+            jobRoom: {fileID: 0}
+            jobAcquisionHour: 0
+            jobPosition: {fileID: 0}
+            jobFacingDirection: 0
+          jobHourTemp: 0
+          productivity: 0
+          characterLevel:
+            levelProductionCyclePeriod: 0
+            doneProductionCycles: 0
+            workingHoursDailyLimit: 0
+            overWorkHoursProductLimit: 0
+            staminaRefillSpeedPerSecond: 0
+          jobState: 0
+          characterLevels: []
+          overWorkedHoursProduct: 0
+          container: {fileID: 0}
+          containerEntrance: {fileID: 0}
+          characterGameObject: {fileID: 0}
+        jobState: 0
+        staminaReductionRate: 0
+        jobRoom: {fileID: 0}
+        jobAcquisionHour: 0
+        jobPosition: {fileID: 0}
+        jobFacingDirection: 0
+      jobHourTemp: 0
+      productivity: 0
+      characterLevel:
+        levelProductionCyclePeriod: 0
+        doneProductionCycles: 0
+        workingHoursDailyLimit: 0
+        overWorkHoursProductLimit: 0
+        staminaRefillSpeedPerSecond: 0
+      jobState: 0
+      characterLevels: []
+      overWorkedHoursProduct: 0
+      container: {fileID: 0}
+      containerEntrance: {fileID: 0}
+      characterGameObject: {fileID: 0}
+    jobState: 0
+    staminaReductionRate: 0
+    jobRoom: {fileID: 0}
+    jobAcquisionHour: 0
+    jobPosition: {fileID: 1391472959586273985}
+    jobFacingDirection: 1
+  isReversed: 0
+  entrancePos: {fileID: 6651353927459550962}
+  jobPos: {fileID: 1134819076985909268}
+  entrancePosNodeMirror: {fileID: 8144020908479059038}
+  jobNodePosMirror: {fileID: 8515818684288047907}
+  isFollowingPath: 0
+  innerPathNodes: []
+--- !u!1 &6587096624311147323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4791126675728637193}
+  m_Layer: 0
+  m_Name: leftEntrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &4791126675728637193
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6587096624311147323}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.030000044, z: -0.71700007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5513596129521967131}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6651353927459550962
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,7 +2062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8790398685055897720}
   m_Layer: 0
-  m_Name: leftEntrance
+  m_Name: BottomEntrance
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1428,7 +2076,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6651353927459550962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3499994, y: 0, z: -2.39}
+  m_LocalPosition: {x: 0, y: 0, z: -2.39}
   m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
   m_Children: []
   m_Father: {fileID: 5477557368673528776}
@@ -1525,6 +2173,7 @@ GameObject:
   - component: {fileID: 1113328149425311583}
   - component: {fileID: 5409469690705242255}
   - component: {fileID: 3610386283768214725}
+  - component: {fileID: 1917183654800646405}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -1549,10 +2198,14 @@ Transform:
   - {fileID: 8189053746314838050}
   - {fileID: 1525169162652042066}
   - {fileID: 2979735431544420412}
+  - {fileID: 7201247292172711667}
+  - {fileID: 5522060304467848927}
+  - {fileID: 4319175131786521298}
   - {fileID: 6921580441781287128}
-  - {fileID: 301395696878790068}
-  - {fileID: 5767512614831816345}
-  - {fileID: 4815169026972613733}
+  - {fileID: 5797427854962850252}
+  - {fileID: 2807931320645161394}
+  - {fileID: 5513596129521967131}
+  - {fileID: 9040779875877942480}
   - {fileID: 8383320652243081508}
   m_Father: {fileID: 5214590673162483548}
   m_RootOrder: 0
@@ -1576,6 +2229,7 @@ MonoBehaviour:
   jobPathFinders: []
   productionJobType: 0
   DebuggingUI: {fileID: 3655774756407017819}
+  NumOfCharInRoom: 0
 --- !u!114 &5409469690705242255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1602,6 +2256,604 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045bd3c3630aeef419eebbe3782af01e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1917183654800646405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7572037349795198088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d21507eac7864341a03dc14d7a6777c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomJobs:
+  - jobName: 
+    jobAnimation: 0
+    jobAnimationClip: {fileID: 7400000, guid: 305a8b72d0b534f4db595accc0a001e4, type: 2}
+    jobHolder:
+      name: 
+      title: 
+      age: 
+      wakeUpDay: 0
+      wakeUpHour: 0
+      stamina: 0
+      happiness: 0
+      job:
+        jobName: 
+        jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
+        jobHolder:
+          name: 
+          title: 
+          age: 
+          wakeUpDay: 0
+          wakeUpHour: 0
+          stamina: 0
+          happiness: 0
+          job:
+            jobName: 
+            jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
+            jobHolder:
+              name: 
+              title: 
+              age: 
+              wakeUpDay: 0
+              wakeUpHour: 0
+              stamina: 0
+              happiness: 0
+              job:
+                jobName: 
+                jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
+                jobHolder:
+                  name: 
+                  title: 
+                  age: 
+                  wakeUpDay: 0
+                  wakeUpHour: 0
+                  stamina: 0
+                  happiness: 0
+                  jobHourTemp: 0
+                  productivity: 0
+                  jobState: 0
+                  overWorkedHoursProduct: 0
+                jobState: 0
+                staminaReductionRate: 0
+                jobRoom: {fileID: 0}
+                jobAcquisionHour: 0
+                jobPosition: {fileID: 0}
+                jobFacingDirection: 0
+              jobHourTemp: 0
+              productivity: 0
+              characterLevel:
+                levelProductionCyclePeriod: 0
+                doneProductionCycles: 0
+                workingHoursDailyLimit: 0
+                overWorkHoursProductLimit: 0
+                staminaRefillSpeedPerSecond: 0
+              jobState: 0
+              characterLevels: []
+              overWorkedHoursProduct: 0
+              container: {fileID: 0}
+              containerEntrance: {fileID: 0}
+              characterGameObject: {fileID: 0}
+            jobState: 0
+            staminaReductionRate: 0
+            jobRoom: {fileID: 0}
+            jobAcquisionHour: 0
+            jobPosition: {fileID: 0}
+            jobFacingDirection: 0
+          jobHourTemp: 0
+          productivity: 0
+          characterLevel:
+            levelProductionCyclePeriod: 0
+            doneProductionCycles: 0
+            workingHoursDailyLimit: 0
+            overWorkHoursProductLimit: 0
+            staminaRefillSpeedPerSecond: 0
+          jobState: 0
+          characterLevels: []
+          overWorkedHoursProduct: 0
+          container: {fileID: 0}
+          containerEntrance: {fileID: 0}
+          characterGameObject: {fileID: 0}
+        jobState: 0
+        staminaReductionRate: 0
+        jobRoom: {fileID: 0}
+        jobAcquisionHour: 0
+        jobPosition: {fileID: 0}
+        jobFacingDirection: 0
+      jobHourTemp: 0
+      productivity: 0
+      characterLevel:
+        levelProductionCyclePeriod: 0
+        doneProductionCycles: 0
+        workingHoursDailyLimit: 0
+        overWorkHoursProductLimit: 0
+        staminaRefillSpeedPerSecond: 0
+      jobState: 0
+      characterLevels: []
+      overWorkedHoursProduct: 0
+      container: {fileID: 0}
+      containerEntrance: {fileID: 0}
+      characterGameObject: {fileID: 0}
+    jobState: 0
+    staminaReductionRate: 0
+    jobRoom: {fileID: 0}
+    jobAcquisionHour: 0
+    jobPosition: {fileID: 1391472959586273985}
+    jobFacingDirection: 1
+  - jobName: 
+    jobAnimation: 0
+    jobAnimationClip: {fileID: 7400000, guid: 305a8b72d0b534f4db595accc0a001e4, type: 2}
+    jobHolder:
+      name: 
+      title: 
+      age: 
+      wakeUpDay: 0
+      wakeUpHour: 0
+      stamina: 0
+      happiness: 0
+      job:
+        jobName: 
+        jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
+        jobHolder:
+          name: 
+          title: 
+          age: 
+          wakeUpDay: 0
+          wakeUpHour: 0
+          stamina: 0
+          happiness: 0
+          job:
+            jobName: 
+            jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
+            jobHolder:
+              name: 
+              title: 
+              age: 
+              wakeUpDay: 0
+              wakeUpHour: 0
+              stamina: 0
+              happiness: 0
+              job:
+                jobName: 
+                jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
+                jobHolder:
+                  name: 
+                  title: 
+                  age: 
+                  wakeUpDay: 0
+                  wakeUpHour: 0
+                  stamina: 0
+                  happiness: 0
+                  jobHourTemp: 0
+                  productivity: 0
+                  jobState: 0
+                  overWorkedHoursProduct: 0
+                jobState: 0
+                staminaReductionRate: 0
+                jobRoom: {fileID: 0}
+                jobAcquisionHour: 0
+                jobPosition: {fileID: 0}
+                jobFacingDirection: 0
+              jobHourTemp: 0
+              productivity: 0
+              characterLevel:
+                levelProductionCyclePeriod: 0
+                doneProductionCycles: 0
+                workingHoursDailyLimit: 0
+                overWorkHoursProductLimit: 0
+                staminaRefillSpeedPerSecond: 0
+              jobState: 0
+              characterLevels: []
+              overWorkedHoursProduct: 0
+              container: {fileID: 0}
+              containerEntrance: {fileID: 0}
+              characterGameObject: {fileID: 0}
+            jobState: 0
+            staminaReductionRate: 0
+            jobRoom: {fileID: 0}
+            jobAcquisionHour: 0
+            jobPosition: {fileID: 0}
+            jobFacingDirection: 0
+          jobHourTemp: 0
+          productivity: 0
+          characterLevel:
+            levelProductionCyclePeriod: 0
+            doneProductionCycles: 0
+            workingHoursDailyLimit: 0
+            overWorkHoursProductLimit: 0
+            staminaRefillSpeedPerSecond: 0
+          jobState: 0
+          characterLevels: []
+          overWorkedHoursProduct: 0
+          container: {fileID: 0}
+          containerEntrance: {fileID: 0}
+          characterGameObject: {fileID: 0}
+        jobState: 0
+        staminaReductionRate: 0
+        jobRoom: {fileID: 0}
+        jobAcquisionHour: 0
+        jobPosition: {fileID: 0}
+        jobFacingDirection: 0
+      jobHourTemp: 0
+      productivity: 0
+      characterLevel:
+        levelProductionCyclePeriod: 0
+        doneProductionCycles: 0
+        workingHoursDailyLimit: 0
+        overWorkHoursProductLimit: 0
+        staminaRefillSpeedPerSecond: 0
+      jobState: 0
+      characterLevels: []
+      overWorkedHoursProduct: 0
+      container: {fileID: 0}
+      containerEntrance: {fileID: 0}
+      characterGameObject: {fileID: 0}
+    jobState: 0
+    staminaReductionRate: 0
+    jobRoom: {fileID: 0}
+    jobAcquisionHour: 0
+    jobPosition: {fileID: 4425874686275792253}
+    jobFacingDirection: 1
+  - jobName: 
+    jobAnimation: 0
+    jobAnimationClip: {fileID: 7400000, guid: 305a8b72d0b534f4db595accc0a001e4, type: 2}
+    jobHolder:
+      name: 
+      title: 
+      age: 
+      wakeUpDay: 0
+      wakeUpHour: 0
+      stamina: 0
+      happiness: 0
+      job:
+        jobName: 
+        jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
+        jobHolder:
+          name: 
+          title: 
+          age: 
+          wakeUpDay: 0
+          wakeUpHour: 0
+          stamina: 0
+          happiness: 0
+          job:
+            jobName: 
+            jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
+            jobHolder:
+              name: 
+              title: 
+              age: 
+              wakeUpDay: 0
+              wakeUpHour: 0
+              stamina: 0
+              happiness: 0
+              job:
+                jobName: 
+                jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
+                jobHolder:
+                  name: 
+                  title: 
+                  age: 
+                  wakeUpDay: 0
+                  wakeUpHour: 0
+                  stamina: 0
+                  happiness: 0
+                  jobHourTemp: 0
+                  productivity: 0
+                  jobState: 0
+                  overWorkedHoursProduct: 0
+                jobState: 0
+                staminaReductionRate: 0
+                jobRoom: {fileID: 0}
+                jobAcquisionHour: 0
+                jobPosition: {fileID: 0}
+                jobFacingDirection: 0
+              jobHourTemp: 0
+              productivity: 0
+              characterLevel:
+                levelProductionCyclePeriod: 0
+                doneProductionCycles: 0
+                workingHoursDailyLimit: 0
+                overWorkHoursProductLimit: 0
+                staminaRefillSpeedPerSecond: 0
+              jobState: 0
+              characterLevels: []
+              overWorkedHoursProduct: 0
+              container: {fileID: 0}
+              containerEntrance: {fileID: 0}
+              characterGameObject: {fileID: 0}
+            jobState: 0
+            staminaReductionRate: 0
+            jobRoom: {fileID: 0}
+            jobAcquisionHour: 0
+            jobPosition: {fileID: 0}
+            jobFacingDirection: 0
+          jobHourTemp: 0
+          productivity: 0
+          characterLevel:
+            levelProductionCyclePeriod: 0
+            doneProductionCycles: 0
+            workingHoursDailyLimit: 0
+            overWorkHoursProductLimit: 0
+            staminaRefillSpeedPerSecond: 0
+          jobState: 0
+          characterLevels: []
+          overWorkedHoursProduct: 0
+          container: {fileID: 0}
+          containerEntrance: {fileID: 0}
+          characterGameObject: {fileID: 0}
+        jobState: 0
+        staminaReductionRate: 0
+        jobRoom: {fileID: 0}
+        jobAcquisionHour: 0
+        jobPosition: {fileID: 0}
+        jobFacingDirection: 0
+      jobHourTemp: 0
+      productivity: 0
+      characterLevel:
+        levelProductionCyclePeriod: 0
+        doneProductionCycles: 0
+        workingHoursDailyLimit: 0
+        overWorkHoursProductLimit: 0
+        staminaRefillSpeedPerSecond: 0
+      jobState: 0
+      characterLevels: []
+      overWorkedHoursProduct: 0
+      container: {fileID: 0}
+      containerEntrance: {fileID: 0}
+      characterGameObject: {fileID: 0}
+    jobState: 0
+    staminaReductionRate: 0
+    jobRoom: {fileID: 0}
+    jobAcquisionHour: 0
+    jobPosition: {fileID: 1134819076985909268}
+    jobFacingDirection: 1
+  - jobName: 
+    jobAnimation: 0
+    jobAnimationClip: {fileID: 7400000, guid: 305a8b72d0b534f4db595accc0a001e4, type: 2}
+    jobHolder:
+      name: 
+      title: 
+      age: 
+      wakeUpDay: 0
+      wakeUpHour: 0
+      stamina: 0
+      happiness: 0
+      job:
+        jobName: 
+        jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
+        jobHolder:
+          name: 
+          title: 
+          age: 
+          wakeUpDay: 0
+          wakeUpHour: 0
+          stamina: 0
+          happiness: 0
+          job:
+            jobName: 
+            jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
+            jobHolder:
+              name: 
+              title: 
+              age: 
+              wakeUpDay: 0
+              wakeUpHour: 0
+              stamina: 0
+              happiness: 0
+              job:
+                jobName: 
+                jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
+                jobHolder:
+                  name: 
+                  title: 
+                  age: 
+                  wakeUpDay: 0
+                  wakeUpHour: 0
+                  stamina: 0
+                  happiness: 0
+                  jobHourTemp: 0
+                  productivity: 0
+                  jobState: 0
+                  overWorkedHoursProduct: 0
+                jobState: 0
+                staminaReductionRate: 0
+                jobRoom: {fileID: 0}
+                jobAcquisionHour: 0
+                jobPosition: {fileID: 0}
+                jobFacingDirection: 0
+              jobHourTemp: 0
+              productivity: 0
+              characterLevel:
+                levelProductionCyclePeriod: 0
+                doneProductionCycles: 0
+                workingHoursDailyLimit: 0
+                overWorkHoursProductLimit: 0
+                staminaRefillSpeedPerSecond: 0
+              jobState: 0
+              characterLevels: []
+              overWorkedHoursProduct: 0
+              container: {fileID: 0}
+              containerEntrance: {fileID: 0}
+              characterGameObject: {fileID: 0}
+            jobState: 0
+            staminaReductionRate: 0
+            jobRoom: {fileID: 0}
+            jobAcquisionHour: 0
+            jobPosition: {fileID: 0}
+            jobFacingDirection: 0
+          jobHourTemp: 0
+          productivity: 0
+          characterLevel:
+            levelProductionCyclePeriod: 0
+            doneProductionCycles: 0
+            workingHoursDailyLimit: 0
+            overWorkHoursProductLimit: 0
+            staminaRefillSpeedPerSecond: 0
+          jobState: 0
+          characterLevels: []
+          overWorkedHoursProduct: 0
+          container: {fileID: 0}
+          containerEntrance: {fileID: 0}
+          characterGameObject: {fileID: 0}
+        jobState: 0
+        staminaReductionRate: 0
+        jobRoom: {fileID: 0}
+        jobAcquisionHour: 0
+        jobPosition: {fileID: 0}
+        jobFacingDirection: 0
+      jobHourTemp: 0
+      productivity: 0
+      characterLevel:
+        levelProductionCyclePeriod: 0
+        doneProductionCycles: 0
+        workingHoursDailyLimit: 0
+        overWorkHoursProductLimit: 0
+        staminaRefillSpeedPerSecond: 0
+      jobState: 0
+      characterLevels: []
+      overWorkedHoursProduct: 0
+      container: {fileID: 0}
+      containerEntrance: {fileID: 0}
+      characterGameObject: {fileID: 0}
+    jobState: 0
+    staminaReductionRate: 0
+    jobRoom: {fileID: 0}
+    jobAcquisionHour: 0
+    jobPosition: {fileID: 6269113600797020990}
+    jobFacingDirection: 1
+  - jobName: 
+    jobAnimation: 0
+    jobAnimationClip: {fileID: 7400000, guid: 305a8b72d0b534f4db595accc0a001e4, type: 2}
+    jobHolder:
+      name: 
+      title: 
+      age: 
+      wakeUpDay: 0
+      wakeUpHour: 0
+      stamina: 0
+      happiness: 0
+      job:
+        jobName: 
+        jobAnimation: 0
+        jobAnimationClip: {fileID: 0}
+        jobHolder:
+          name: 
+          title: 
+          age: 
+          wakeUpDay: 0
+          wakeUpHour: 0
+          stamina: 0
+          happiness: 0
+          job:
+            jobName: 
+            jobAnimation: 0
+            jobAnimationClip: {fileID: 0}
+            jobHolder:
+              name: 
+              title: 
+              age: 
+              wakeUpDay: 0
+              wakeUpHour: 0
+              stamina: 0
+              happiness: 0
+              job:
+                jobName: 
+                jobAnimation: 0
+                jobAnimationClip: {fileID: 0}
+                jobHolder:
+                  name: 
+                  title: 
+                  age: 
+                  wakeUpDay: 0
+                  wakeUpHour: 0
+                  stamina: 0
+                  happiness: 0
+                  jobHourTemp: 0
+                  productivity: 0
+                  jobState: 0
+                  overWorkedHoursProduct: 0
+                jobState: 0
+                staminaReductionRate: 0
+                jobRoom: {fileID: 0}
+                jobAcquisionHour: 0
+                jobPosition: {fileID: 0}
+                jobFacingDirection: 0
+              jobHourTemp: 0
+              productivity: 0
+              characterLevel:
+                levelProductionCyclePeriod: 0
+                doneProductionCycles: 0
+                workingHoursDailyLimit: 0
+                overWorkHoursProductLimit: 0
+                staminaRefillSpeedPerSecond: 0
+              jobState: 0
+              characterLevels: []
+              overWorkedHoursProduct: 0
+              container: {fileID: 0}
+              containerEntrance: {fileID: 0}
+              characterGameObject: {fileID: 0}
+            jobState: 0
+            staminaReductionRate: 0
+            jobRoom: {fileID: 0}
+            jobAcquisionHour: 0
+            jobPosition: {fileID: 0}
+            jobFacingDirection: 0
+          jobHourTemp: 0
+          productivity: 0
+          characterLevel:
+            levelProductionCyclePeriod: 0
+            doneProductionCycles: 0
+            workingHoursDailyLimit: 0
+            overWorkHoursProductLimit: 0
+            staminaRefillSpeedPerSecond: 0
+          jobState: 0
+          characterLevels: []
+          overWorkedHoursProduct: 0
+          container: {fileID: 0}
+          containerEntrance: {fileID: 0}
+          characterGameObject: {fileID: 0}
+        jobState: 0
+        staminaReductionRate: 0
+        jobRoom: {fileID: 0}
+        jobAcquisionHour: 0
+        jobPosition: {fileID: 0}
+        jobFacingDirection: 0
+      jobHourTemp: 0
+      productivity: 0
+      characterLevel:
+        levelProductionCyclePeriod: 0
+        doneProductionCycles: 0
+        workingHoursDailyLimit: 0
+        overWorkHoursProductLimit: 0
+        staminaRefillSpeedPerSecond: 0
+      jobState: 0
+      characterLevels: []
+      overWorkedHoursProduct: 0
+      container: {fileID: 0}
+      containerEntrance: {fileID: 0}
+      characterGameObject: {fileID: 0}
+    jobState: 0
+    staminaReductionRate: 0
+    jobRoom: {fileID: 0}
+    jobAcquisionHour: 0
+    jobPosition: {fileID: 3003355915365182498}
+    jobFacingDirection: 1
 --- !u!1 &7854629896355627428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,7 +2935,7 @@ MonoBehaviour:
   m_Text: '1
 
 '
---- !u!1 &7920627972610581191
+--- !u!1 &7919100897358349194
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1691,63 +2943,123 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 301395696878790068}
-  - component: {fileID: 3015253827360781639}
-  - component: {fileID: 1552454308323138807}
+  - component: {fileID: 1654520222113427166}
   m_Layer: 0
-  m_Name: leftEntranceToJob2Pos
+  m_Name: leftEntrance
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &301395696878790068
+--- !u!4 &1654520222113427166
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7920627972610581191}
+  m_GameObject: {fileID: 7919100897358349194}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.030000044, z: -0.71700007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9040779875877942480}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8144020908479059038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 194921245013093425}
+  m_Layer: 0
+  m_Name: leftEntrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &194921245013093425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8144020908479059038}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.030000044, z: -0.71700007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2807931320645161394}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8469431386039709745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5513596129521967131}
+  - component: {fileID: 1270223664572806860}
+  - component: {fileID: 365616464115021437}
+  m_Layer: 0
+  m_Name: leftEntranceToJob4Pos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &5513596129521967131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8469431386039709745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -4.1, z: 0}
   m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
   m_Children:
-  - {fileID: 6116198738726740886}
-  - {fileID: 2440351722645551624}
+  - {fileID: 325379662742424103}
+  - {fileID: 4791126675728637193}
   m_Father: {fileID: 5477557368673528776}
-  m_RootOrder: 7
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3015253827360781639
+--- !u!114 &1270223664572806860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7920627972610581191}
+  m_GameObject: {fileID: 8469431386039709745}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   showThisOnly: 0
---- !u!114 &1552454308323138807
+--- !u!114 &365616464115021437
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7920627972610581191}
+  m_GameObject: {fileID: 8469431386039709745}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a824e94057c71c4b9201374866ab68a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisJobPath: 1
-  jobEntity: {fileID: 0}
+  thisJobPath: 0
+  jobEntity: {fileID: 1917183654800646405}
   job:
     jobName: 
     jobAnimation: 0
-    jobAnimationClip: {fileID: 0}
+    jobAnimationClip: {fileID: 7400000, guid: 305a8b72d0b534f4db595accc0a001e4, type: 2}
     jobHolder:
       name: 
       title: 
@@ -1794,7 +3106,7 @@ MonoBehaviour:
                   happiness: 0
                   jobHourTemp: 0
                   productivity: 0
-                  jobState: 1
+                  jobState: 0
                   overWorkedHoursProduct: 0
                 jobState: 0
                 staminaReductionRate: 0
@@ -1810,7 +3122,7 @@ MonoBehaviour:
                 workingHoursDailyLimit: 0
                 overWorkHoursProductLimit: 0
                 staminaRefillSpeedPerSecond: 0
-              jobState: 1
+              jobState: 0
               characterLevels: []
               overWorkedHoursProduct: 0
               container: {fileID: 0}
@@ -1830,7 +3142,7 @@ MonoBehaviour:
             workingHoursDailyLimit: 0
             overWorkHoursProductLimit: 0
             staminaRefillSpeedPerSecond: 0
-          jobState: 1
+          jobState: 0
           characterLevels: []
           overWorkedHoursProduct: 0
           container: {fileID: 0}
@@ -1850,7 +3162,7 @@ MonoBehaviour:
         workingHoursDailyLimit: 0
         overWorkHoursProductLimit: 0
         staminaRefillSpeedPerSecond: 0
-      jobState: 1
+      jobState: 0
       characterLevels: []
       overWorkedHoursProduct: 0
       container: {fileID: 0}
@@ -1860,16 +3172,16 @@ MonoBehaviour:
     staminaReductionRate: 0
     jobRoom: {fileID: 0}
     jobAcquisionHour: 0
-    jobPosition: {fileID: 0}
-    jobFacingDirection: 0
+    jobPosition: {fileID: 1391472959586273985}
+    jobFacingDirection: 1
   isReversed: 0
   entrancePos: {fileID: 6651353927459550962}
-  jobPos: {fileID: 4425874686275792253}
-  entrancePosNodeMirror: {fileID: 3654717273253552418}
-  jobNodePosMirror: {fileID: 9150122673097027803}
+  jobPos: {fileID: 6269113600797020990}
+  entrancePosNodeMirror: {fileID: 6587096624311147323}
+  jobNodePosMirror: {fileID: 4595179645589161192}
   isFollowingPath: 0
   innerPathNodes: []
---- !u!1 &8302200139069461855
+--- !u!1 &8515818684288047907
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1877,370 +3189,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5767512614831816345}
-  - component: {fileID: 3271014108539311902}
-  - component: {fileID: 5214965432355565130}
+  - component: {fileID: 4374796519362063114}
   m_Layer: 0
-  m_Name: rightEntranceToJob1Pos
+  m_Name: Job1Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &5767512614831816345
+--- !u!4 &4374796519362063114
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8302200139069461855}
+  m_GameObject: {fileID: 8515818684288047907}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.1, z: 0}
-  m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
-  m_Children:
-  - {fileID: 8868962877001830249}
-  - {fileID: 225092757597150950}
-  m_Father: {fileID: 5477557368673528776}
-  m_RootOrder: 8
+  m_LocalPosition: {x: 0, y: 0.030000044, z: 0}
+  m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
+  m_Children: []
+  m_Father: {fileID: 2807931320645161394}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3271014108539311902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8302200139069461855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showThisOnly: 0
---- !u!114 &5214965432355565130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8302200139069461855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a824e94057c71c4b9201374866ab68a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thisJobPath: 2
-  jobEntity: {fileID: 0}
-  job:
-    jobName: 
-    jobAnimation: 0
-    jobAnimationClip: {fileID: 0}
-    jobHolder:
-      name: 
-      title: 
-      age: 
-      wakeUpDay: 0
-      wakeUpHour: 0
-      stamina: 0
-      happiness: 0
-      job:
-        jobName: 
-        jobAnimation: 0
-        jobAnimationClip: {fileID: 0}
-        jobHolder:
-          name: 
-          title: 
-          age: 
-          wakeUpDay: 0
-          wakeUpHour: 0
-          stamina: 0
-          happiness: 0
-          job:
-            jobName: 
-            jobAnimation: 0
-            jobAnimationClip: {fileID: 0}
-            jobHolder:
-              name: 
-              title: 
-              age: 
-              wakeUpDay: 0
-              wakeUpHour: 0
-              stamina: 0
-              happiness: 0
-              job:
-                jobName: 
-                jobAnimation: 0
-                jobAnimationClip: {fileID: 0}
-                jobHolder:
-                  name: 
-                  title: 
-                  age: 
-                  wakeUpDay: 0
-                  wakeUpHour: 0
-                  stamina: 0
-                  happiness: 0
-                  jobHourTemp: 0
-                  productivity: 0
-                  jobState: 1
-                  overWorkedHoursProduct: 0
-                jobState: 0
-                staminaReductionRate: 0
-                jobRoom: {fileID: 0}
-                jobAcquisionHour: 0
-                jobPosition: {fileID: 0}
-                jobFacingDirection: 0
-              jobHourTemp: 0
-              productivity: 0
-              characterLevel:
-                levelProductionCyclePeriod: 0
-                doneProductionCycles: 0
-                workingHoursDailyLimit: 0
-                overWorkHoursProductLimit: 0
-                staminaRefillSpeedPerSecond: 0
-              jobState: 1
-              characterLevels: []
-              overWorkedHoursProduct: 0
-              container: {fileID: 0}
-              containerEntrance: {fileID: 0}
-              characterGameObject: {fileID: 0}
-            jobState: 0
-            staminaReductionRate: 0
-            jobRoom: {fileID: 0}
-            jobAcquisionHour: 0
-            jobPosition: {fileID: 0}
-            jobFacingDirection: 0
-          jobHourTemp: 0
-          productivity: 0
-          characterLevel:
-            levelProductionCyclePeriod: 0
-            doneProductionCycles: 0
-            workingHoursDailyLimit: 0
-            overWorkHoursProductLimit: 0
-            staminaRefillSpeedPerSecond: 0
-          jobState: 1
-          characterLevels: []
-          overWorkedHoursProduct: 0
-          container: {fileID: 0}
-          containerEntrance: {fileID: 0}
-          characterGameObject: {fileID: 0}
-        jobState: 0
-        staminaReductionRate: 0
-        jobRoom: {fileID: 0}
-        jobAcquisionHour: 0
-        jobPosition: {fileID: 0}
-        jobFacingDirection: 0
-      jobHourTemp: 0
-      productivity: 0
-      characterLevel:
-        levelProductionCyclePeriod: 0
-        doneProductionCycles: 0
-        workingHoursDailyLimit: 0
-        overWorkHoursProductLimit: 0
-        staminaRefillSpeedPerSecond: 0
-      jobState: 1
-      characterLevels: []
-      overWorkedHoursProduct: 0
-      container: {fileID: 0}
-      containerEntrance: {fileID: 0}
-      characterGameObject: {fileID: 0}
-    jobState: 0
-    staminaReductionRate: 0
-    jobRoom: {fileID: 0}
-    jobAcquisionHour: 0
-    jobPosition: {fileID: 0}
-    jobFacingDirection: 0
-  isReversed: 0
-  entrancePos: {fileID: 9108748301417015496}
-  jobPos: {fileID: 1391472959586273985}
-  entrancePosNodeMirror: {fileID: 223750699454996710}
-  jobNodePosMirror: {fileID: 3873350075984034014}
-  isFollowingPath: 0
-  innerPathNodes: []
---- !u!1 &8554944572494880610
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4815169026972613733}
-  - component: {fileID: 7352589010911128211}
-  - component: {fileID: 4260021170887076093}
-  m_Layer: 0
-  m_Name: rightEntranceToJob2Pos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &4815169026972613733
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8554944572494880610}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.1, z: 0}
-  m_LocalScale: {x: 3.333333, y: 3.333333, z: 3.333333}
-  m_Children:
-  - {fileID: 6487985994431936159}
-  - {fileID: 3067249834293900154}
-  m_Father: {fileID: 5477557368673528776}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7352589010911128211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8554944572494880610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 505c7287897a82144beee9455b45479f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showThisOnly: 0
---- !u!114 &4260021170887076093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8554944572494880610}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a824e94057c71c4b9201374866ab68a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  thisJobPath: 3
-  jobEntity: {fileID: 0}
-  job:
-    jobName: 
-    jobAnimation: 0
-    jobAnimationClip: {fileID: 0}
-    jobHolder:
-      name: 
-      title: 
-      age: 
-      wakeUpDay: 0
-      wakeUpHour: 0
-      stamina: 0
-      happiness: 0
-      job:
-        jobName: 
-        jobAnimation: 0
-        jobAnimationClip: {fileID: 0}
-        jobHolder:
-          name: 
-          title: 
-          age: 
-          wakeUpDay: 0
-          wakeUpHour: 0
-          stamina: 0
-          happiness: 0
-          job:
-            jobName: 
-            jobAnimation: 0
-            jobAnimationClip: {fileID: 0}
-            jobHolder:
-              name: 
-              title: 
-              age: 
-              wakeUpDay: 0
-              wakeUpHour: 0
-              stamina: 0
-              happiness: 0
-              job:
-                jobName: 
-                jobAnimation: 0
-                jobAnimationClip: {fileID: 0}
-                jobHolder:
-                  name: 
-                  title: 
-                  age: 
-                  wakeUpDay: 0
-                  wakeUpHour: 0
-                  stamina: 0
-                  happiness: 0
-                  jobHourTemp: 0
-                  productivity: 0
-                  jobState: 1
-                  overWorkedHoursProduct: 0
-                jobState: 0
-                staminaReductionRate: 0
-                jobRoom: {fileID: 0}
-                jobAcquisionHour: 0
-                jobPosition: {fileID: 0}
-                jobFacingDirection: 0
-              jobHourTemp: 0
-              productivity: 0
-              characterLevel:
-                levelProductionCyclePeriod: 0
-                doneProductionCycles: 0
-                workingHoursDailyLimit: 0
-                overWorkHoursProductLimit: 0
-                staminaRefillSpeedPerSecond: 0
-              jobState: 1
-              characterLevels: []
-              overWorkedHoursProduct: 0
-              container: {fileID: 0}
-              containerEntrance: {fileID: 0}
-              characterGameObject: {fileID: 0}
-            jobState: 0
-            staminaReductionRate: 0
-            jobRoom: {fileID: 0}
-            jobAcquisionHour: 0
-            jobPosition: {fileID: 0}
-            jobFacingDirection: 0
-          jobHourTemp: 0
-          productivity: 0
-          characterLevel:
-            levelProductionCyclePeriod: 0
-            doneProductionCycles: 0
-            workingHoursDailyLimit: 0
-            overWorkHoursProductLimit: 0
-            staminaRefillSpeedPerSecond: 0
-          jobState: 1
-          characterLevels: []
-          overWorkedHoursProduct: 0
-          container: {fileID: 0}
-          containerEntrance: {fileID: 0}
-          characterGameObject: {fileID: 0}
-        jobState: 0
-        staminaReductionRate: 0
-        jobRoom: {fileID: 0}
-        jobAcquisionHour: 0
-        jobPosition: {fileID: 0}
-        jobFacingDirection: 0
-      jobHourTemp: 0
-      productivity: 0
-      characterLevel:
-        levelProductionCyclePeriod: 0
-        doneProductionCycles: 0
-        workingHoursDailyLimit: 0
-        overWorkHoursProductLimit: 0
-        staminaRefillSpeedPerSecond: 0
-      jobState: 1
-      characterLevels: []
-      overWorkedHoursProduct: 0
-      container: {fileID: 0}
-      containerEntrance: {fileID: 0}
-      characterGameObject: {fileID: 0}
-    jobState: 0
-    staminaReductionRate: 0
-    jobRoom: {fileID: 0}
-    jobAcquisionHour: 0
-    jobPosition: {fileID: 0}
-    jobFacingDirection: 0
-  isReversed: 0
-  entrancePos: {fileID: 9108748301417015496}
-  jobPos: {fileID: 4425874686275792253}
-  entrancePosNodeMirror: {fileID: 1826594845528700703}
-  jobNodePosMirror: {fileID: 5380508555871406723}
-  isFollowingPath: 0
-  innerPathNodes: []
 --- !u!1 &8922424841513518949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,36 +3385,6 @@ Transform:
   m_Father: {fileID: 5477557368673528776}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &9150122673097027803
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2440351722645551624}
-  m_Layer: 0
-  m_Name: Job2Pos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &2440351722645551624
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9150122673097027803}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.1849998, y: 0.030000044, z: 0.963}
-  m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
-  m_Children: []
-  m_Father: {fileID: 301395696878790068}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2824711332123995135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2527,30 +3467,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 3695358671655894683, guid: 826af257dd316254b928f7cc1cf26c24,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3695358671655894681, guid: 826af257dd316254b928f7cc1cf26c24,
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
-      objectReference: {fileID: 0}
-    - target: {fileID: 3695358671655894681, guid: 826af257dd316254b928f7cc1cf26c24,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4933423223330968612, guid: 826af257dd316254b928f7cc1cf26c24,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4933423223330968612, guid: 826af257dd316254b928f7cc1cf26c24,
-        type: 3}
-      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
-      value: 0.9814308
       objectReference: {fileID: 0}
     - target: {fileID: 4933423223330968612, guid: 826af257dd316254b928f7cc1cf26c24,
         type: 3}
@@ -2561,6 +3481,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Size
       value: 42.223675
+      objectReference: {fileID: 0}
+    - target: {fileID: 4933423223330968612, guid: 826af257dd316254b928f7cc1cf26c24,
+        type: 3}
+      propertyPath: m_LODs.Array.data[0].screenRelativeHeight
+      value: 0.9814308
       objectReference: {fileID: 0}
     - target: {fileID: 4933423223330968612, guid: 826af257dd316254b928f7cc1cf26c24,
         type: 3}

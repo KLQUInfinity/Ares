@@ -34,10 +34,10 @@ public class CharController : MonoBehaviour
     #endregion
 
     #region FollowingPath
-    [HideInInspector] public int currBBSlotIndex, currSlotIndex;
-    [HideInInspector] public SlotDir currSlotDir;
+    public int currBBSlotIndex, currSlotIndex;
+    public SlotDir currSlotDir;
 
-    [SerializeField] private List<Vector3> followingPath;
+    [SerializeField] private List<Vector3> followingPath = new List<Vector3>();
     #endregion
 
     [HideInInspector] public RuntimeAnimatorController myAnimController;
@@ -52,7 +52,6 @@ public class CharController : MonoBehaviour
     private void Start()
     {
         myRB = GetComponent<Rigidbody>();
-        followingPath = new List<Vector3>();
         curPos = transform.position;
         cAnimFSM = GetComponent<CharacterAnimationFSM>();
         myAnimController = GetComponent<Animator>().runtimeAnimatorController;
@@ -71,6 +70,10 @@ public class CharController : MonoBehaviour
                 {
                     isMovePath = false;
                     GetComponent<Dragable_Item>().containerRoom = LevelManager.Instance.roomManager.populateAndGetContainerRoom(this.gameObject);
+                    if (!GetComponent<Dragable_Item>().containerRoom.name.Equals("TrainningRoom"))
+                    {
+                        GetComponent<Dragable_Item>().containerRoom.GetComponentInChildren<RoomEntity>().AddCharCountToRoom();
+                    }
                     GetComponent<CharacterEntity>().OnPathFollowingEnd(entranceDir);
                     return;
                 }

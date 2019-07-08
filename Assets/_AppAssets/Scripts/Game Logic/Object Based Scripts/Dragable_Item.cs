@@ -151,6 +151,7 @@ public class Dragable_Item : MonoBehaviour
                             //this.GetComponent<CharacterEntity>().followRoomInnerPath(roomEntity, true);
                             // ->>>>> LevelManager.Instance.characterManager.getCharacterWithGameObject(gameObject).containerEntrance= Calculated entrance to get out from.
 
+                            oldContainer.GetComponentInChildren<RoomEntity>().SubCharCountToRoom();
                             if (oldContainer.name.Equals("TrainningRoom"))
                             {
                                 GetComponent<Animator>().runtimeAnimatorController = myCharC.myAnimController;

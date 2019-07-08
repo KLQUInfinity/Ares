@@ -137,5 +137,15 @@ public class SlotManager : MonoBehaviour
         slot.RoomObj = capsole;
         slot.BuildThisSlot(roomPrefab.name);
         LevelManager.Instance.CalculateThisRoomBounds(new Room(capsole));
+
+        SlotDir enterance = (slot.MyDir == SlotDir.Right) ? SlotDir.Left : SlotDir.Right;
+        int num = PlayerPrefs.GetInt(id + " CharNum");
+
+        PlayerPrefs.SetInt(id + " CharNum",0);
+
+        for (int i = 0; i < num; i++)
+        {
+            LevelManager.Instance.CreateChar(capsole.GetComponentInChildren<RoomEntity>());
+        }
     }
 }
